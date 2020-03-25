@@ -114,7 +114,7 @@ textarea {
     border-color: #3a7b1d;}
     .btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus{box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
 
-.btn{border-radius: 0;font-size: 14px;font-family: "Averta-Bold";text-transform: uppercase;white-space: nowrap;padding-top: 0.58rem;padding-bottom: .58rem;padding-left: 1.5rem;padding-right: 1.5rem;}
+    .btn{border-radius: 0;font-size: 14px;font-family: "Averta-Bold";text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 1.5rem;padding-right: 1.5rem;}
 .btn.btn-lg{font-size: 16px;padding: 1rem 2rem;}
 .btn i{margin-right: 10px;}
 .form-control{border-color: #ebebeb;border-radius: 2px;font-size: 14px;font-family: "Averta-Regular";height: calc(2em + .75rem + 2px);}
@@ -182,22 +182,44 @@ textarea {
 .planCalloutSec ul li{max-width: 220px;}
 .planCalloutSec ul li h3{font-size: 26px;margin-top: 1rem;}
 
-.browseHousePlan{background: #3b8beb;color: #fff;;}
-.browseHousePlanSec{display: flex;align-items: center;}
-.browseHousePlanSec .browseContentSec{width: 50%;padding: 0 15px;}
-.browseHousePlanSec .browseContentSec h3{color: #fff;}
-.browseHousePlanSec .browseContentSec h6{color: #fff;margin-bottom: 2rem;}
-.browseHousePlanSec .browseContentSec h6 strong{font-family: "Averta-Bold";}
-.browseHousePlanSec .browseContentSec h6 strong b{font-size: 22px;}
-.browseHousePlanSec .browseSliderSec{width: 50%;padding: 0 15px;}
+
+.browseHousePlan{background: #3b8beb;color: #fff;padding: 80px 0 40px 0;position: relative;}
+.browseHousePlanSec{display: flex;position: relative;z-index: 1;width: 50%;margin-left: auto;}
+.browseHousePlan .browseContentSec{width: 100%;padding: 80px 15px 40px 15px;position: absolute;right: 0;top: 0;}
+.browseHousePlan .browseContentSec .browseContentSecSp{width: 50%;padding: 0 15px;}
+.browseHousePlan .browseContentSec h3{color: #fff;}
+.browseHousePlan .browseContentSec h6{color: #fff;margin-bottom: 2rem;}
+.browseHousePlan .browseContentSec h6 strong{font-family: "Averta-Bold";}
+.browseHousePlan .browseContentSec h6 strong b{font-size: 22px;}
+.browseHousePlanSec .browseSliderSec{width: 100%;padding: 0 15px;}
+.browseHousePlanSec .browseSliderSec .productBox{margin: 0 5px;}
 
 
 .productBox{background: #fff;padding: 5px;display: flex;flex-direction: column;}
-.productBox .productBtnHolder{display: flex;}
-.productBox .productBtnHolder .btn-product{border: 1px solid #1f1f1f;}
-.productBox .productBtnHolder > span{padding: 0 5px;}
+.productBox .productBtnHolder{display: flex;margin-top: 5px;}
+.productBox .productBtnHolder .btn-product{border: 1px solid #1f1f1f;    border-radius: 0;font-size: 14px;text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 15px;padding-right: 15px;font-family: "Averta W01 Semibold";color: #1f1f1f;width: 100%;display: block;text-align: center;}
+.productBox .productBtnHolder > span{padding: 0 5px;flex: 1;}
 .productBox .productBtnHolder > span:first-child{padding-left: 0;}
 .productBox .productBtnHolder > span:last-child{padding-right: 0;}
+
+
+.productBox .productBlock{position: relative;}
+.productBox .productBlock .productTopIconHolder{position: absolute;left: 0;top: 0;display: flex;justify-content: space-between;width: 100%;padding: 5px;align-items: flex-start;z-index: 2;}
+.productBox .productBlock .productTopIconHolder > a{background: #fff;padding: 8px 7px;display: flex;align-items: center;justify-content: center;}
+.productBox .productBlock .productTopIconHolder .rightIconHolder {display: flex;}
+.productBox .productBlock .productTopIconHolder .rightIconHolder a{background: rgba(255,255,255,0.3);padding: 5px 8px;display: flex;align-items: center;justify-content: center;margin-left: 5px;}
+.productBox .productBlock .productBottomInfoSec{position: absolute;left: 0;bottom: 0;width: 100%;display: flex;flex-direction: column;align-items: flex-end;z-index: 2;}
+.productBox .productBlock .productBottomInfoSec .productInfoSec{background: rgba(0,0,0,0.5);width: 100%;}
+.productBox .productBlock .productImageSec{position: relative;z-index: 1;}
+.productBox .productBlock .productImageSec:after{content: '';background: url('../img/product-shadow.png') top left repeat-x;width: 100%;height: 100%;left: 0;top: 0;position: absolute;}
+.productBox .productBlock .productImageSec img{width: 100%;height: 395px;object-fit: cover;object-position: center;display: block;}
+.productBox .productBlock .productBottomInfoSec .productInfoSec ul{display: flex;list-style-type: none;margin: 0;padding: 0;width: 100%;}
+.productBox .productBlock .productBottomInfoSec .productInfoSec ul li{flex: 1;border-right: 1px solid rgba(255,255,255,0.2);padding:10px 15px;display: flex;flex-direction: column;align-items: center;font-size: 16px;font-family: "Averta W01 Semibold";}
+
+.productBox .productBlock .productBottomInfoSec > span{padding: 5px 15px;background: #fff;font-size: 16px;color: #000;font-family: "Averta W01 Semibold";margin: 10px;}
+.productBrowseSlider{overflow: hidden;}
+.productBrowseSlider .slick-track{display: flex;}
+
 
 /* costBuiltCalcSec start */
 
@@ -216,7 +238,6 @@ textarea {
 
 
 /* costBuiltCalcSec end */
-
 
 
 /* footer start */
