@@ -222,6 +222,24 @@ textarea {
 .productBrowseSlider .slick-track{display: flex;}
 
 
+/* costBuiltCalcSec start */
+
+.costBuiltCalcSec{background: #3b8beb;padding: 5rem 0;}
+.costBuiltCalcSec .contentSp h3{color: #fff}
+.costBuiltCalcSec .contentSp p{color: #fff}
+.costBuiltCalcSec .contentSp h5 span{padding: 0 3px;background: #fff;color: #3b8beb;}
+.costBuiltCalcSec .contentSp h5{color: #fff}
+.costCalcList{list-style: none;padding: 0;margin: 60px 0;display: flex;flex-wrap: wrap;justify-content: center;/* align-items: center; */}
+.costCalcList li{width: calc(100% / 6);padding: 20px 15px;color: #fff;font-size: 18px;font-family: "Averta W01 Semibold";height: inherit;display: flex;flex-direction: column;justify-content: center;}
+.costCalcList li img{display: block;margin: 0 auto 10px;}
+.costCalcList li span{width: min-content;margin: 0 auto;line-height: 20px;}
+.costCalcList li:nth-child(-n + 6){border-bottom: 1px solid #61a2ef;}
+.costCalcList li{border-right: 1px solid #61a2ef;}
+.costCalcList li:last-child, .costCalcList li:nth-child(6n){border-right: 0;}
+
+
+/* costBuiltCalcSec end */
+
 
 /* footer start */
 
