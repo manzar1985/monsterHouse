@@ -1,0 +1,405 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+* What follows is the result of much research on cross-browser styling.
+* Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+* Kroc Camen, and the H5BP dev community and team.
+*/
+
+/* ==========================================================================
+Base styles: opinionated defaults
+========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+  * Remove text-shadow in selection highlight:
+  * https://twitter.com/miketaylr/status/12228805301
+  *
+  * Vendor-prefixed and regular ::selection selectors cannot be combined:
+  * https://stackoverflow.com/a/16982510/7133471
+  *
+  * Customize the background color to match your design.
+  */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+  * A better looking default horizontal rule
+  */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+  * Remove the gap between audio, canvas, iframes,
+  * images, videos and the bottom of their containers:
+  * https://github.com/h5bp/html5-boilerplate/issues/440
+  */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+  * Remove default fieldset styles.
+  */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  * Allow only vertical resizing of textareas.
+  */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+    Browser Upgrade Prompt
+    ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+    Author's custom styles
+    ========================================================================== */
+
+.btn-primary{background: #3a7b1d;border-color: #3a7b1d;color: #fff;}
+.btn-primary:hover {color: #fff;background-color: #2a5f13;border-color: #2a5f13;}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{    box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{color: #fff;background-color: #2a5f13;border-color: #2a5f13;}
+
+.btn-light{background: #fff;border-color: #ffff;color: #3a7b1d;}
+.btn-light:hover {color: #fff;background-color: #3a7b1d;border-color: #3a7b1d;}
+.btn-light.focus, .btn-light:focus{    color: #fff;
+  background-color: #3a7b1d;
+  border-color: #3a7b1d;
+  box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
+  .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle{color: #fff;
+    background-color: #3a7b1d;
+    border-color: #3a7b1d;}
+    .btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus{box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
+
+.btn{border-radius: 0;font-size: 14px;font-family: "Averta-Bold";text-transform: uppercase;white-space: nowrap;padding-top: 0.58rem;padding-bottom: .58rem;padding-left: 1.5rem;padding-right: 1.5rem;}
+.btn.btn-lg{font-size: 16px;padding: 1rem 2rem;}
+.btn i{margin-right: 10px;}
+.form-control{border-color: #ebebeb;border-radius: 2px;font-size: 14px;font-family: "Averta-Regular";height: calc(2em + .75rem + 2px);}
+@media (min-width: 1310px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1280px;
+}
+}
+
+.contentSp h3{font-family: 'montserratbold';font-size: 48px;color: #141f2b;margin: 0 0 1.6rem 0;}
+.contentSp p{font-family: "Averta-Regular";font-size: 16px;color: #141f2b;margin-bottom: 1.2rem;line-height: 34px;}
+.contentSp h5{font-family: "Averta-Regular";font-size: 24px;color: #141f2b;margin:0 0 1.5rem 0;}
+.contentSp h6{font-family: "Averta-Regular";font-size: 18px;color: #141f2b;margin:0 0 1.5rem 0;line-height: 40px;}
+
+
+.topBarContainer{background: #3b8beb;padding: 8px 0;}
+.topBarContainer .container{max-width: 1752px;}
+.topBarSec{display: flex;align-items: center;}
+.topBarleftInfoSec ul{display: flex;list-style-type: none;margin: 0;padding: 0;color: #fff;align-items: center;}
+.topBarleftInfoSec ul li + li{margin-left: 10px;}
+.topBarleftInfoSec ul li p{font-family: "Averta-Regular";font-size: 16px;display: flex;align-items: center;margin: 0 0 0 10px;}
+.topBarleftInfoSec ul li p a{color: #fff;text-decoration: none;font-family: "Averta-Bold";font-size: 22px;display: flex;align-items: center;margin-left: 10px;}
+.topBarleftInfoSec ul li p a i{display: flex;margin: 0 5px 0 0;}
+.topBarRightInfoSec{margin-left: auto;display: flex;align-items: center;}
+.topBarRightInfoSec ul{display: flex;list-style-type: none;margin: 0;padding: 0;color: #fff;align-items: center;}
+.topBarRightInfoSec ul li{margin: 0 0 0 15px;}
+.topBarRightInfoSec ul li a i{background: #fff;border-radius: 100%;width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;}
+.topSearchSec .form-control{border-radius: 0;min-width: 19rem;border-color: #fff;height: calc(1.25em + .75rem + 2px);}
+.topSearchSec .btn{border-radius: 0;padding: .25rem 2rem;}
+
+.navBarHolder .container{max-width: 1752px;}
+.navBarHolder .navbar{padding-left: 0;padding-right: 0;}
+.navBarHolder .navbar .navbar-brand{padding-top: 0;padding-bottom: 0;}
+.navBarHolder .navbar .navbar-nav{width: 100%;justify-content: space-between;margin-left: 6rem;}
+.navBarHolder .navbar .navbar-nav .nav-link{font-size: 13px;color: #333333;font-family: 'montserratsemibold';}
+.navBarHolder .navbar .navbar-nav .dropdown-toggle::after{width: 10px;height: 6px;background: url(../img/nav-dropdown-arrow.png) center center no-repeat;border: 0;}
+
+
+.sliderSec {position: relative;margin-bottom: 70px;}
+.sliderSec ul{list-style-type: none;margin: 0;padding: 0;}
+.sliderSec ul li{position: relative;}
+.sliderSec ul li:after{content: '';background: rgba(0,0,0,0.1);width: 100%;height: 100%;left: 0;top: 0;position: absolute;}
+.sliderSec ul li > img{width: 100%;height: 730px;object-position: center;object-fit: cover;}
+.sliderSec ul li .sliderCaption{position: absolute;left: 50%;top: 50%;transform: translate(-50% , -50%);z-index: 1;color: #fff;text-align: center;max-width: 100%;}
+.sliderSec ul li .sliderCaption h2{font-size: 74px;font-family: 'montserratsemibold';margin: 0;}
+.sliderSec ul li .sliderCaption p{font-size: 40px;font-family: "Averta-Regular";margin: 0 0 2rem 0;}
+.planFilterSec{position: absolute;top: 100%;left: 0;width: 100%;transform: translateY(-50%);}
+.planFilterFieldSec{padding: 0 90px;position: relative;}
+.planFilterFieldSec > i{position: absolute;left: 100%;top: 50%;transform: translateY(-50%);margin-left: -50px;}
+.planFilterFieldSp{background: #fff;border-radius: 15px;box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);padding:25px 40px;display: flex;align-items: center;}
+.planFilterFieldSp .planFilterFieldHolder{width: 100%;display: flex;}
+.planFilterFormGroup{width: 100%;max-width: 125px;padding: 0 10px;}
+.planFilterFormGroup label{font-size: 14px;font-family: "Averta W01 Semibold";}
+.planFilterFormGroup .form-control{border-color: #ebebeb;}
+.planFilterFormGroup.sqrFt{max-width: 100%;}
+.planFilterFormGroup.sqrFt .d-flex span{padding: 0 10px;}
+.planFilterFormGroup.sqrFt .d-flex .form-control{max-width: 95px;}
+.planFilterFormGroup .form-control{border-radius: 0;}
+.planFilterBtnSec .btn{min-width: 196px;;}
+
+
+.planToFindHomeSec{padding: 100px 0;}
+.planToFindHomeSec h6{color: #3b8beb;}
+.planCalloutSec ul{display: flex;list-style-type: none;width: 100%;justify-content: space-evenly;margin: 60px 0  40px 0;padding: 0;}
+.planCalloutSec ul li{max-width: 220px;}
+.planCalloutSec ul li h3{font-size: 26px;margin-top: 1rem;}
+
+.browseHousePlan{background: #3b8beb;color: #fff;;}
+.browseHousePlanSec{display: flex;align-items: center;}
+.browseHousePlanSec .browseContentSec{width: 50%;padding: 0 15px;}
+.browseHousePlanSec .browseContentSec h3{color: #fff;}
+.browseHousePlanSec .browseContentSec h6{color: #fff;margin-bottom: 2rem;}
+.browseHousePlanSec .browseContentSec h6 strong{font-family: "Averta-Bold";}
+.browseHousePlanSec .browseContentSec h6 strong b{font-size: 22px;}
+.browseHousePlanSec .browseSliderSec{width: 50%;padding: 0 15px;}
+
+
+.productBox{background: #fff;padding: 5px;display: flex;flex-direction: column;}
+.productBox .productBtnHolder{display: flex;}
+.productBox .productBtnHolder .btn-product{border: 1px solid #1f1f1f;}
+.productBox .productBtnHolder > span{padding: 0 5px;}
+.productBox .productBtnHolder > span:first-child{padding-left: 0;}
+.productBox .productBtnHolder > span:last-child{padding-right: 0;}
+
+
+
+
+
+/* footer start */
+
+footer{padding: 0;}
+footer p{font-size: 14px;color: #23303a;margin: 0;}
+.footerBlockHolder{display: flex;justify-content: space-between;margin: 0 -15px;align-items: flex-start;flex-wrap: wrap;padding: 5rem 0;border-bottom: 1px solid #dfdfdf;}
+.footerBlockHolder > *{padding: 0 15px;}
+.footerBlockHolder h6{font-size: 13px;font-family: 'montserratbold';}
+.footerSearchBlock{flex: 0 0 380px;}
+.footerSearchBlock .input-group{margin-top: 30px;}
+.footerSearchBlock .input-group .form-control{height: calc(2.5em + .75rem + 2px);}
+.footerSearchBlock .input-group .btn{padding-top: 0.75rem;padding-bottom: .75rem;}
+.cardImgSec{margin: 20px -5px;display: flex;align-items: center;flex-wrap: wrap}
+.cardImgSec span{max-width: 33.33%;padding: 0 5px}
+.adviceSection a{font-size: 22px;color: #3b8beb;display: flex;align-items: center;font-family: "Averta-Bold";margin-top: 15px;}
+.adviceSection a i{margin-right: 10px;display: flex;}
+.footerSearchBlock .topSearchSec .form-control{min-width: auto;}
+.footerNavBlock{display: flex;flex-wrap: wrap;max-width: 390px;flex-direction: column;}
+.footerNavBlock h6{flex: 0 0 100%;max-width: 100%;}
+.footerNavBlock ul{flex: 0 0 100%;max-width: 100%;list-style: none;padding: 0;margin: 0;}
+.footerNavBlock ul li{padding-top: 8px;padding-bottom: 8px;}
+.footerNavBlock ul li a{text-decoration: none;color: #23303a;font-size: 15px;font-family: "Averta-Regular";}
+.footerNavBlock ul.double-inner{display: flex;flex-wrap: wrap;margin: 0 -10px;}
+.footerNavBlock ul.double-inner li{width: 50%;padding-left: 10px;padding-right: 10px;}
+
+.footerBottomSec{display: flex;flex-wrap: wrap;justify-content: space-between;margin: 0 -15px;padding: 30px 0;}
+.footerBottomSec p a{color: #23303a;text-decoration: none}
+.footerBottomSec> * {padding: 0 15px}
+.footerBottomSec ul{list-style: none;margin: 0;display: flex;align-items: center;padding-right: 0;}
+.footerBottomSec ul li{padding: 0 30px;}
+.footerBottomSec ul li:last-child{padding-right: 15px}
+
+
+
+/* footer end */
+
+/* ==========================================================================
+    Helper classes
+    ========================================================================== */
+
+/*
+  * Hide visually and from screen readers
+  */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+    ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+    Print styles.
+    Inlined to avoid the additional HTTP request:
+    https://www.phpied.com/delay-loading-your-print-css/
+    ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+      * Don't show links that are fragment identifiers,
+      * or use the `javascript:` pseudo protocol
+      */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+      * Printing Tables:
+      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+      */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

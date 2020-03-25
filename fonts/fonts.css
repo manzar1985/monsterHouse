@@ -1,0 +1,40 @@
+@font-face {font-family: "Averta-Regular";
+  src: url("150037e11f159dca84bc4c04549094b6.eot"); /* IE9*/
+  src: url("150037e11f159dca84bc4c04549094b6.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("150037e11f159dca84bc4c04549094b6.woff2") format("woff2"), /* chrome、firefox */
+  url("150037e11f159dca84bc4c04549094b6.woff") format("woff"), /* chrome、firefox */
+  url("150037e11f159dca84bc4c04549094b6.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("150037e11f159dca84bc4c04549094b6.svg#Averta-Regular") format("svg"); /* iOS 4.1- */
+}
+@font-face {font-family: "Averta-Bold";
+  src: url("c36a75c5ada59665e225bbf5e38efd34.eot"); /* IE9*/
+  src: url("c36a75c5ada59665e225bbf5e38efd34.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("c36a75c5ada59665e225bbf5e38efd34.woff2") format("woff2"), /* chrome、firefox */
+  url("c36a75c5ada59665e225bbf5e38efd34.woff") format("woff"), /* chrome、firefox */
+  url("c36a75c5ada59665e225bbf5e38efd34.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("c36a75c5ada59665e225bbf5e38efd34.svg#Averta-Bold") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url('montserrat-semibold-webfont.woff2') format('woff2'),
+       url('montserrat-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {font-family: "Averta W01 Semibold";
+  src: url("5d640771234976607eb77f96b3e69c1c.eot"); /* IE9*/
+  src: url("5d640771234976607eb77f96b3e69c1c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("5d640771234976607eb77f96b3e69c1c.woff2") format("woff2"), /* chrome、firefox */
+  url("5d640771234976607eb77f96b3e69c1c.woff") format("woff"), /* chrome、firefox */
+  url("5d640771234976607eb77f96b3e69c1c.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("5d640771234976607eb77f96b3e69c1c.svg#Averta W01 Semibold") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: 'montserratbold';
+  src: url('montserrat-bold-webfont.woff2') format('woff2'),
+       url('montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
