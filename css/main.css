@@ -217,7 +217,8 @@ textarea {
 .productBox .productBlock .productBottomInfoSec .productInfoSec ul li{flex: 1;border-right: 1px solid rgba(255,255,255,0.2);padding:10px 15px;display: flex;flex-direction: column;align-items: center;font-size: 16px;font-family: "Averta W01 Semibold";}
 
 .productBox .productBlock .productBottomInfoSec > span{padding: 5px 15px;background: #fff;font-size: 16px;color: #000;font-family: "Averta W01 Semibold";margin: 10px;}
-.productBrowseSlider{overflow: hidden;}
+.productBrowseSlider{overflow: hidden;position: relative;}
+.productBrowseSlider:after{content: '';position: absolute;right: 0;top: 0;bottom: 0;width: 58px;background: url(../img/browse-right-shadow.png) top right repeat-y;}
 .productBrowseSlider .slick-track{display: flex;}
 
 
