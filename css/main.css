@@ -118,16 +118,21 @@ textarea {
 .btn.btn-lg{font-size: 16px;padding: 1rem 2rem;}
 .btn i{margin-right: 10px;}
 .form-control{border-color: #ebebeb;border-radius: 2px;font-size: 14px;font-family: "Averta-Regular";height: calc(2em + .75rem + 2px);}
-@media (min-width: 1310px){
+
+.btn-gray{background-color: #f7f9fb;border-color: #f7f9fb;color: #666666;}
+.btn-gray:hover{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
+.btn-gray:focus{    box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
+@media (min-width: 1340px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1280px;
+    max-width: 1310px;
 }
 }
 
 .contentSp h3{font-family: 'montserratbold';font-size: 48px;color: #141f2b;margin: 0 0 1.6rem 0;}
-.contentSp p{font-family: "Averta-Regular";font-size: 16px;color: #141f2b;margin-bottom: 1.2rem;line-height: 34px;}
-.contentSp h5{font-family: "Averta-Regular";font-size: 24px;color: #141f2b;margin:0 0 1.5rem 0;}
-.contentSp h6{font-family: "Averta-Regular";font-size: 18px;color: #141f2b;margin:0 0 1.5rem 0;line-height: 40px;}
+.contentSp p{font-family: "Averta-Regular";font-size: 16px;color: #141f2b;margin-bottom: 1.2rem;line-height: 30px;}
+.contentSp h5{font-family: "Averta-Regular";font-size: 24px;color: #141f2b;margin:0 0 1.5rem 0;line-height: 36px;}
+.contentSp h4{font-family: "Averta-Regular";font-size: 22px;color: #141f2b;margin:0 0 1.5rem 0;line-height: 36px;}
+.contentSp h6{font-family: "Averta-Regular";font-size: 18px;color: #141f2b;margin:0 0 1.5rem 0;line-height: 36px;}
 
 
 .topBarContainer{background: #3b8beb;padding: 8px 0;}
@@ -186,7 +191,7 @@ textarea {
 .browseHousePlan{background: #3b8beb;color: #fff;padding: 80px 0 40px 0;position: relative;}
 .browseHousePlanSec{display: flex;position: relative;z-index: 1;width: 50%;margin-left: auto;}
 .browseHousePlan .browseContentSec{width: 100%;padding: 80px 15px 40px 15px;position: absolute;right: 0;top: 0;}
-.browseHousePlan .browseContentSec .browseContentSecSp{width: 50%;padding: 0 15px;}
+.browseHousePlan .browseContentSec .browseContentSecSp{width: 45%;padding: 0 15px;}
 .browseHousePlan .browseContentSec h3{color: #fff;}
 .browseHousePlan .browseContentSec h6{color: #fff;margin-bottom: 2rem;}
 .browseHousePlan .browseContentSec h6 strong{font-family: "Averta-Bold";}
@@ -195,7 +200,7 @@ textarea {
 .browseHousePlanSec .browseSliderSec .productBox{margin: 0 5px;}
 
 
-.productBox{background: #fff;padding: 5px;display: flex;flex-direction: column;}
+.productBox{background: #fff;padding: 5px;display: flex;flex-direction: column;color: #fff;border: 1px solid #eeeeee;}
 .productBox .productBtnHolder{display: flex;margin-top: 5px;}
 .productBox .productBtnHolder .btn-product{border: 1px solid #1f1f1f;    border-radius: 0;font-size: 14px;text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 15px;padding-right: 15px;font-family: "Averta W01 Semibold";color: #1f1f1f;width: 100%;display: block;text-align: center;}
 .productBox .productBtnHolder > span{padding: 0 5px;flex: 1;}
@@ -221,6 +226,77 @@ textarea {
 .productBrowseSlider:after{content: '';position: absolute;right: 0;top: 0;bottom: 0;width: 58px;background: url(../img/browse-right-shadow.png) top right repeat-y;}
 .productBrowseSlider .slick-track{display: flex;}
 
+.housePlanStyleSec{padding: 90px 0;}
+.housePlanStyleSec .fetauredProductTab{display: flex;list-style-type: none;margin: 0;padding: 0;align-items: center;justify-content: center;margin: 40px 0 50px 0;}
+.housePlanStyleSec .fetauredProductTab li{margin: 0 10px;}
+.housePlanStyleSec .fetauredProductTab li a{padding: 8px 20px;font-family: "Averta W01 Semibold";font-size: 16px;text-align: center;display: block;width: 100%;background: #f7f9fb;color: #131f2b;;}
+.housePlanStyleSec .fetauredProductTab li a.active{background: #3b8beb;color: #fff;position: relative;;}
+.housePlanStyleSec .fetauredProductTab li a.active:after{content: '';width: 0; height: 0; border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #3b8beb;position: absolute;top: 100%;left: 50%;margin-left: -5px;}
+.housePlanStyleSec .productHolder{display: flex;flex-wrap: wrap;}
+.housePlanStyleSec .productHolder .productBox{margin: 15px;width: calc(50% - 30px);}
+.housePlanStyleSec .btnHolder{margin-top: 20px;}
+
+
+.findHomeSec{position: relative;padding: 90px 0;}
+.findHomeSec .btnHolder{margin-top: 40px;}
+.findHomeSec .findHomeBanner{position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+.findHomeSec .findHomeBanner:after{position: absolute;top: 0;left: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.8);content: '';}
+.findHomeSec .findHomeBanner img{object-fit: cover;object-position: center;width: 100%;height: 100%;}
+.findHomeContentHolder{position: relative;z-index: 1;color: #fff;}
+.findHomeContentHolder h3,.findHomeContentHolder h4,.findHomeContentHolder p{color: #fff;}
+.findHomeContentHolder h4{margin-bottom: 35px;}
+
+.makeUniqueSec{padding: 90px 0;}
+.makeUniqueSec .uniquePlanBlockSec{display: flex;}
+.makeUniqueSec .uniquePlanBlockHolder{padding: 15px;}
+.makeUniqueSec .uniquePlanBlockHolder h5{font-size: 25px;font-family: "Averta W01 Semibold";margin: 0;}
+.makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp{display: flex;flex-direction: column;height: calc(100% - 86px);border: 1px solid #f7f9fb;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductAvatarHolder{width: 100%;position: relative;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductAvatarHolder img{width: 100%;height: 438px;object-fit: cover;object-position: center;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductAvatarHolder span{position: absolute;bottom: 0;right: 0;padding: 5px 15px;background: #fff;font-size: 16px;color: #000;font-family: "Averta W01 Semibold";margin: 10px;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec{padding: 15px;text-align: left;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec p{color: #1f2d3d;margin-bottom: 15px;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .btnHolder{margin-top: 20px;margin-bottom: 15px;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec h4{color: #3b8beb;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing{display: flex;align-items: flex-start;justify-content: space-between;list-style-type: none;margin: 0 0 30px 0;padding: 0;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li{display: flex;flex-direction: column;padding: 0 15px;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li i{width: 100%;display: block;height: 55px;display: flex;align-items: flex-start;justify-content: center;}
+.makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span{font-size: 20px;font-family: "Averta W01 Semibold";color: #131e26;}
+.makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover{box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
+
+
+.testimonialSec{padding: 90px 0;}
+.testimonialSec .testimonialSlideSec{margin-top: 60px;}
+.testimonialSec .testimonialSlideSec ul{list-style-type: none;margin: 0;padding: 0;}
+.testimonialSec .testimonialSlideSec ul{list-style-type: none;margin: 0;padding: 0;}
+.testimonialSec .testimonialSlideSec .slick-track{display: flex;}
+.testimonialSec .testimonialSlideSec .slick-slider{position: relative;overflow: hidden;padding: 0 20px;}
+.testimonialSec .testimonialSlideSec .slick-list{overflow: hidden;}
+.testimonialSec .testimonialSlideSec .slick-arrow{position: absolute;top: 50%;text-indent: -999em;z-index: 2;;width: 13px;height: 24px;background: url('../img/testimonial-arrow.png') center center no-repeat;border: 0;margin-top: -12px;outline: 0;}
+.testimonialSec .testimonialSlideSec .slick-arrow.slick-next{right: 0;}
+.testimonialSec .testimonialSlideSec .slick-arrow.slick-prev{left: 0;transform: rotate(-180deg);}
+.testimonialSec .testimonialSlideSec .testimonialBlock{padding: 0 100px;display: flex;text-align: left;}
+.testimonialSec .testimonialSlideSec .testimonialBlock > i{padding: 0 15px;}
+.testimonialSec .testimonialSlideSec .testimonialBlock > i img{width: 124px;height: 124px;object-fit: cover;object-position: center;}
+.testimonialSec .testimonialSlideSec .testimonialBlock .testimonialContent{padding: 0 15px;}
+.testimonialSec .testimonialSlideSec .testimonialBlock .testimonialContent p{font-size: 24px;color: #141f2b;line-height: 40px;margin-bottom: 40px;}
+.testimonialSec .testimonialSlideSec .testimonialBlock .testimonialContent b{color: #3b8beb;font-family: "Averta W01 Semibold";font-size: 18px;}
+.testimonialSec .btnHolder{margin-top: 40px;}
+
+
+.qucikAdviceSec{background: #f7f9fb;padding: 90px 0;}
+.qucikAdviceSec .adviceBlockHolder{display: flex;flex-wrap: wrap;margin-top: 20px;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock{width: 50%;padding: 0 15px;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp{border: 1px solid #e0e7ed;display: flex;flex-direction: column;height: 100%;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp:hover{background: #fff;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp .adviceImgSec{width: 100%;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp .adviceImgSec img{width: 100%;height: 438px;object-fit: cover;object-position: center;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec{padding:30px 20px;text-align: left;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec h5{font-size: 26px;font-family: "Averta W01 Semibold";margin-bottom: 10px;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec > b{font-family: "Averta-Regular";font-weight: normal;font-size: 16px;display: block;margin-bottom: 1.5rem;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec > b span{color: #3a8beb;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec .link{font-size: 14px;font-family: "Averta W01 Semibold";color: #3a8beb;text-transform: uppercase;}
+.qucikAdviceSec .btnHolder{margin-top: 60px;}
 
 /* costBuiltCalcSec start */
 
