@@ -208,7 +208,6 @@ textarea {
 .productBox .productBtnHolder > span:first-child{padding-left: 0;}
 .productBox .productBtnHolder > span:last-child{padding-right: 0;}
 
-
 .productBox .productBlock{position: relative;}
 .productBox .productBlock .productTopIconHolder{position: absolute;left: 0;top: 0;display: flex;justify-content: space-between;width: 100%;padding: 5px;align-items: flex-start;z-index: 2;}
 .productBox .productBlock .productTopIconHolder > a{background: #fff;padding: 8px 7px;display: flex;align-items: center;justify-content: center;}
@@ -349,9 +348,32 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .footerBottomSec ul li{padding: 0 30px;}
 .footerBottomSec ul li:last-child{padding-right: 15px}
 
-
-
 /* footer end */
+
+/* banner start */
+.pg{padding: 30px 0}
+.banner{position: relative;min-height: 500px;display: flex;align-items: center;justify-content: center;flex-direction: column;margin-bottom: 30px;}
+.banner .banner-img{position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 0;}
+.banner .banner-img img{width: 100%;height: 100%;object-fit: cover;}
+.banner .banner-text{padding: 3rem 0;width: 100%;text-align: center;position: relative;z-index: 1;}
+.banner .banner-text .desc{text-align: center;}
+.banner .banner-text .desc h2{font-size: 50px;margin: 0;color: #fff;font-family: 'montserratbold';}
+
+/* banner end */
+
+/* terms start */
+
+.terms{color: #444;font-family: 'Averta-Regular';}
+.terms h4{font-family: "Averta-Bold";font-size: 22px;margin: 15px 0 5px;}
+.terms p{font-size: 18px;margin: 0 0 10px;}
+.terms p + h4{margin-top: 35px;}
+.terms ol{list-style-type: none;counter-reset: li;padding: 0;margin: 0 0 10px;}
+.terms ol li{position: relative;font-family: "Averta-Bold";padding: 10px 0;font-size: 22px;}
+.terms ol li:before{counter-increment: li;content: counter(li, decimal-leading-zero);margin-right: 1.25em;}
+
+
+/* terms end*/
+
 
 /* ==========================================================================
     Helper classes
