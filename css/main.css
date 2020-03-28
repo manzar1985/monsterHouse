@@ -97,7 +97,7 @@ textarea {
 /* ==========================================================================
     Author's custom styles
     ========================================================================== */
-
+a,a:hover{text-decoration: none;}
 .btn-primary{background: #3a7b1d;border-color: #3a7b1d;color: #fff;}
 .btn-primary:hover {color: #fff;background-color: #2a5f13;border-color: #2a5f13;}
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{    box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
@@ -263,6 +263,7 @@ textarea {
 .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li i{width: 100%;display: block;height: 55px;display: flex;align-items: flex-start;justify-content: center;}
 .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span{font-size: 20px;font-family: "Averta W01 Semibold";color: #131e26;}
 .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover{box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
+.makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover .btn-gray{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
 
 
 .testimonialSec{padding: 90px 0;}
