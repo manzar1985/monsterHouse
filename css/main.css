@@ -315,7 +315,7 @@ a,a:hover{text-decoration: none;}
 .housePlanProductContainer .housePlanProductSec{display: flex;flex-wrap: wrap;}
 .housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{width: 28.7%;padding-right: 25px;}
 .housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 71.3%;padding-left: 25px;}
-.housePlanFilterTabSec{display: flex;justify-content: space-between;width: 100%;margin-bottom: 90px;}
+.housePlanFilterTabSec{display: flex;justify-content: space-between;width: 100%;margin-bottom: 70px;}
 .housePlanFilterTabSec .housePlanCountSec{display: flex;align-items: center;}
 .housePlanFilterTabSec .housePlanCountSec p{font-size: 16px;color: #1f2d3d;margin: 0 15px 0 0;}
 .housePlanFilterTabSec .housePlanCountSec p span{font-family: "Averta W01 Semibold";font-size: 22px;}
@@ -352,7 +352,18 @@ a,a:hover{text-decoration: none;}
 .filterRefineForm label{font-family: 'Averta W01 Semibold';font-size: 16px;color: #1f2c3d;}
 .filterRefineForm .filterFormRow{margin-left: -5px;margin-right: -5px;display: flex;flex-wrap: wrap;}
 .filterRefineForm .filterFormRow .filterFieldSec{padding: 0 5px;flex: 0 0 50%;max-width: 50%;}
-
+.productFilterRefineSec .filterCheckList ul{display: flex;margin: 0;padding: 0;list-style-type: none;flex-direction: column;}
+.productFilterRefineSec .filterCheckList ul li{display: flex;margin: 0;padding: 0;list-style-type: none;width: 100%;}
+.productFilterRefineSec .filterCheckList ul li + li{margin-top: 13px;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox{position: relative;width:100%;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox input{position: absolute;opacity: 0;width:0;height:0;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox label{font-size: 16px;font-family: "Averta W01 Semibold";color:#1f2c3d;display: flex;align-items: flex-start;margin: 0;width: 100%;line-height: 22px;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox label i{width: 22px;height: 22px;background: #fff;border:1px solid #e6ecf2;position: relative;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox label i:after{width: 12px;height: 12px;background: #fff;position: absolute;top: 4px;left: 4px;content:'';}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox input:checked + label i{border-color: #3a7b1d;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox input:checked + label i:after{background: #3a7b1d;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox label b{margin-left: auto;background: #e3eaf0;border-radius: 20px;font-size: 14px;font-family: "Averta W01 Semibold";color: #1f2d3d;padding: 1px 12px;}
+.productFilterRefineSec .filterCheckList ul li .filterCheckBox label span{padding-left: 15px;padding-right: 15px;}
 
 .customDreamContainer{position: relative;margin-bottom: 66px;}
 .customDreamContainer .customDreamBgHolder{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
