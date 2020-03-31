@@ -132,6 +132,10 @@ a,a:hover{text-decoration: none;}
 .btn-gray{background-color: #f7f9fb;border-color: #f7f9fb;color: #666666;}
 .btn-gray:hover{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
 .btn-gray:focus{    box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
+
+.nicescroll-rails{opacity: 1 !important;}
+.nicescroll-rails:after{content: '';height: 100%;background: #d8e1eb;width: 2px;border-radius:5px;position: absolute;;left: 50%;margin-left: -1px;top:0;z-index: 1;}
+.nicescroll-rails .nicescroll-cursors{z-index: 2;}
 @media (min-width: 1340px){
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1310px;
@@ -352,7 +356,7 @@ a,a:hover{text-decoration: none;}
 .filterRefineForm label{font-family: 'Averta W01 Semibold';font-size: 16px;color: #1f2c3d;}
 .filterRefineForm .filterFormRow{margin-left: -5px;margin-right: -5px;display: flex;flex-wrap: wrap;}
 .filterRefineForm .filterFormRow .filterFieldSec{padding: 0 5px;flex: 0 0 50%;max-width: 50%;}
-.productFilterRefineSec .filterCheckList ul{display: flex;margin: 0;padding: 0;list-style-type: none;flex-direction: column;}
+.productFilterRefineSec .filterCheckList ul{display: flex;margin: 0;padding: 0;list-style-type: none;flex-direction: column;max-height: 295px;padding-right: 15px;}
 .productFilterRefineSec .filterCheckList ul li{display: flex;margin: 0;padding: 0;list-style-type: none;width: 100%;}
 .productFilterRefineSec .filterCheckList ul li + li{margin-top: 13px;}
 .productFilterRefineSec .filterCheckList ul li .filterCheckBox{position: relative;width:100%;}

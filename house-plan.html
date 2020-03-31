@@ -293,7 +293,7 @@
                   data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check1" name="checkbox">
@@ -366,7 +366,7 @@
                   data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check10" name="checkbox">
@@ -439,7 +439,7 @@
                   data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check19" name="checkbox">
@@ -494,7 +494,7 @@
                   data-parent="#accordionExample">
                   <div class="card-body">
                    <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check25" name="checkbox">
@@ -567,7 +567,7 @@
                   data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check34" name="checkbox">
@@ -645,7 +645,7 @@
                 <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check44" name="checkbox">
@@ -687,7 +687,7 @@
                 <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check48" name="checkbox">
@@ -729,7 +729,7 @@
                 <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check52" name="checkbox">
@@ -771,7 +771,7 @@
                 <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check56" name="checkbox">
@@ -813,7 +813,7 @@
                 <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check60" name="checkbox">
@@ -856,7 +856,7 @@
                   data-parent="#accordionExample">
                   <div class="card-body">
                     <section class="filterCheckList">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <section class="filterCheckBox">
                             <input type="checkbox" id="check64" name="checkbox">
@@ -907,7 +907,7 @@
                   <section class="productBottomInfoSec">
                     <span>Plan #00-00000</span>
                     <section class="productInfoSec">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <span>1</span>
                           Stories
@@ -954,7 +954,7 @@
                   <section class="productBottomInfoSec">
                     <span>Plan #00-00000</span>
                     <section class="productInfoSec">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <span>1</span>
                           Stories
@@ -1001,7 +1001,7 @@
                   <section class="productBottomInfoSec">
                     <span>Plan #00-00000</span>
                     <section class="productInfoSec">
-                      <ul>
+                      <ul class="boxscroll">
                         <li>
                           <span>1</span>
                           Stories
@@ -1962,6 +1962,7 @@
   <script src="js/vendor/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script>
@@ -1981,7 +1982,8 @@
       dots: false,
       arrows: true
     });
-
+$(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
+$('#ascrail2000').show();
   </script>
 </body>
 
