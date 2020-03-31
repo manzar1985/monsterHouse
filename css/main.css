@@ -114,6 +114,16 @@ a,a:hover{text-decoration: none;}
     border-color: #3a7b1d;}
     .btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus{box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
 
+.btn-light.blue:hover {color: #fff;background-color: #0e56a5;border-color: #0e56a5;}
+.btn-light.blue.focus, .btn-light.blue:focus{    color: #fff;
+  background-color: #0e56a5;
+  border-color: #0e56a5;
+  box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
+  .btn-light.blue:not(:disabled):not(.disabled).active, .btn-light.blue:not(:disabled):not(.disabled):active, .show>.btn-light.blue.dropdown-toggle{color: #fff;
+    background-color: #0e56a5;
+    border-color: #0e56a5;}
+    .btn-light.blue:not(:disabled):not(.disabled).active:focus, .btn-light.blue:not(:disabled):not(.disabled):active:focus, .show>.btn-light.blue.dropdown-toggle:focus{box-shadow: 0 0 0 0.2rem rgba(14,86,165,.5);}
+
     .btn{border-radius: 0;font-size: 14px;font-family: "Averta-Bold";text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 1.5rem;padding-right: 1.5rem;}
 .btn.btn-lg{font-size: 16px;padding: 1rem 2rem;}
 .btn i{margin-right: 10px;}
@@ -150,6 +160,7 @@ a,a:hover{text-decoration: none;}
 .topBarRightInfoSec ul li a span{background: #42861e;color: #fff;width: 15px;height: 15px;border-radius: 3px;font-size: 75%;display: flex;align-items: center;justify-content: center;position: absolute;bottom: calc(100% - 11px);left: calc(100% - 7px);}
 .topSearchSec .form-control{border-radius: 0;min-width: 19rem;border-color: #fff;height: calc(1.25em + .75rem + 2px);}
 .topSearchSec .btn{border-radius: 0;padding: .25rem 2rem;}
+.topSearchSec .btn i{    vertical-align: text-bottom;}
 
 .navBarHolder .container{max-width: 1752px;}
 .navBarHolder .navbar{padding-left: 0;padding-right: 0;}
@@ -286,6 +297,7 @@ a,a:hover{text-decoration: none;}
 
 
 .qucikAdviceSec{background: #f7f9fb;padding: 90px 0;}
+.qucikAdviceSec h5 a{color: #3a8beb;font-family: "Averta W01 Semibold";}
 .qucikAdviceSec .adviceBlockHolder{display: flex;flex-wrap: wrap;margin-top: 20px;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock{width: 50%;padding: 0 15px;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp{border: 1px solid #e0e7ed;display: flex;flex-direction: column;height: 100%;}
@@ -298,6 +310,104 @@ a,a:hover{text-decoration: none;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec > b span{color: #3a8beb;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec .link{font-size: 14px;font-family: "Averta W01 Semibold";color: #3a8beb;text-transform: uppercase;}
 .qucikAdviceSec .btnHolder{margin-top: 60px;}
+
+.housePlanProductContainer{padding: 90px 0;}
+.housePlanProductContainer .housePlanProductSec{display: flex;flex-wrap: wrap;}
+.housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{width: 28.7%;padding-right: 25px;}
+.housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 71.3%;padding-left: 25px;}
+.housePlanFilterTabSec{display: flex;justify-content: space-between;width: 100%;margin-bottom: 90px;}
+.housePlanFilterTabSec .housePlanCountSec{display: flex;align-items: center;}
+.housePlanFilterTabSec .housePlanCountSec p{font-size: 16px;color: #1f2d3d;margin: 0 15px 0 0;}
+.housePlanFilterTabSec .housePlanCountSec p span{font-family: "Averta W01 Semibold";font-size: 22px;}
+.housePlanFilterTabSec .housePlanSearchSec {margin-left: 15px;max-width: 205px;}
+.housePlanFilterTabSec .housePlanSearchSec .form-control{height: calc(2.572em + .75rem + 2px);}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder{display: flex;align-items: center;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanProductStyleFilter{display: flex;align-items: center;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanProductStyleFilter > a{margin: 0 5px;display: flex;align-items: center;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder{margin-left: 15px;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul{display: flex;align-items: center;list-style-type: none;margin: 0;padding: 0;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li{margin-left: -1px;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li a{border-radius: 0;font-size: 14px;font-family: "Averta-Bold";white-space: nowrap;padding-top: .844rem;padding-bottom: .844rem;padding-left: 1rem;padding-right: 1rem;display: flex;color: #888888;border: 1px solid #f0f0f0;    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;min-width: 160px;justify-content: center;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li a.active,.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li a:hover{background: #2f83e8;color: #fff;border-color: #2f83e8;;}
+.housePlanProductHolder .row{margin-left: -5px;margin-right: -5px;}
+.housePlanProductHolder .productHolder{display: flex;flex-wrap: wrap;}
+.housePlanProductHolder .productBox{margin: 10px 5px;width: calc(50% - 10px);}
+.housePlanProductHolder .productBox .productBlock .productImageSec img{height: 340px;}
+.housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 12px;padding:.5rem 5px;}
+.productFilterRefineHolder > p{font-family: "Averta-Regular";font-size: 16px;color: #141f2b;margin-bottom: 1.2rem;line-height: 30px;}
+.productFilterRefineHolder .productFilterRefineSec {display: flex;flex-direction: column;}
+.productFilterRefineHolder .productFilterRefineSec .filterCard{margin-bottom: 1rem;margin-top: 1rem;width: 100%;}
+.productFilterRefineSec .card{background: #f7f9fb;border: 0;border-radius: 0;}
+.productFilterRefineSec .card .card-header{background: transparent;border-bottom-color: #e9eef3;font-family: 'montserratsemibold';font-size: 20px;color: #1f2c3d;display: flex;align-items: center;padding-top: 1.1rem;padding-bottom: 1.1rem;}
+.productFilterRefineSec .card .card-header h4{margin: 0;font-family: 'montserratsemibold';font-size: 20px;color: #1f2c3d;}
+.productFilterRefineSec .card .card-header a{margin-left: auto;}
+.productFilterRefineSec .card .card-header a.link{color: #2f83e8;font-size: 14px;}
+.productFilterRefineSec .accordion .card{border: 1px solid #e9eef3;}
+.productFilterRefineSec .accordion .card + .card{border-top: 0;}
+.productFilterRefineSec .accordion .card .card-header {padding: 0;}
+.productFilterRefineSec .accordion .card .card-header h2{width: 100%;}
+.productFilterRefineSec .accordion .card .card-header h2 button{padding-top: 1.1rem;padding-bottom: 1.1rem;width: 100%;text-align: left;font-family: 'montserratsemibold';font-size: 20px;color: #1f2c3d;line-height: 1.2;border: 0;text-decoration: none;text-transform: capitalize;position: relative;}
+.productFilterRefineSec .accordion .card .card-header h2 button:after{content: '';width: 14px;height: 8px;background: url(../img/accordion-arrow.png);position: absolute;right: 15px;top: 50%;margin-top: -4px;transform: rotate(180deg);}
+.productFilterRefineSec .accordion .card .card-header h2 button.collapsed:after{transform: rotate(0deg);}
+.filterRefineForm label{font-family: 'Averta W01 Semibold';font-size: 16px;color: #1f2c3d;}
+.filterRefineForm .filterFormRow{margin-left: -5px;margin-right: -5px;display: flex;flex-wrap: wrap;}
+.filterRefineForm .filterFormRow .filterFieldSec{padding: 0 5px;flex: 0 0 50%;max-width: 50%;}
+
+
+.customDreamContainer{position: relative;margin-bottom: 66px;}
+.customDreamContainer .customDreamBgHolder{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.customDreamContainer .customDreamBgHolder:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;content: '';background: rgba(0,0,0,0.8);}
+.customDreamContainer .customDreamBgHolder img{width: 100%;height: 100%;object-fit: cover;object-position: center;}
+.customDreamContainer .customDreamHolder{position: relative;z-index: 1;color: #fff;padding: 90px 0;}
+.customDreamContainer .customDreamHolder .customDreamSec > h2{color: #fff;}
+.customDreamContainer .customDreamHolder .customDreamSec > h4{color: #fff;}
+.customDreamContainer .customDreamHolder .customDreamSec > h3{color: #fff;}
+.customDreamContainer .customDreamHolder .customDreamSec > h6{color: #fff;}
+.customDreamContainer .customDreamHolder .customDreamSec > p{color: #fff;}
+.customDreamContainer .customDreamContentHolder{display: flex;text-align: left;margin-left: -40px;margin-right: -40px;padding-top: 40px;padding-bottom: 40px;}
+.customDreamContainer .customDreamContentHolder .customDreamLeftSec{padding: 0 40px;width: 50%;position: relative;padding-right: 60px;}
+.customDreamContainer .customDreamContentHolder .customDreamLeftSec h6{color: #fff;margin: 0;}
+.customDreamContainer .customDreamContentHolder .customDreamLeftSec h4{color: #51ad29;font-family: "Averta W01 Semibold";margin: 0;font-style: italic;}
+.customDreamContainer .customDreamContentHolder .customDreamLeftSec::before{content: '';position: absolute;right: 20px;top: 0;bottom: 0;background: url('../img/custom-dream-sep.png') center center no-repeat;width: 14px;}
+.customDreamContainer .customDreamContentHolder .customDreamRightSec{padding: 0 40px;width: 50%;position: relative;}
+.customDreamContainer .customDreamContentHolder .customDreamRightSec h6{color: #fff;margin: 10px 0;}
+.customDreamContainer .costEffectiveContainer{position: absolute;top: 100%;transform: translateY(-50%);left: 0;width: 100%;}
+.customDreamContainer .costEffectiveContainer .costEffectiveSec{background: #3a7b1d;padding: 35px 100px;display: flex;text-align: left;align-items: center;}
+.customDreamContainer .costEffectiveContainer .costEffectiveSec h2{color: #fff;margin: 0;font-size: 26px;font-family: "Averta W01 Semibold";padding-right: 50px;}
+
+.designerEnvisionContainer {padding: 90px 0;}
+.designerEnvisionContainer .designerEnvisionSec h4{color: #398beb;font-family: "Averta W01 Semibold";}
+.designerEnvisionContainer .designerEnvisionSec .designerEnvisionCallout{display: flex;flex-direction: column;margin: 40px 0;}
+.designerEnvisionContainer .designerEnvisionSec .designerEnvisionCallout i{height: 65px;display: flex;align-items: center;justify-content: center;margin-bottom: 25px;}
+.designerEnvisionContainer .designerEnvisionSec .designerEnvisionCallout h3{font-size: 20px;font-family: "Averta W01 Semibold";}
+.designerEnvisionContainer .designerEnvisionSec h6{margin-bottom: 1rem;}
+
+.homeFloorPlanContainer{padding: 90px 0;background: #f7f9fb url(../img/floor-plan-bg.jpg) center right no-repeat;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints{display: flex;flex-wrap: wrap;justify-content: space-between;margin: 0;padding: 0;list-style-type: none;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li{max-width: 558px;display: flex;margin: 38px 0;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li i{background: #fff;width: 110px;height: 110px;display: flex;align-items: center;justify-content: center;margin-right: 30px;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li .floorPlanContent{width: calc(100% - 140px);}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li .floorPlanContent h6{font-size: 20px;font-family: "Averta W01 Semibold";margin-bottom: 10px;line-height: 20px;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li .floorPlanContent p{margin-bottom: 0;line-height: 28px;}
+
+
+.onlineHouseBenefitsContainer{padding: 90px 0;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsSec h4{color: #398beb;font-size: 22px;font-family: "Averta W01 Semibold";;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder{margin: 0;padding: 0;list-style-type: none;display: flex;flex-direction: column;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li{margin: 0;padding: 0;text-align: left;border-bottom: 1px solid #eaeaea;padding: 30px 0  15px 0;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li:last-child{border-bottom: 0;padding-bottom: 0;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList{margin: 0;padding: 0;display: flex;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList i{background: #fff;width: 110px;height: 110px;display: flex;align-items: center;justify-content: center;margin-right: 30px;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList .onlineHouseBenefitsContent{width: calc(100% - 140px);}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList .onlineHouseBenefitsContent h6{font-style: italic;font-size: 20px;font-family: "Averta W01 Semibold";;}
+
+
+.purchaseOnlinePlanContainer{padding: 90px 0;background: #3b8beb;}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanSec *{color: #fff;}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanHolder h4{font-family: "Averta W01 Semibold";}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanHolder ul{display: flex;flex-wrap: wrap;list-style-type: none;margin: 0;padding: 0;text-align: left;}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanHolder ul li{width: 33.3333%;padding: 0 0 0 30px;position: relative;font-family: "Averta W01 Semibold";font-size: 20px;margin: 5px 0;}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanHolder ul li::before{content: '';width: 8px;height: 8px;border-radius: 100%;display: block;position: absolute;left: 0;top: 12px;background: rgba(255,255,255,0.4);}
 
 /* costBuiltCalcSec start */
 
