@@ -477,7 +477,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 /* footer end */
 
 /* banner start */
-.pg{padding: 30px 0}
+.pg{padding: 50px 0}
 .banner{position: relative;min-height: 500px;display: flex;align-items: center;justify-content: center;flex-direction: column;margin-bottom: 30px;}
 .banner .banner-img{position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 0;}
 .banner .banner-img img{width: 100%;height: 100%;object-fit: cover;}
@@ -518,15 +518,39 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 /* testimonialList end */
 
 /* blogSection start */
-.blogSection{display: flex;flex-direction: column;width: 47%;}
-.blogSection .blog{padding: 30px 15px;width: 100%;}
+.blogSection{display: flex;flex-direction: column;width: 50%;padding: 0 15px;}
+.blogSection .blog{padding: 10px;width: 100%;border: 1px solid #f8fafb;border-radius: 10px;margin-bottom: 45px;}
+.blogSection .blog .blogSp{padding: 10px;width: 100%;border-radius: 10px;background: #f7f9fb;}
 .blogSection .blogImg{width: 100%;margin-bottom: 15px;}
 .blogSection .blogImg img{width: 100%;}
 .blogSection .blogDesc{padding-right: 15px;font-family: "Averta-Bold";}
 .blogSection .blogDesc h5{font-size: 22px;color: #444;}
 .blogSection .blogDesc a{text-decoration: none;color: #003f97;font-size: 16px;}
 
-.sidebar{width: 100%;font-family: "Averta W01 Semibold"}
+.blogDetailContentSec h2{font-size: 26px;color: #333333;margin-top: 2rem;font-family: "Averta-Bold";display: flex;align-items: center;}
+.blogDetailContentSec p{font-size: 18px;color: #444444;margin: 10px 0;}
+.blogDetailContentSec p span{color: #003f97;font-family: "Averta W01 Semibold";}
+.blogDetailContentSec img{max-width: 100%;margin: 10px 0;float: left;margin-right: 30px;}
+.blogDetailContentSec img.w-100{margin-right: 0;}
+.blogDetailContentSec ul{margin: 0;padding: 0;list-style-type: none;counter-reset: my-sec-counter;}
+.blogDetailContentSec ul li{font-size: 22px;font-family: "Averta W01 Semibold";color: #444444;margin: 22px 0;display: flex;align-items: center;}
+.blogDetailContentSec ul li:before{
+  padding-right: 10px;
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter) ". ";}
+.detailContentList:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.detailContentListholder{counter-reset: my-sec-counter;}
+.detailContentList h2:before {
+  padding-right: 10px;
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter) ". ";
+}
+
+.sidebar{width: 100%;font-family: "Averta W01 Semibold";background: #f7f9fb;}
 .sidebar .sidebar-title{background: #1f2c3d;padding: 10px 85px 10px 30px;position: relative;margin-bottom: 13px;}
 .sidebar .sidebar-title .mhpLogo{width: 70px;height: 70px;position: absolute;right: 15px;top: 50%;transform: translateY(-50%);}
 .sidebar .sidebar-title .mhpLogo img{width: 100%;}
@@ -534,9 +558,13 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .sidebar .sidebar-body ul{list-style: none;padding: 0;margin: 0;}
 .sidebar .sidebar-body ul li{border-bottom: 1px solid #e9eef3;}
 .sidebar .sidebar-body ul li:last-child{border-bottom: 0;}
-.sidebar .sidebar-body ul li a{padding: 10px;text-decoration: none;display: flex;align-items: center;color: #424251;font-size: 14px;}
+.sidebar .sidebar-body ul li a{padding: 14px 20px;text-decoration: none;display: flex;align-items: center;color: #424251;font-size: 14px;}
 .sidebar .sidebar-body ul li a .fa{margin-right: 15px;color: #9797a6;}
 .sidebar + .sidebar{margin-top: 50px;}
+
+.blogContentHolder{display: flex;margin-left: -15px;margin-right: -15px;flex-wrap: wrap;}
+.blogContentSec{width: 71%;padding: 0 30px 0 15px;}
+.blogInfoListSec{width: 29%;padding: 0 15px;}
 
 /* blogSection end */
 

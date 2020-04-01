@@ -356,7 +356,7 @@
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                    <button class="btn btn-link niceScrollTrigger" type="button" data-toggle="collapse" data-target="#collapseTwo"
                       aria-expanded="true" aria-controls="collapseTwo">
                       Lot Characteristics
                     </button>
@@ -429,7 +429,7 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree"
+                    <button class="btn btn-link niceScrollTrigger" type="button" data-toggle="collapse" data-target="#collapseThree"
                       aria-expanded="true" aria-controls="collapseThree">
                       Foundation Type
                     </button>
@@ -484,7 +484,7 @@
               <div class="card">
                 <div class="card-header" id="headingFour">
                   <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                    <button class="btn btn-link niceScrollTrigger" type="button" data-toggle="collapse" data-target="#collapseFour"
                       aria-expanded="true" aria-controls="collapseFour">
                       Exterior Features
                     </button>
@@ -557,7 +557,7 @@
               <div class="card">
                 <div class="card-header" id="headingFive">
                   <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
+                    <button class="btn btn-link niceScrollTrigger" type="button" data-toggle="collapse" data-target="#collapseFive"
                       aria-expanded="true" aria-controls="collapseFive">
                       Interior Features
                     </button>
@@ -636,7 +636,7 @@
               <div class="card">
                 <div class="card-header" id="headingSix">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    <button class="btn btn-link collapsed niceScrollTrigger" type="button" data-toggle="collapse"
                       data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                       Beds
                     </button>
@@ -678,7 +678,7 @@
               <div class="card">
                 <div class="card-header" id="headingSeven">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    <button class="btn btn-link collapsed niceScrollTrigger" type="button" data-toggle="collapse"
                       data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                       Baths
                     </button>
@@ -720,7 +720,7 @@
               <div class="card">
                 <div class="card-header" id="headingEight">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    <button class="btn btn-link collapsed niceScrollTrigger" type="button" data-toggle="collapse"
                       data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                       Half Baths
                     </button>
@@ -762,7 +762,7 @@
               <div class="card">
                 <div class="card-header" id="headingNine">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    <button class="btn btn-link collapsed niceScrollTrigger" type="button" data-toggle="collapse"
                       data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                       Kitchen
                     </button>
@@ -804,7 +804,7 @@
               <div class="card">
                 <div class="card-header" id="headingTen">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    <button class="btn btn-link collapsed niceScrollTrigger" type="button" data-toggle="collapse"
                       data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                       Garage Type
                     </button>
@@ -846,7 +846,7 @@
               <div class="card">
                 <div class="card-header" id="headingEleven">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                    <button class="btn btn-link collapsed niceScrollTrigger" type="button" data-toggle="collapse"
                       data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                       Building Shape
                     </button>
@@ -1982,8 +1982,11 @@
       dots: false,
       arrows: true
     });
-$(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
-$('#ascrail2000').show();
+    $(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
+
+    $('.niceScrollTrigger').click(function () {
+      $(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
+    });
   </script>
 </body>
 
