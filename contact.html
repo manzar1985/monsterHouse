@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -128,62 +129,81 @@
   </header>
 
 
-  <section class="banner bannerBlank">
+  <section class="banner">
     <div class="banner-img">
+      <img src="./img/contact-bg.jpg" alt="banner">
     </div>
     <div class="banner-text">
       <div class="container">
         <div class="desc">
-          <h2 class="text-dark">Terms-Conditions</h2>
+          <h2>Contact Us</h2>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="terms pg">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h4>Refund / Exchange Policy:</h4>
-          <p>
-            Plans printed by MonsterHousePlans.com’s designers are refundable within 10 business days of purchase under the following conditions:
-          </p>
-          <p><strong>
-            Plans are in their sealed, original packaging and have not been opened (to be determined by the firm that shipped the original order). Customer will pay a 20% re-stocking fee plus all shipping charges. Reproducibles, CAD Files & PDF’s are not refundable under any circumstances due to copyright issues.
-          </strong></p>
-          <p>
-            Plans ordered from MonsterHousePlans.com may be exchanged within 30 days of purchase under the following conditions:
-          </p>
-          <p>
-            <strong>
-              Upon designer approval, customer may exchange for a plan within the same designer’s collection (plan number to have same prefix). Customer will pay 20- 40% of the amount of the original order for re-stocking, plus the difference in cost if exchanging for a higher priced plan. Customer will also be responsible for all shipping charges. Reproducibles, CAD Files & PDF’s are not exchangeable under any circumstances due to copyright issues.
-            </strong>
-          </p>
-          <h4>Important Stuff</h4>
-          <p>
-            MonsterHousePlans provides house plans for construction purposes but does not oversee the construction. The plan purchaser is responsible for assuring the plan meets local codes and regulations. It is the responsibility of the plan purchaser to obtain any and all structural analysis, engineering and specifications that may be required in the municipality in which it is to be built. Plan purchaser is to verify all lot conditions and measurements before construction. Purchaser is responsible for additional expenses incurred in order to meet local code and engineering requirements.
-          </p>
-          <p>
-            Customer understands that the following conditions in your specific area may require additional engineering:
-          </p>
-          <ol>
-            <li>Wind / hurricane / tornado</li>
-            <li>Seismic / earthquake</li>
-            <li>Heavy snow</li>
-            <li>Flood potential</li>
-            <li>Soil instability</li>
-          </ol>
-          <p>
-            Customer understands that HVAC, Plumbing & Electrical will not be included in plans (other than location of plumbing fixtures and electrical lights, plugs & switches*).
-          </p>
-          <p>Purchaser agrees that the use of the plan is for the construction of one house only*, and that the plan or any part of it will not be reproduced by any means without the written consent of the copyright owner.</p>
-          <p>
-            *Unless otherwise noted.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <section class="contactContainer">
+    <section class="container">
+      <section class="contactSec">
+        <section class="contactLeftSec">
+          <section class="contactContentSec">
+            <h3><span>We’d love to hear<br>from you</span></h3>
+            <p>Please fill out our form and we will<br>get back to you</p>
+            <img src="img/contact-1.jpg" alt="img">
+          </section>
+        </section>
+        <section class="contactRightSec">
+          <section class="contactFormSec">
+            <form>
+              <ul>
+                <li><input type="text" class="form-control" placeholder="Name"></li>
+                <li><input type="text" class="form-control" placeholder="Email"></li>
+                <li><input type="text" class="form-control" placeholder="Phone"></li>
+                <li>
+                <select class="form-control">
+                  <option>How did you hear about monsterhouseplans:</option>
+                </select>
+                </li>
+                <li>
+                  <textarea class="form-control" placeholder="Message"></textarea>
+                </li>
+              </ul>
+              <div class="btnHolder"><input class="btn btn-primary" type="submit" value="Submit"></div>
+            </form>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <section class="contactMapContainer">
+    <section class="container">
+      <section class="contactMapSec">
+        <section class="contactInfoSec">
+          <h3>Monster House<br>Plans</h3>
+          <ul>
+            <li>
+              <i><img src="img/contact-location.png" alt="icon"></i>
+              <span>1849 West Beach Rd.<br>- Oak Harbor,<br>WA 98277</span>
+            </li>
+            <li>
+              <i><img src="img/contact-phone.png" alt="icon"></i>
+              <b><a href="tel:360-325-8061">360-325-8061</a></b>
+            </li>
+            <li>
+              <i><img src="img/contact-fax.png" alt="icon"></i>
+              <b>310-919-0316</b>
+            </li>
+            <li>
+              <i><img src="img/contact-mail.png" alt="icon"></i>
+              <span><a href="mailto:info@monsterhouseplans.com">info@monsterhouseplans.com</a></span>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </section>
+    <img src="img/contact-map.jpg" alt="map">
+  </section>
 
   <section class="qucikAdviceSec text-center contentSp">
     <section class="container">
@@ -233,6 +253,8 @@
             <li><a href="testimonial.html">Testimonials</a></li>
           </ul>
         </section>
+
+
         <section class="footerNavBlock">
           <h6>CONTACT US </h6>
           <ul>
@@ -270,13 +292,18 @@
   </footer>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="js/vendor/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/columnToJs.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+
+    })
+  </script>
 
 </body>
 
 </html>
-``

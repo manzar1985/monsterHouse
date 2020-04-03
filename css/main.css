@@ -479,12 +479,14 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 /* banner start */
 .pg{padding: 50px 0}
 .banner{position: relative;min-height: 500px;display: flex;align-items: center;justify-content: center;flex-direction: column;margin-bottom: 30px;}
+.banner::after{content: '';position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);}
 .banner .banner-img{position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 0;}
 .banner .banner-img img{width: 100%;height: 100%;object-fit: cover;}
 .banner .banner-text{padding: 3rem 0;width: 100%;text-align: center;position: relative;z-index: 1;}
 .banner .banner-text .desc{text-align: center;}
 .banner .banner-text .desc h2{font-size: 50px;margin: 0;color: #fff;font-family: 'montserratbold';}
 .banner.bannerBlank{height: 330px;background: #f7f9fb;min-height: auto;}
+.banner.bannerBlank:after{display: none;}
 /* banner end */
 
 /* terms start */
@@ -569,6 +571,31 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 /* blogSection end */
 
 
+.contactContainer{padding: 40px 0  70px 0;}
+.contactSec{display: flex;margin-left: -15px;margin-right: -15px;}
+.contactLeftSec{padding: 0 15px;width: 50%;}
+.contactRightSec{padding: 0 15px;width: 50%;display: flex;justify-content: center;}
+.contactSec .contactContentSec h3{font-size: 48px;color: #131f2b;margin: 0 0 2.7rem 0;font-family: 'montserratbold';}
+.contactSec .contactContentSec h3:after{content: '';width: 251px;height: 1px;background: #194982;display: inline-block;margin-left: 25px;}
+.contactSec .contactContentSec p{font-size: 26px;color: #131f2b;margin: 0 0 2.7rem 0;font-family: 'Averta W01 Semibold';}
+.contactSec .contactContentSec img{max-width: 100%;}
+.contactSec .contactFormSec{max-width: 430px;width: 100%;}
+.contactSec .contactFormSec ul{margin: 0 0 3rem 0;padding: 0;list-style-type: none;}
+.contactSec .contactFormSec ul li{margin: 0 0 20px 0;padding: 0;list-style-type: none;}
+.contactSec .contactFormSec .form-control{border-radius: 0;border-width:0 0 1px 0;font-size: 16px;height:calc(3.5em + .75rem + 2px);padding-left:0;padding-right: 0;}
+.contactSec .contactFormSec .form-control:focus{box-shadow: none;}
+.contactSec .contactFormSec textarea.form-control{height: 110px;resize: none;}
+.contactSec .contactFormSec .btn{min-width: 10rem;}
+.contactMapContainer img{width: 100%;position: relative;}
+.contactMapSec{position: relative;z-index: 1;}
+.contactInfoSec{position: absolute;background: rgba(255,255,255,0.15);padding:20px;top: 65px;left: 0;display: flex;flex-direction: column;align-items: center;width: 500px;}
+.contactInfoSec ul{margin: 0;padding: 0;list-style-type: none;;}
+.contactInfoSec ul li{font-size: 22px;color: #fff;font-family: "Averta-Regular";display: flex;align-items: flex-start;line-height: 45px;margin: 35px 0;}
+.contactInfoSec ul li i{display: flex;align-items: center;margin-right: 20px;width: 22px;height: 45px;}
+.contactInfoSec ul li i img{width: auto;}
+.contactInfoSec ul li b{font-size: 30px;color: #fff;font-family: "Averta-Regular";font-weight:normal;}
+.contactInfoSec ul li a{color: #fff;}
+.contactInfoSec h3{font-size: 48px;color: #fff;margin: 0 0 0 0;font-family: 'montserratbold';text-align: center;}
 /* ==========================================================================
     Helper classes
     ========================================================================== */
