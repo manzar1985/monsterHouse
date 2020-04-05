@@ -321,7 +321,8 @@ a,a:hover{text-decoration: none;}
 .housePlanProductContainer .housePlanProductSec{display: flex;flex-wrap: wrap;}
 .housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{width: 28.7%;padding-right: 25px;}
 .housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 71.3%;padding-left: 25px;}
-.housePlanFilterTabSec{display: flex;justify-content: space-between;width: 100%;margin-bottom: 70px;}
+.housePlanFilterTabSec{width: 100%;}
+.housePlanFilterTabSp{display: flex;justify-content: space-between;width: 100%;margin-bottom: 70px;}
 .housePlanFilterTabSec .housePlanCountSec{display: flex;align-items: center;}
 .housePlanFilterTabSec .housePlanCountSec p{font-size: 16px;color: #1f2d3d;margin: 0 15px 0 0;}
 .housePlanFilterTabSec .housePlanCountSec p span{font-family: "Averta W01 Semibold";font-size: 22px;}
@@ -376,6 +377,7 @@ a,a:hover{text-decoration: none;}
 .housePlanProductContainer.housePlanThreeColumn > .container{max-width: 100%;padding: 0 50px;max-width: 2100px;}
 .housePlanProductContainer.housePlanThreeColumn .housePlanProductSec .productFilterRefineHolder{width: 100%;max-width: 340px;}
 .housePlanProductContainer.housePlanThreeColumn .housePlanProductSec .housePlanProductHolder{width: calc(100% - 340px);}
+.housePlanProductContainer.housePlanThreeColumn .housePlanFilterTabSp{max-width: 1310px;margin-left: auto;margin-right: auto;}
 }
 
 .customDreamContainer{position: relative;margin-bottom: 66px;}
