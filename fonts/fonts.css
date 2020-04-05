@@ -22,7 +22,8 @@
   font-style: normal;
 
 }
-@font-face {font-family: "Averta W01 Semibold";
+@font-face {
+  font-family: "Averta W01 Semibold";
   src: url("5d640771234976607eb77f96b3e69c1c.eot"); /* IE9*/
   src: url("5d640771234976607eb77f96b3e69c1c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
   url("5d640771234976607eb77f96b3e69c1c.woff2") format("woff2"), /* chrome、firefox */
