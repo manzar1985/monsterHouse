@@ -100,11 +100,13 @@ textarea {
 a,a:hover{text-decoration: none;}
 .btn-primary{background: #3a7b1d;border-color: #3a7b1d;color: #fff;}
 .btn-primary:hover {color: #fff;background-color: #2a5f13;border-color: #2a5f13;}
+.btn-primary:focus{box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);color: #fff;background-color: #2a5f13;border-color: #2a5f13;}
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{    box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{color: #fff;background-color: #2a5f13;border-color: #2a5f13;}
 
 .btn-light{background: #fff;border-color: #ffff;color: #3a7b1d;}
 .btn-light:hover {color: #fff;background-color: #3a7b1d;border-color: #3a7b1d;}
+.btn-light:focus{color: #fff;background-color: #3a7b1d;border-color: #3a7b1d;box-shadow: 0 0 0 0.2rem rgba(58,123,29,.5);}
 .btn-light.focus, .btn-light:focus{    color: #fff;
   background-color: #3a7b1d;
   border-color: #3a7b1d;
@@ -126,6 +128,8 @@ a,a:hover{text-decoration: none;}
 
     .btn{border-radius: 0;font-size: 14px;font-family: "avertabold";text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 1.5rem;padding-right: 1.5rem;}
 .btn.btn-lg{font-size: 16px;padding: 1rem 2rem;}
+.btn.btn-med{padding: 0.85rem 2rem;}
+.btn.btn-sm{padding: 0.65rem 1rem;font-size: 12px;}
 .btn i{margin-right: 10px;}
 .form-control{border-color: #ebebeb;border-radius: 2px;font-size: 14px;font-family: "avertaregular";height: calc(2em + .75rem + 2px);}
 
@@ -152,6 +156,7 @@ a,a:hover{text-decoration: none;}
 
 
 .topBarContainer{background: #3b8beb;padding: 9px 0;}
+.navBarHolder{border-bottom: 1px solid #f0f0f0;}
 .topBarContainer .container{max-width: 1752px;}
 .topBarSec{display: flex;align-items: center;}
 .topBarleftInfoSec ul{display: flex;list-style-type: none;margin: 0;padding: 0;color: #fff;align-items: center;}
@@ -174,7 +179,7 @@ a,a:hover{text-decoration: none;}
 .navBarHolder .navbar .navbar-nav{width: 100%;justify-content: space-between;margin-left: 6rem;}
 .navBarHolder .navbar .navbar-nav .nav-link{font-size: 13px;color: #333333;font-family: 'montserratsemibold';}
 .navBarHolder .navbar .navbar-nav .dropdown-toggle::after{width: 10px;height: 6px;background: url(../img/nav-dropdown-arrow.png) center center no-repeat;border: 0;}
-
+.navbar-collapse .topSearchSec{display: none;}
 
 .sliderSec {position: relative;margin-bottom: 70px;}
 .sliderSec ul{list-style-type: none;margin: 0;padding: 0;}
@@ -329,8 +334,8 @@ a,a:hover{text-decoration: none;}
 .housePlanFilterTabSec .housePlanSearchSec {margin-left: 15px;max-width: 205px;}
 .housePlanFilterTabSec .housePlanSearchSec .form-control{height: calc(2.572em + .75rem + 2px);}
 .housePlanFilterTabSec .housePlanProductStyleFilterHolder{display: flex;align-items: center;}
-.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanProductStyleFilter{display: flex;align-items: center;}
-.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanProductStyleFilter > a{margin: 0 5px;display: flex;align-items: center;}
+.housePlanFilterTabSec .housePlanCountSec .housePlanProductStyleFilter{display: flex;align-items: center;}
+.housePlanFilterTabSec .housePlanCountSec .housePlanProductStyleFilter > a{margin: 0 5px;display: flex;align-items: center;}
 .housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder{margin-left: 15px;}
 .housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul{display: flex;align-items: center;list-style-type: none;margin: 0;padding: 0;}
 .housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li{margin-left: -1px;}
@@ -497,7 +502,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .banner .banner-img img{width: 100%;height: 100%;object-fit: cover;}
 .banner .banner-text{padding: 3rem 0;width: 100%;text-align: center;position: relative;z-index: 1;}
 .banner .banner-text .desc{text-align: center;}
-.banner .banner-text .desc h2{font-size: 50px;margin: 0;color: #fff;font-family: 'montserratbold';}
+.banner .banner-text .desc h2{font-size: 73px;margin: 0;color: #fff;font-family: 'montserratbold';}
 .banner.bannerBlank{height: 330px;background: #f7f9fb;min-height: auto;}
 .banner.bannerBlank:after{display: none;}
 /* banner end */
@@ -542,13 +547,13 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .blogSection .blogDesc h5{font-size: 22px;color: #444;}
 .blogSection .blogDesc a{text-decoration: none;color: #003f97;font-size: 16px;}
 
-.blogDetailContentSec h2{font-size: 26px;color: #333333;margin-top: 2rem;font-family: "avertabold";display: flex;align-items: center;}
+.blogDetailContentSec h2{font-size: 26px;color: #333333;margin-top: 2rem;font-family: "avertabold";display: flex;align-items: flex-start;}
 .blogDetailContentSec p{font-size: 18px;color: #444444;margin: 10px 0;}
 .blogDetailContentSec p span{color: #003f97;font-family: "avertasemibold";}
 .blogDetailContentSec img{max-width: 100%;margin: 10px 0;float: left;margin-right: 30px;}
 .blogDetailContentSec img.w-100{margin-right: 0;}
 .blogDetailContentSec ul{margin: 0;padding: 0;list-style-type: none;counter-reset: my-sec-counter;}
-.blogDetailContentSec ul li{font-size: 22px;font-family: "avertasemibold";color: #444444;margin: 22px 0;display: flex;align-items: center;}
+.blogDetailContentSec ul li{font-size: 22px;font-family: "avertasemibold";color: #444444;margin: 22px 0;display: flex;align-items: flex-start;}
 .blogDetailContentSec ul li:before{
   padding-right: 10px;
   counter-increment: my-sec-counter;
@@ -599,7 +604,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .contactSec .contactFormSec .form-control:focus{box-shadow: none;}
 .contactSec .contactFormSec textarea.form-control{height: 110px;resize: none;}
 .contactSec .contactFormSec .btn{min-width: 10rem;}
-.contactMapContainer img{width: 100%;position: relative;}
+.contactMapContainer > img{width: 100%;position: relative;height: 782px;object-fit: cover;object-position: center;}
 .contactMapSec{position: relative;z-index: 1;}
 .contactInfoSec{position: absolute;background: rgba(255,255,255,0.15);padding:20px;top: 65px;left: 0;display: flex;flex-direction: column;align-items: center;width: 500px;}
 .contactInfoSec ul{margin: 0;padding: 0;list-style-type: none;;}
@@ -661,6 +666,792 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .faqSec .card .card-header .btn.collapsed::after{content: '+';}
 .faqSec .card .card-body{padding: 0 0 15px 0;font-size: 16px;color: #1f2c3d;font-family: 'avertaregular';padding-right: 5rem;line-height: 30px;}
 
+.housePlanDetailPageContainer{padding: 20px 0;}
+.housePlanDetailPageSec .housePlanDetailTitleHolder{display: flex;align-items: flex-end;margin: 30px 0;}
+.housePlanDetailPageSec .housePlanDetailTitleHolder p{color: #666666;font-size: 16px;margin: 0 0 10px 0;}
+.housePlanDetailPageSec .housePlanDetailTitleHolder p span{color: #1f2c3d;font-family: 'avertasemibold';}
+.housePlanDetailPageSec .housePlanDetailTitleHolder h2{font-size: 26px;color: #333333;font-family: 'avertasemibold';margin: 0;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec{margin-left: auto;display: flex;align-items: center;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec > span{font-size: 13px;color: #3b8beb;font-family: 'montserratsemibold';padding: 0 15px;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a{width: 40px; height: 40px;border-radius: 100%;border: 1px solid #eeeeee;display: flex;align-items: center;justify-content: center;margin: 0 10px;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a:last-child{margin-right: 0;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a svg{width: 50%;height: 50%;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a svg path{fill: #444444;}
+.housePlanDetailTitleHolder.xs-sp{display: none;}
+.housePlanSliderHolder{width: 100%;margin: 0;padding: 0;}
+.housePlanSliderHolder ul{margin: 0;padding: 0;list-style-type: none;}
+.housePlanSliderHolder ul li{position: relative;}
+.housePlanSliderHolder .pgwSlideshow{background: none;box-shadow: none;}
+.housePlanSliderHolder .pgwSlideshow .ps-list{background: none;box-shadow: none;border-top: 0;}
+.housePlanSliderHolder .pgwSlideshow .ps-list:after,.housePlanSliderHolder .pgwSlideshow .ps-list::before{content:'';background: #fff;height: 100%;width: 25px;background: #fff;position: absolute;top:0;z-index: 2;}
+.housePlanSliderHolder .pgwSlideshow .ps-list:after{left: 0;}
+.housePlanSliderHolder .pgwSlideshow .ps-list::before{right: 0;}
+.housePlanSliderHolder .pgwSlideshow .ps-list li img{width: 145px;height: 90px;object-fit: cover;object-position: center;border: 0;}
+.housePlanSliderHolder .pgwSlideshow .ps-list{padding: 0 25px;}
+.housePlanSliderHolder .pgwSlideshow .ps-list .ps-prev{width: 25px;border-radius: 0;padding-left: 0;padding-right: 0;background: transparent;border: 0;top: 32px;}
+.housePlanSliderHolder .pgwSlideshow .ps-list .ps-prev .ps-prevIcon{width:8px;height:14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;}
+.housePlanSliderHolder .pgwSlideshow .ps-list .ps-next{width: 25px;border-radius: 0;padding-left: 0;padding-right: 0;background: transparent;border: 0;text-align: right;top: 32px;}
+.housePlanSliderHolder .pgwSlideshow .ps-list .ps-next .ps-nextIcon{width:8px;height:14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;transform: rotate(180deg);display: inline-block;}
+.housePlanSliderHolder .pgwSlideshow .ps-list li .ps-item.ps-selected{border-color: #3b8beb;}
+.housePlanSliderHolder .pgwSlideshow .ps-list li .ps-item{opacity: 1;}
+
+.housePlanDetailPageHolder{display: flex;margin: 0 -25px;padding: 40px 0;}
+.housePlanDetailPageHolder .housePlanDetailPageLeftSec{width: calc(100% - 390px);padding: 0 25px;}
+.housePlanDetailPageHolder .housePlanDetailPageRightSec{padding: 0 25px;width: 390px;}
+.housePlanSliderActionoHolder{background: #fff;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);margin-bottom: 3rem;}
+.housePlanSliderActionoHolder ul{margin: 0;padding: 0;width: 100%;list-style-type: none;display: flex;}
+.housePlanSliderActionoHolder ul li{border-right:1px solid #eaeaea;}
+.housePlanSliderActionoHolder ul li:last-child{border-right:0;}
+.housePlanSliderActionoHolder ul li a{display: flex;flex-direction: column;align-items: center;font-size: 16px;color: #1f2c3d;font-family: 'avertasemibold';padding: 25px;}
+.housePlanSliderActionoHolder ul li a i{width:70px;height: 70px;border-radius: 100%;background: #f7f9fb;display: flex;align-items: center;justify-content: center;margin-bottom: 25px;}
+.housePlanSliderActionoHolder ul li a span{text-align: center;}
+.housePlanKeySpecsHolder{margin-bottom: 30px;}
+.housePlanKeySpecsHolder h4{color:#333333;font-size: 22px;font-family: 'avertabold';margin-top: 1.5rem;margin-bottom: 1rem;}
+.housePlanKeySpecs{border:1px solid #dddddd;position: relative;padding:2rem 1.5rem;width: 100%;margin: 3rem 0 0 0;}
+.housePlanKeySpecs .legend{position: relative;display: inline-block;position: absolute;left: 120px;top: 0;transform: translateY(-50%);}
+.housePlanKeySpecs .legend span{color:#fff;font-size: 22px;font-family: 'avertabold';background: #0a56a5;padding: 5px 25px;position: relative;z-index: 1;}
+.housePlanKeySpecs .legend:after{content:'';left: -25px;width: calc(100% + 50px);height: 100%;background: #fff;;position: absolute;top: 0;}
+.housePlanKeySpecs ul{margin: 0;padding: 0;width: 100%;list-style-type: none;display: flex;align-items: center;justify-content: center;justify-content: space-between;margin: 2rem 0  1rem 0;}
+.housePlanKeySpecs ul li{display: flex;flex-direction: column;align-items: center;padding: 0 25px;}
+.housePlanKeySpecs ul li span{font-size: 16px;color:#1f2c3d;font-family: 'avertasemibold';text-align: center;margin-top: 1rem;}
+
+.housePlanDetailPageContentHolder h3{color:#0c58a5;font-size: 22px;font-family: 'avertabold';margin-top: 1.5rem;margin-bottom: 1rem;}
+.housePlanDetailPageContentHolder h4{color:#333333;font-size: 22px;font-family: 'avertabold';margin-top: 1.5rem;margin-bottom: 1rem;}
+.housePlanDetailPageContentHolder h5{color:#1f2c3d;font-size: 20px;font-family: 'avertasemibold';margin-top: 1.5rem;margin-bottom: 1rem;}
+.housePlanDetailPageContentHolder ul{margin: 0 0 1rem 0;padding: 0;width: 100%;list-style-type: none;display: flex;flex-direction: column;}
+.housePlanDetailPageContentHolder ul li{font-size: 16px;color:#1f2c3d;font-family: 'avertasemibold';position: relative;padding-left: 30px;margin: 10px 0;}
+.housePlanDetailPageContentHolder ul li:after{content:'';width:8px;height:14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;transform: rotate(180deg);display: inline-block;position: absolute;left: 0;top: 6px;}
+.housePlanDetailPageContentHolder p{font-size: 16px;color:#1f2c3d;font-family: 'avertasemibold';margin-bottom: 12px;}
+.housePlanDetailPageContentHolder p strong{color:#0c58a5;font-size: 22px;font-family: 'avertabold';}
+.housePlanDetailPageContentHolder p a{color:#0c58a5;}
+.housePlanDetailPageContentHolder h5 + h3{margin-top: 0;}
+.housePlanDetailPageContentHolder ul + h3{margin-top: 0;}
+.housePlanDetailPageContentHolder ul.foundation{flex-wrap:wrap;flex-direction: row;margin-bottom: 2rem;}
+.housePlanDetailPageContentHolder ul.foundation li{padding: 0;width: 50%;color:#0c58a5;font-size: 22px;font-family: 'avertabold';}
+.housePlanDetailPageContentHolder ul.foundation li span{color:#1f2c3d;font-size: 16px;font-family: 'avertasemibold';}
+.housePlanDetailPageContentHolder ul.foundation li:after{display:none;}
+
+.housePlanDetailPageContentHolder ul.faq li:after{display:none;}
+.housePlanDetailPageContentHolder ul.faq li{padding-left: 0;border-bottom: 1px solid #eee;padding: 0 0 15px 0;}
+.housePlanDetailPageContentHolder ul.faq li h4{padding-left: 40px;margin-top: 0;font-family: "avertasemibold";font-size: 22px;color:#1f2c3d;line-height: 34px;}
+.housePlanDetailPageContentHolder ul.faq li h4:after{content: 'Q';font-family: "avertabold";font-size: 26px;color: #0a56a5;position: absolute;left: 0;top: 2px;background: none;transform: translate(0);}
+.housePlanDetailPageContentHolder ul.faq li p{font-family: 'avertaregular';}
+
+.housePlanHeaderBlock{display: flex;background: #f7f9fb;padding: 17px 20px;align-items: center;justify-content: space-between;}
+.housePlanHeaderBlock h4{margin: 0;color: #333333;font-size: 22px;font-family: 'avertabold';}
+.housePlanHeaderBlock .downloadIcon{text-transform: uppercase;color:#3b8beb;font-size: 14px;display: flex;align-items: center;font-family: 'avertasemibold';}
+.housePlanHeaderBlock .downloadIcon i{padding-right: 15px;}
+
+
+.housePlanFieldSetHolder{border:1px solid #dddddd;position: relative;padding:2rem 2.5rem;width: 100%;margin: 3rem 0 4rem 0;}
+.housePlanFieldSetHolder h4{color:#333333;font-size: 22px;font-family: 'avertabold';margin-top: 1.5rem;margin-bottom: 1rem;}
+.housePlanFieldSetHolder .legend{position: relative;display: inline-block;position: absolute;left: 120px;top: 0;transform: translateY(-50%);}
+.housePlanFieldSetHolder .legend span{color:#fff;font-size: 22px;font-family: 'avertabold';background: #0a56a5;padding: 5px 25px;position: relative;z-index: 1;}
+.housePlanFieldSetHolder .legend:after{content:'';left: -25px;width: calc(100% + 50px);height: 100%;background: #fff;;position: absolute;top: 0;}
+.housePlanFieldSetHolder ul{margin: 0;padding: 0;list-style-type: none;}
+.housePlanFieldSetHolder ul li{display: flex;flex-direction: column;align-items: flex-start;margin-bottom: 1rem;}
+.housePlanFieldSetHolder ul li img{margin: 0 auto 1rem auto;max-width:100%;}
+.housePlanFieldSetHolder ul li .btn{margin-left: auto;}
+
+.housePlanDetailPageCard{padding: 0 20px;background: #f7f9fb;;}
+.housePlanDetailPageCard .housePlanHeaderBlock h4{margin: 1rem 0;}
+.housePlanDetailPageCard .housePlanCardBody table{width: 100%;table-layout: fixed;margin-bottom: 3rem;}
+.housePlanDetailPageCard .housePlanCardBody table th,.housePlanDetailPageCard .housePlanCardBody table td{width: 33.333%;height: 110px;padding:15px 25px;background: #fff;;}
+.housePlanDetailPageCard .housePlanCardBody table th{color:#1f2c3d;font-size: 22px;font-family: 'avertabold';text-align: center;}
+.housePlanDetailPageCard .housePlanCardBody table tr:nth-child(2n+1) th{background:#1f2c3d;color:#fff;}
+.housePlanDetailPageCard .housePlanCardBody table tr:nth-child(2n+2) td{background:#ebf0f5;}
+.housePlanDetailPageCard .housePlanCardBody table td{padding-left: 95px;}
+.housePlanDetailPageCard .housePlanCardBody table td p{margin: 0;font-family: "avertasemibold";font-size: 16px;color:#1f2c3d;line-height: 30px;}
+
+.relatedHousePlanThumbSec{padding-bottom: 2rem;}
+.relatedHousePlanThumbSec h4{color:#333333;font-size: 22px;font-family: 'avertabold';margin-top: 1.5rem;margin-bottom: 1rem;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder{margin: 0 -5px;display: flex;flex-wrap: wrap;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb{width: calc(33.3333% - 10px);margin: 5px;position: relative;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb img{width: 100%;height: 250px;object-fit: cover;object-position: center;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb span{position: absolute;bottom:10px;right:0;background: rgba(10,86,165,0.8);padding: 1px 30px;color:#fff;font-size: 22px;font-family: 'avertabold';}
+.relatedHousePlanThumbSec .btnHolder{text-align:center;padding-top:1.5rem;}
+.relatedHousePlanThumbSec .btnHolder .btn{min-width:130px;}
+
+.housePlanFeatureCard{background: #f7f9fb;margin-bottom: 30px;}
+.housePlanFeatureCard h4{color:#fff;font-size: 22px;font-family: 'montserratsemibold';background: #1f2c3d;padding: 15px 20px;margin: 0;}
+.housePlanFeatureCardBody{padding: 20px;}
+.housePlanFeatureCard .featureBadgeList{margin: 0;padding: 0;list-style-type: none;}
+.housePlanFeatureCard .featureBadgeList li{margin-bottom: 1.5rem;}
+.housePlanFeatureCard .featureBadgeList li h5{font-family: "avertasemibold";font-size: 20px;color:#1f2c3d;margin: 0 0 15px 0;}
+.housePlanFeatureCard .featureBadgeList li a{font-family: "avertasemibold";font-size: 14px;color:#666;margin: 0;background: #e1e9f0;display: inline-block;padding: 4px 15px;border-radius: 15px;margin-right: 15px;margin-bottom: 10px;}
+.housePlanFeatureCard .relatedList{margin: 0;padding: 0;list-style-type: none;display: flex;flex-direction: column;}
+.housePlanFeatureCard .relatedList li{margin: 10px 0;}
+.housePlanFeatureCard .relatedList li a{position: relative;display: block;font-family: "avertasemibold";font-size: 14px;color:#666;}
+.housePlanFeatureCard .relatedList li a:after{content: '';width: 8px;height: 14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;transform: rotate(180deg);display: inline-block;position: absolute;right: 0;top: 4px;}
+
+.selectPlanFormHolder{background: #f7f9fb;margin-bottom: 50px;display: flex;align-items: center;padding: 0 5px;}
+.selectPlanFormHolder .selectPlanFormSec{padding: 0 10px;width: 100%;}
+.selectPlanFormHolder .selectPlanFormSec .form-control{background: transparent;border-radius: 0;border-width: 0 0 1px 0;font-size: 16px;color: #1f2c3d;}
+.selectPlanFormHolder .selectPlanFormSec .form-control:first-child{margin-top: 5px;}
+.selectPlanFormHolder .selectPlanFormSec .form-control:last-child{border-bottom: 0;margin-bottom: 5px;}
+.selectPlanFormHolder .selectPlanAmountSec{padding: 0 10px;display: flex;flex-direction: column;}
+.selectPlanFormHolder .selectPlanAmountSec p{font-size: 14px;color: #333333;font-family: 'avertaregular';text-align: center;}
+.selectPlanFormHolder .selectPlanAmountSec p span{font-size: 22px;color: #3a8beb;font-family: 'avertabold';}
+
+.orderCostBuildSec .wizard{padding: 60px;}
+.orderCostBuildSec .wizard .steps{margin-bottom: 60px;}
+.orderCostBuildSec .wizard .steps ul{margin: 0;padding: 0;width: 100%;display: flex;justify-content: center;list-style-type: none;justify-content: center;}
+.orderCostBuildSec .wizard .steps ul li{position: relative;}
+.orderCostBuildSec .wizard .steps ul li a{font-size: 18px;color: #d1d3d7;font-family: "avertasemibold";text-align: center;padding: 0 25px;display: flex;flex-direction: column;width: 265px;position: relative;z-index: 3;}
+.orderCostBuildSec .wizard .steps ul li a .current-info{display: none;}
+.orderCostBuildSec .wizard .steps ul li a .number{display: none;}
+.orderCostBuildSec .wizard .steps ul li a i{height: 80px;margin-bottom: 50px;}
+.orderCostBuildSec .wizard .steps ul li a i{display: flex;justify-content: center;align-items: flex-start;}
+.orderCostBuildSec .wizard .steps ul li:first-child::before{display: none;}
+.orderCostBuildSec .wizard .steps ul li:after{content: '';height: 30px;width: 30px;border: 4px solid #d1d3d7;border-radius: 100%;background: #fff;position: absolute;top: 80px;left: 50%;transform: translateX(-50%);z-index: 2;}
+.orderCostBuildSec .wizard .steps ul li::before{content: '';height: 2px;width: 100%;background: #c0c2c7;position: absolute;top: 94px;left: -50%;}
+.orderCostBuildSec .wizard .steps ul li.current a,.orderCostBuildSec .wizard .steps ul li.done a{color: #3a7b1d;}
+.orderCostBuildSec .wizard .steps ul li.current:after,.orderCostBuildSec .wizard .steps ul li.done:after{width: 50px;height: 50px;border: 10px solid #3a7b1d;top: 68px;}
+.orderCostBuildSec .wizard .steps ul li.current:before,.orderCostBuildSec .wizard .steps ul li.done:before{background:#3a7b1d;}
+.orderCostBuildSec .wizard .steps ul li.done:before{background:#3a7b1d;}
+.orderCostBuildSec .wizard .content .title{display: none;}
+.orderCostBuildSec .wizard .wizardBody{display: none;}
+.orderCostBuildSec .wizard .wizardBody.current{display: block;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder{background: #f7f9fb;padding: 40px 120px 60px 120px;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .form-group{margin-bottom: 2.6rem;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .form-group label{font-family: "avertasemibold";font-size: 22px;color:#1f2c3d;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .form-group .form-control{font-size: 16px;height: calc(2.9em + .75rem + 2px);}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder h3{color:#0651a0;font-size:26px;font-family: 'avertabold';margin: 2.2rem 0 1.7rem 0;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .btnHolder{padding-top:2rem;padding-bottom: 1rem;display: flex;align-items: center;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .btnHolder .link{font-size:16px;font-family: 'avertabold';color:#003f97;margin-right: 15px;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-control-label::before,.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-control-label::after{top: 8px;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-control-label::before{background: transparent;border-color: #1f2c3d;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-radio .custom-control-input:checked~.custom-control-label::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead{display: flex;align-items: flex-end;justify-content: space-between;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead h4{font-size:48px;font-family: 'montserratbold';color:#1f2c3d;margin: 0;line-height: 72px;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead p{margin: 0;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead p span{font-size:48px;font-family: 'montserratbold';color:#3a7b1d;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead p b{font-size:22px;font-family: 'montserratbold';color:#131f2b;padding-right: 20px;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormImgHolder{display: flex;align-items: flex-end;flex-direction: column;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormImgHolder img{width: 100%;max-height:361px;object-fit:cover;object-position: center;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormImgHolder span{font-size:22px;font-family: 'avertabold';color:#0a55a5;margin: 1rem 0 1.5rem 0;}
+.orderCostBuildSec .wizard .wizardBody .billingAndPaymentSec .ShippingAmountList{display: flex;margin-bottom: 1rem;}
+.orderCostBuildSec .wizard .wizardBody .billingAndPaymentSec .ShippingAmountList label{margin-right: 80px;}
+.orderCostBuildSec .wizard .wizardBody .billingAndPaymentSec .ShippingAmountList label span{color:#666666;padding-left: 10px;}
+.risk{color:#c6022c !important;}
+.green{color:#3a7b1d !important;}
+
+
+.buildCostContainer{padding: 70px 0 0 0;}
+.buildCostContainer .nav-tabs{justify-content: center;border: 0;padding-left: 15px;padding-right: 15px;}
+.buildCostContainer .nav-tabs .nav-link{border-color: #f0f0f0;border-radius: 0;padding: .75rem 2rem;font-size:14px;font-family: 'avertabold';color:#878787;}
+.buildCostContainer .nav-tabs .nav-item.show .nav-link,.buildCostContainer .nav-tabs .nav-link.active{background: #2f83e8;color: #fff;border-color: #2f83e8;}
+
+.buildCostTabContainer{padding: 70px 0 0 0;}
+.buildCostTabContainer h2{font-size: 48px;color: #131f2b;font-family: 'montserratbold';text-align: center;margin-bottom: 2.5rem;}
+.buildCostTabContainer h3{font-size: 26px;color: #131f2b;font-family: 'avertasemibold';text-align: center;margin-bottom: 1rem;}
+.instantCostBuildSec .bulletList{display: flex;list-style-type: none;margin: 0;padding: 0;text-align: left;flex-direction: column;}
+.instantCostBuildSec .bulletList li {padding: 0 0 0 30px;position: relative;font-family: "avertaregular";font-size: 16px;margin: 10px 0;color: #1f2c3d;}
+.instantCostBuildSec .bulletList li::before {content: '';width: 8px;height: 8px;border-radius: 100%;display: block;position: absolute;left: 0;top: 9px;background: #2f83e8;}
+.instantCostBuildSec .decimalList{display: flex;list-style-type: none;margin: 0;padding: 0;text-align: left;flex-direction: column;counter-reset: section;}
+.instantCostBuildSec .decimalList li {padding: 0 0 0 50px;position: relative;font-family: "avertasemibold";font-size: 16px;margin: 10px 0;color: #1f2c3d;line-height: 30px;}
+.instantCostBuildSec .decimalList li::before {counter-increment: section;content: counter(section);width: 30px;height: 30px;border-radius: 100%;display: block;position: absolute;left: 0;top: 1px;background: #3a7b1d;font-family: "avertasemibold";font-size: 16px;color: #fff;display: flex;justify-content: center;align-items: center;}
+.instantCostBuildSec{text-align: center;margin-bottom: 70px;}
+.instantCostBuildSec .buildCostSampleSec{display: flex;flex-direction: column;align-items: center;margin-bottom: 40px;}
+.instantCostBuildSec .buildCostSampleSec > img{width: 100%;box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);margin: 10px 0;}
+.instantCostBuildSec .buildCostSampleSec h4{font-size: 22px;color: #398beb;font-family: 'montserratsemibold';text-align: center;margin: 55px 0;position: relative;padding: 0 35px;}
+.instantCostBuildSec .buildCostSampleSec h4:after{content: '';background: url('../img/eg-arrow.png') center center no-repeat;width: 23px;height: 47px;position: absolute;right: 0;top: 100%;margin-top: -7px;}
+.instantCostBuildSec .instantSubContainer{padding: 0 70px;}
+
+.buildCostSampleReportSec{display: flex;background: #f7f9fb;overflow: hidden;margin: 80px 0 60px 0;}
+.buildCostSampleReportSec .buildCostSampleReportThumb{padding: 15px 15px 15px 50px;width: 270px;position: relative;z-index: 1;}
+.buildCostSampleReportSec .buildCostSampleReportThumb img{box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);}
+.buildCostSampleReportSec .buildCostSampleReportContent{padding: 15px 90px 15px 120px;width: calc(100% - 270px);background: #3a7b1d;display: flex;align-items: center;justify-content: space-between;position: relative;}
+.buildCostSampleReportSec .buildCostSampleReportContent h4{color: #fff;font-family: 'avertasemibold';font-size: 26px;margin: 0;}
+.buildCostSampleReportSec .buildCostSampleReportContent a.btn{display: flex;align-items: center;}
+.buildCostSampleReportSec .buildCostSampleReportContent:before{content: '';position: absolute;left: 0px;top: 50%;margin-top:-120px;width: 0;height: 0;border-top: 120px solid transparent;border-bottom: 120px solid transparent;border-left: 80px solid #2e6118;}
+.buildCostSampleReportSec .buildCostSampleReportContent:after{content: '';position: absolute;left: -10px;top: 50%;margin-top:-120px;width: 0;height: 0;border-top: 120px solid transparent;border-bottom: 120px solid transparent;border-left: 80px solid #f7f9fb;}
+
+
+.instantCostBuildFaqContainer{background: #3b8beb;color:#fff;padding: 70px 0;}
+.instantCostBuildFaqSec > h3{    font-size: 26px;color: #fff;font-family: 'avertasemibold';text-align: left;}
+.instantCostBuildFaqSec .faqSec .card{background: transparent;border-style: dotted;border-color: #fff;;}
+.instantCostBuildFaqSec .faqSec .card:last-child{border-bottom: 0;}
+.instantCostBuildFaqSec .faqSec .card .card-header h2{font-size: 2rem;}
+.instantCostBuildFaqSec .faqSec .card .card-header .btn{padding-left: 0;color: #fff;font-size: 16px;font-family: 'montserratsemibold';padding-top: 1rem;padding-bottom: 1rem;}
+.instantCostBuildFaqSec .faqSec .card .card-header .btn::before{display: none;}
+.instantCostBuildFaqSec .faqSec .card .card-header .btn::after{color: #fff;top: 11px;}
+.instantCostBuildFaqSec .faqSec .card .card-body{color: #fff;line-height: 26px;}
+.instantCostBuildFaqSec .btnHolder{margin-top: 2rem;}
+.instantCostBuildFaqSec .btnHolder .link{color: #fff;font-size: 20px;font-family: 'avertabold';}
+
+.competitiveComparisionTableHolder{margin: 70px 0;overflow: auto;}
+.competitiveComparisionTableHolder table{width: 100%;}
+.competitiveComparisionTableHolder table thead tr th{color: #398beb;font-size: 18px;font-family: 'montserratsemibold';text-align: center;white-space: nowrap;padding: 15px 2rem;height: 60px;}
+.competitiveComparisionTableHolder table thead tr th:first-child i{min-width: 200px;display: block;}
+.competitiveComparisionTableHolder table tbody tr td{color: #404051;font-size: 16px;font-family: 'avertaregular';text-align: center;white-space: nowrap;padding: 15px 2rem;height: 60px;width: 20%;border-left: 1px solid #e9eef3;border-bottom: 1px solid #e9eef3;}
+.competitiveComparisionTableHolder table tbody tr td:first-child{text-align: left;font-family: 'avertasemibold';white-space: normal;width: 60%;border-left: 0;}
+.competitiveComparisionTableHolder table tbody tr:nth-child(2n+1){background: #f7f9fb;}
+
+.costBuilQaulityLevelsHolder{margin: 70px 0;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow{margin-bottom: 20px;display: flex;background: #f7f9fb;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelTitle{background: #1f2c3d;padding: 20px;display: flex;align-items: center;width: 210px;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelTitle h4{color: #fff;font-size: 24px;margin: 0;font-family: 'avertasemibold';}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelTitle h4 span{font-size: 16px;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent{width: calc(100% - 210px);padding: 30px 20px 20px 20px ;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListHolder{display: flex;margin: 0 -10px;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListBlock{margin: 0 10px;width: calc(33.3333% - 20px);background: #fff;border: 1px solid #e9eef3;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListBlock h6{color: #1f2c3d;font-size: 16px;margin: 0;font-family: 'avertabold';background: #e4ebf1;padding: 12px 20px;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListBlock ul{margin: 0;padding: 0;list-style-type: none;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListBlock ul li{margin: 0;padding: 0;list-style-type: none;border-bottom: 1px solid #e9eef3;padding: 12px 20px;}
+.costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListBlock ul li:last-child{border-bottom: 0;}
+
+.costBuiltFaq .faqSec{margin: 30px 0 90px 0;}
+.costBuiltFaq .faqSec .card:last-child{border-bottom: 0;}
+.costBuiltFaqAlert{background: #f7f9fb;padding: 20px 90px;color: #404051;font-size: 16px;font-family: 'avertaregular';text-align: center;margin-top: 2rem;}
+.navbar .filterTrigger{display: none;}
+@media only screen and (max-width: 991px) {
+
+  .topBarRightInfoSec .topSearchSec{display: none;}
+  .topBarleftInfoSec ul li:last-child{margin-left: auto;}
+  .topBarleftInfoSec ul li:last-child span{display: none;}
+  .navBarHolder .navbar .navbar-brand img{max-height: 60px;}
+  .navbar-light .navbar-toggler{border: 0;padding: 0;}
+  .navbar-collapse{position: fixed;top: 0;left: 0;height: 100% !important;background: #3b8beb;z-index: 9999;width: 100%;padding: 20px;display: block !important;transition: left 0.3s ease-in-out;}
+  .navbar-collapse.collapse{left: -100%;}
+  .navbar-collapse.collapse.show{left: 0;}
+  .navBarHolder .navbar .navbar-nav{margin-left: 0;padding: 0;}
+  .navBarHolder .navbar .navbar-nav .nav-link{border-bottom: 1px solid #4f97ed;color: #fff;font-size: 16px;font-family: 'montserratsemibold';padding: .8rem 1rem;}
+  .navBarHolder .navbar .navbar-nav .dropdown-toggle::after{height: 26px;float: right;background: url(../img/nav-dropdown-arrow-white.png) center center no-repeat;}
+  .navbar-nav .dropdown-menu{background:rgba(0, 0, 0, 0.2);box-shadow: none;border: 0;border-radius: 0;padding: 0;}
+  .navbar-nav .dropdown-menu .dropdown-item{border-bottom: 1px solid #4f97ed;color: #fff;font-size: 14px;font-family: 'montserratsemibold';padding: .8rem 1rem;}
+  .navbar-collapse .navbar-toggler{float: right;}
+  .navbar-collapse .navbar-toggler-icon{background: url('../img/navbar-cross.png') center center no-repeat;}
+  .navbar-collapse .topSearchSec{padding: 20px;display: flex;width: 100%;}
+  .navbar-collapse .topSearchSec .form-control{height: calc(2.6em + .75rem + 2px);min-width: auto;}
+  .navbar-collapse .topSearchSec .btn{padding: .25rem 1.2rem;}
+  .navbar-collapse .topSearchSec .btn i{margin: 0;}
+
+
+  .planFilterFieldSec > i{display: none;}
+
+
+  .browseHousePlan .browseContentSec{position: static;padding: 0;text-align: center;}
+  .browseHousePlan .browseContentSec .browseContentSecSp{width: 100%;padding: 0;}
+  .browseHousePlanSec{width: 100%;margin-top: 2rem;}
+
+
+  .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing{flex-wrap: wrap;}
+  .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li {width: 50%;margin-top: 2rem;}
+  .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span{font-size: 16px;}
+  .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span br{display: none;}
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp{box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
+
+
+
+  .footerBottomSec{flex-direction: column;align-items: center;text-align: center;}
+  .footerBottomSec p{margin-bottom: 1rem;}
+  .footerNavBlock{margin-top: 3rem;}
+  .footerSearchBlock{flex: auto;text-align: center;}
+  .footerSearchBlock .input-group .btn{padding-left: 1rem;padding-right: 1rem;}
+
+  .instantCostBuildSec .instantSubContainer{padding: 0;}
+}
+@media only screen and (max-width: 767px) {
+
+  .topBarleftInfoSec{width: 100%;}
+  .topBarRightInfoSec{display: none;}
+
+  .sliderSec ul li .sliderCaption{width: 100%;padding: 0 15px;}
+  .sliderSec ul li .sliderCaption h2{font-size: 32px;}
+  .sliderSec ul li .sliderCaption p{font-size: 22px;}
+  .sliderCaption .btn{display: none;}
+  .planFilterFieldSec{padding: 0;}
+  .planFilterFieldSp{display: flex;flex-direction: column;padding: 20px;}
+  .planFilterFieldSp .planFilterFieldHolder{flex-wrap: wrap;margin: 0 -10px;width: auto;}
+  .planFilterFormGroup{max-width: 50%;}
+  .planFilterBtnSec{width: 100%;}
+  .planFilterBtnSec .btn{width: 100%;}
+  .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: inherit;margin-top: 10px;}
+  .sliderSec ul li .sliderCaption{top: 15px;transform: translate(-50% , 0);min-height: 170px;justify-content: center;display: flex;flex-direction: column;}
+  .sliderSec ul li > img{height: 500px;}
+  .planFilterSec{top: 220px;transform: none;}
+  .contentSp h3{font-size: 32px;}
+  .contentSp h5{font-size: 18px;line-height: 30px;}
+  .contentSp p{line-height: 26px;margin-bottom: 0.9rem;}
+  .contentSp h4{font-size: 18px;line-height: 30px;}
+  .planCalloutSec ul{flex-wrap: wrap;}
+  .planCalloutSec ul li{max-width: 100%;width: 100%;margin-bottom: 1rem;}
+  .planCalloutSec ul li:last-child{margin-bottom: 0;}
+  .planCalloutSec ul li h3{font-size: 20px;}
+  .browseHousePlan{padding-top: 40px;}
+  .productBrowseSlider:after{display: none;}
+
+  /* productBox */
+  .planToFindHomeSec{padding-bottom: 40px;}
+  .productBox .productBtnHolder .btn-product{font-size: 8px;padding:5px;}
+  .browseHousePlanSec .browseSliderSec .productBox{width: calc(100vw - 30px);}
+  .productBox .productBlock .productImageSec img{height: 260px;}
+  .productBox .productBlock .productBottomInfoSec .productInfoSec ul li{font-size: 11px;padding: 10px;}
+  .productBox .productBlock .productBottomInfoSec > span{font-size: 11px;}
+  .productBox .productBtnHolder > span{padding: 0 1px;}
+  .productBox{padding: 2px;}
+  .productBox .productBlock .productTopIconHolder > a{padding: 5px;}
+  .productBox .productBlock .productTopIconHolder > a img{max-height: 15px;}
+
+
+
+  .housePlanStyleSec .fetauredProductTab li a{font-size: 14px;white-space: nowrap;}
+  .housePlanStyleSec .fetauredProductTab{overflow: auto;justify-content: flex-start;height: 50px;margin: 30px -15px;}
+  .housePlanStyleSec .productHolder .productBox{width: calc(100% - 30px);margin-top: 5px;margin-bottom: 5px;}
+  .housePlanStyleSec{padding: 40px 0;}
+
+  .findHomeSec{padding: 40px 0;}
+
+  .makeUniqueSec{padding: 40px 0;}
+  .makeUniqueSec .uniquePlanBlockSec{flex-wrap: wrap;width: 100%;}
+  .makeUniqueSec .uniquePlanBlockHolder{width: 100%;}
+  .makeUniqueSec .uniquePlanBlockHolder .planProductAvatarHolder img{height: 220px;}
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp{height: auto;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
+  .makeUniqueSec .uniquePlanBlockHolder h5{font-size: 20px;}
+
+  .costBuiltCalcSec{padding: 40px 0;}
+  .costCalcList li{width: 50%;font-size: 16px;padding-left: 10px;padding-right: 10px;border-bottom: 1px solid #61a2ef;}
+  .costCalcList li:nth-child(2n+2){border-right: 0;}
+  .costCalcList li:last-child{border-bottom: 0;}
+  .costCalcList li img{max-height: 50px;}
+  .costCalcList{margin-bottom: 1rem;}
+
+  .testimonialSec{padding: 40px 0;}
+  .testimonialSec .testimonialSlideSec .testimonialBlock{padding: 0;flex-direction: column;align-items: center;}
+  .testimonialSec .testimonialSlideSec .testimonialBlock .testimonialContent{text-align: center;padding-top: 1rem;padding-left: 0;padding-right: 0;}
+  .testimonialSec .testimonialSlideSec .testimonialBlock .testimonialContent p{font-size: 20px;line-height: 32px;margin-bottom: 1rem;}
+  .testimonialSec .testimonialSlideSec .testimonialBlock > i img{width: 80px;height: 80px;}
+
+  .qucikAdviceSec{padding: 40px 0;}
+  .qucikAdviceSec .adviceBlockHolder .adviceBlock{width: 100%;}
+  .qucikAdviceSec .adviceBlockHolder .adviceBlock + .adviceBlock{margin-top: 2rem;}
+  .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp .adviceImgSec img{height: 230px;}
+  .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec h5{font-size: 20px;}
+  .qucikAdviceSec .btnHolder{margin-top: 30px;}
+
+
+  .footerNavBlock{margin-top: 2rem;width: 100%;max-width: 100%;}
+  .cardImgSec{justify-content: center;}
+  .adviceSection{text-align: center;}
+  .adviceSection a{justify-content: center;}
+  .footerBlockHolder{padding: 2.5rem 0;}
+
+
+  /* blog */
+  .banner{min-height: 300px;}
+  .pg{padding: 30px 0;}
+  .banner .banner-text .desc h2{font-size: 32px;}
+  .blogContentSec{width: 100%;padding-right: 15px;}
+  .blogSection{width: 100%;}
+  .blogSection .blogDesc h5{font-size: 16px;}
+  .blogSection .blogDesc{padding-right: 0;}
+  .blogSection .blog{margin-bottom: 15px;}
+  .blogContentHolder{flex-direction: column-reverse;}
+  .blogInfoListSec{width: 100%;margin-bottom: 15px;}
+  .sidebar .sidebar-title .mhpLogo{display: none;}
+  .sidebar + .sidebar{margin-top: 15px;}
+  .sidebar .sidebar-title{padding: 10px 30px 10px 15px;}
+  .sidebar .sidebar-title:after {display: inline-block;margin-left: .255em;vertical-align: .255em;position: absolute;top: 50%;right: 15px;margin-top: -2px;content: "";border-top: .3em solid #fff;border-right: .3em solid transparent;border-bottom: 0;border-left: .3em solid transparent;}
+  .sidebar .sidebar-title[aria-expanded="true"]:after{transform: rotate(180deg);}
+
+  .blogDetailContentSec h2{font-size: 22px;}
+  .blogDetailContentSec ul li{font-size: 18px;margin: 5px 0;}
+  .blogDetailContentSec img{width: 100%;float: none;margin-left: 0;margin-right: 0;}
+
+  /* build cost instant */
+  .buildCostContainer .nav-tabs .nav-item{width: 100%;text-align: center;}
+  .buildCostContainer{padding: 30px 0;}
+
+  .buildCostTabContainer h2{font-size: 26px;}
+  .buildCostTabContainer h3{font-size: 18px;}
+  .instantCostBuildSec .buildCostSampleSec h4{font-size: 16px;}
+
+  .buildCostSampleReportSec{flex-direction: column;}
+  .buildCostSampleReportSec .buildCostSampleReportContent:before,.buildCostSampleReportSec .buildCostSampleReportContent:after{display: none;;}
+  .buildCostSampleReportSec .buildCostSampleReportThumb{width: 100%;padding: 15px;}
+  .buildCostSampleReportSec .buildCostSampleReportContent{flex-direction: column;padding: 15px;width: 100%;}
+  .buildCostSampleReportSec .buildCostSampleReportContent h4{margin-bottom: 1rem;}
+  .buildCostSampleReportSec{margin: 40px 0;}
+
+  .faqSec .card .card-body{padding-right: 0;}
+
+  .competitiveComparisionTableHolder table thead tr th{font-size: 16px;}
+  .competitiveComparisionTableHolder{margin: 40px 0;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow{flex-direction: column;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent{width: 100%;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelTitle{width: 100%;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListHolder{overflow: auto;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent .costBuilQaulityListBlock{width: 100%;min-width: 225px;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelTitle h4{font-size: 20px;}
+  .faqSec .card .card-header .btn{font-size: 16px;padding: 1.4rem 2rem 1.4rem 30px;}
+  .costBuiltFaqAlert{padding: 20px;}
+  .faqSec .card .card-header .btn::before{font-size: 18px;top: 21px;}
+  .faqSec .card .card-header .btn::after{font-size: 18px;top: 18px;}
+
+/* contact */
+  .contactSec{flex-direction: column;}
+  .contactLeftSec{width: 100%;}
+  .contactRightSec{width: 100%;margin-top: 2rem;}
+  .contactSec .contactContentSec h3{font-size: 32px;margin-bottom: 1rem;}
+  .contactSec .contactContentSec h3:after{display: none;}
+  .contactSec .contactContentSec p{font-size: 20px;margin-bottom: 2rem;}
+  .contactSec .contactContentSec p br{display: none;}
+  .contactInfoSec{right: 0;width: auto;}
+  .contactInfoSec h3{font-size: 26px;}
+  .contactInfoSec ul li{font-size: 16px;margin: 15px 0;}
+  .contactInfoSec ul li b{font-size: 16px;}
+  .contactMapContainer > img{height: 550px;}
+
+  .faqContainer{padding: 0px 0 40px 0;}
+
+/* house plan */
+.housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{width: 100%;padding-right: 0;}
+.housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 100%;padding-left: 0;}
+.housePlanProductHolder .productBox{width: calc(100% - 10px);}
+.housePlanProductHolder .productHolder{width: 100%;}
+.housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 8px;padding: 5px;}
+.housePlanProductHolder .productBox .productBlock .productImageSec img{height: 260px;}
+
+.housePlanFilterTabSp{flex-direction: column;position: relative;margin-bottom: 40px;}
+.housePlanFilterTabSec .housePlanCountSec{flex-direction: column;position: relative;}
+.housePlanFilterTabSec .housePlanSearchSec{width: 100%;margin-left: 0;max-width: 100%;margin-top: 1rem;padding-right: 80px;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder{flex-direction: column;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul{flex-wrap: wrap;margin-top: 1.5rem;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li{width: 50%;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li:nth-child(-n+2){margin-bottom: 15px;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder{margin-left: 0;}
+.housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder ul li a{padding-left: 5px;padding-right: 5px;min-width: inherit;font-size: 12px;}
+.housePlanFilterTabSec .housePlanCountSec .housePlanProductStyleFilter{position: absolute;bottom: 15px;right: 0;}
+
+.productFilterRefineHolder .productFilterRefineSec{display: none;}
+.filterBtnHolder{margin: 2rem 0;text-align: center;}
+.filterBtnHolder .btn{min-width: 10rem;}
+
+.filtersActive .productFilterRefineHolder .productFilterRefineSec{display: block;}
+.filtersActive .sliderSec,.filtersActive .housePlanFilterTabSec,.filtersActive .productFilterRefineHolder > p,.filtersActive .housePlanProductHolder,.filtersActive .customDreamContainer,.filtersActive .designerEnvisionContainer,.filtersActive .homeFloorPlanContainer,.filtersActive .onlineHouseBenefitsContainer,.filtersActive .purchaseOnlinePlanContainer,.filtersActive .qucikAdviceSec,.filtersActive .farmHouseDetailContainer,.filtersActive .keyElementContainer,.filtersActive .interiorExteriorContainer{display: none;}
+.filtersActive .housePlanProductContainer{padding-top: 0;padding-bottom: 0;}
+
+
+.filtersActive .navbar .filterTrigger{display: block;margin: 7.35px 0;}
+.filtersActive .navbar .navbar-brand{display: none;}
+.filtersActive .filterBtnHolder{display: none;}
+.filtersActive .filterBtnHolder.applyHolder{display: block;}
+
+.customDreamContainer .customDreamHolder{padding: 40px 0 110px 0;}
+.customDreamContainer .customDreamContentHolder{flex-direction: column;margin: 0;}
+.customDreamContainer .customDreamContentHolder .customDreamLeftSec{width: 100%;padding-right: 0;padding-left: 0;padding-bottom: 40px;margin-bottom: 20px;}
+.customDreamContainer .customDreamContentHolder .customDreamRightSec{width: 100%;padding-right: 0;padding-left: 0;}
+.customDreamContainer .customDreamContentHolder .customDreamLeftSec::before{transform: rotate(90deg);width: 14px;height: 229px;margin-left: -7px;margin-bottom: calc(-229px / 2);content: '';position: absolute;right: 50%;top: auto;bottom: 0;}
+.customDreamContainer .costEffectiveContainer .costEffectiveSec{padding: 15px;flex-direction: column;}
+.customDreamContainer .costEffectiveContainer .costEffectiveSec h2{font-size: 20px;padding-right: 0;text-align: center;margin-bottom: 1rem;}
+.customDreamContainer .costEffectiveContainer .costEffectiveSec .btn{width: 100%;min-width: inherit;padding-left: 15px;padding-right: 15px;font-size: 13px;}
+.designerEnvisionContainer .designerEnvisionSec .designerEnvisionCallout{margin: 15px 0;}
+.homeFloorPlanContainer{padding-bottom: 40px;background-position: bottom right;}
+.homeFloorPlanContainer{padding: 40px 0;text-align: center;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li{flex-direction: column;align-items: center;margin: 15px 0;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li i{margin-right: 0;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li .floorPlanContent{width: 100%;margin-top: 2rem;}
+
+
+.onlineHouseBenefitsContainer{padding: 40px 0;}
+
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li{padding: 10px 0  5px 0;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList{flex-direction: column;align-items: center;text-align: center;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList i{margin-right: 0;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList .onlineHouseBenefitsContent{width: 100%;margin-top: 1rem;}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanHolder ul li{width: 100%;font-size: 18px;}
+
+
+.farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent{margin: 0;flex-direction: column;}
+.farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent .farmHouseDetailLeftSec{padding: 0;width: 100%;}
+.farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent .farmHouseDetailRightSec{padding: 0;width: 100%;}
+.housePlanProductContainer{padding-bottom: 40px;}
+.farmHouseDetailContainer .farmHouseDetailHolder{padding: 40px 0;}
+.designerEnvisionContainer{padding: 40px 0;}
+.keyElementContainer{padding: 40px 0;}
+.keyElementSec ul li{width: 100%;max-width: 100%;font-size: 16px;}
+
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow{margin: 0;flex-direction: column-reverse;padding: 40px 0;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorContent{padding: 0;width: 100%;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorImgHolder{padding: 0;width: 100%;margin-bottom: 1rem;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorContent li{width: 100%;max-width: 100%;font-size: 16px;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow:nth-child(2n+2){flex-direction: column-reverse;}
+.onlineHouseBenefitsContainer.farmHouseStyleContainer .onlineHouseBenefitsListHolder li{margin-bottom: 1rem;}
+.onlineHouseBenefitsContainer.farmHouseStyleContainer .onlineHouseBenefitsListHolder{margin-bottom: 1rem;}
+.onlineHouseBenefitsContainer.farmHouseStyleContainer{padding-bottom: 40px;}
+.onlineHouseBenefitsContainer.farmHouseStyleContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList i{margin-right: 0;}
+.onlineHouseBenefitsContainer.farmHouseStyleContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList .onlineHouseBenefitsContent{width: 100%;}
+.purchaseOnlinePlanContainer{padding: 40px 0;}
+
+
+/* individual-plan */
+
+.housePlanDetailTitleHolder{flex-direction: column;}
+.housePlanDetailTitleHolder .housePlanDetailTitleRightSec{display: none;}
+.housePlanDetailPageSec .housePlanDetailTitleHolder h2{font-size: 22px;}
+.housePlanSliderHolder .pgwSlideshow .ps-list{display: none !important;}
+.pgwSlideshow .ps-current>ul>li img{height: 250px; object-fit: cover;object-position: center;}
+.housePlanDetailTitleHolder.xs-sp{display: flex;align-items: center;}
+.housePlanDetailTitleHolder.xs-sp  .housePlanDetailTitleRightSec{display: flex;margin-left: 0;}
+
+.housePlanDetailPageHolder{flex-direction: column-reverse;margin: 0;}
+.housePlanDetailPageHolder .housePlanDetailPageLeftSec{width: 100%;padding: 0;}
+.housePlanDetailPageHolder .housePlanDetailPageRightSec{width: 100%;padding: 0;}
+.selectPlanFormHolder{margin-bottom: 20px;}
+.housePlanDetailPageHolder{padding-top: 0;}
+.housePlanSliderActionoHolder ul{flex-wrap: wrap;justify-content: space-between;}
+.housePlanSliderActionoHolder{box-shadow: none;}
+.housePlanSliderActionoHolder ul li{border: 0;max-width: 50%;}
+.housePlanSliderActionoHolder ul li a{font-size: 13px;padding-left: 10px;padding-right: 10px;}
+.housePlanKeySpecsHolder h4{font-size: 20px;}
+.housePlanKeySpecs .legend{left: 40px;}
+.housePlanKeySpecs .legend span{font-size: 18px;}
+.housePlanKeySpecs ul{flex-wrap: wrap;justify-content: space-between;margin-top: 0;margin-bottom: 0;}
+.housePlanKeySpecs ul li{border: 0;max-width: 50%;padding-left: 10px;padding-right: 10px;margin-top: 20px;}
+.housePlanKeySpecs{padding-left: 15px;padding-right: 15px;}
+.housePlanHeaderBlock{flex-direction: column;align-items: center;text-align: center;}
+.housePlanHeaderBlock a{margin-top: 1rem;}
+.housePlanDetailPageContentHolder h4{font-size: 20px;}
+.housePlanDetailPageContentHolder h3{font-size: 20px;}
+.housePlanFieldSetHolder .legend{left: 40px;}
+.housePlanFieldSetHolder .legend span{font-size: 18px;}
+.housePlanFieldSetHolder{padding-left: 15px;padding-right: 15px;}
+.housePlanFieldSetHolder ul li .btn{margin-right: auto;}
+.housePlanDetailPageContentHolder ul.foundation li{width: 100%;}
+.housePlanDetailPageContentHolder ul.faq li h4{font-size: 18px;padding-left: 30px;}
+.housePlanDetailPageContentHolder ul.faq li h4:after{font-size: 20px;top:0;}
+.housePlanDetailPageCard .housePlanHeaderBlock{text-align: left;padding-left: 0;padding-right: 0;}
+.housePlanDetailPageCard .housePlanCardBody table td{padding-left: 15px;padding-right: 15px;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb{width: 100%;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb img{height: 180px;}
+.housePlanDetailPageCard .housePlanCardBody table tbody tr{display: flex;flex-direction: column;width: 100%;padding-left: 40%;position: relative;}
+.housePlanDetailPageCard .housePlanCardBody table tbody tr th{position: absolute;left: 0;height: 100%;width: 40%;padding-left: 10px;padding-right: 10px;font-size: 18px;display: flex;align-items: center;}
+.housePlanDetailPageCard .housePlanCardBody table tbody tr td{width: 100%;height: auto;}
+
+.orderCostBuildSec .wizard{padding-left: 0;padding-right: 0;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder{padding-left: 15px;padding-right: 15px;}
+
+
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead{flex-direction: column;align-items: flex-start;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead h4{font-size: 26px;line-height: 32px;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead p span{font-size: 26px;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormImgHolder img{height: 180px;}
+.orderCostBuildSec .wizard .wizardBody .billingAndPaymentSec .ShippingAmountList{flex-direction: column;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder h3{font-size: 20px;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .form-group label{font-size: 18px;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .form-group .form-control{height: calc(2.5em + .75rem + 2px);}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .form-group{margin-bottom: 1.8rem;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-control{width: 100%;margin-bottom: 1rem;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-control-label::before, .orderCostBuildSec .wizard .wizardBody .orderCostFormHolder .custom-control-label::after{top: 5px;}
+.orderCostBuildSec .wizard .steps ul{justify-content: flex-start;overflow-x: auto;overflow-y: hidden;}
+.orderCostBuildSec .wizard .steps ul li a{padding-left: 10px;padding-right: 10px;width: 145px;font-size: 14px;}
+.orderCostBuildSec .wizard .steps ul li a i svg{height: 40px;}
+.orderCostBuildSec .wizard .steps ul li.current:after, .orderCostBuildSec .wizard .steps ul li.done:after{    width: 30px;height: 30px;border: 5px solid #3a7b1d;top: 65px;}
+.orderCostBuildSec .wizard .steps ul li a i{height: 65px;}
+.orderCostBuildSec .wizard .steps ul li::before{top: 79px;}
+.orderCostBuildSec .wizard .steps ul li:after{top: 65px;}
+
+.testimonialList li{max-width: 100%;width: 100%;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .sliderSec ul li .sliderCaption h2{font-size: 48px;;}
+  .sliderSec ul li .sliderCaption{width: 80%;top: 30%;}
+
+  .planFilterFieldSec{padding: 0;}
+  .planFilterFieldSp{flex-direction: column;align-items: center;padding: 25px;}
+  .planFilterFormGroup{max-width: 33.333%;}
+  .planFilterFieldSp .planFilterFieldHolder{flex-wrap: wrap;}
+  .planFilterFormGroup.sqrFt{max-width: 66.666%;}
+  .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: inherit;}
+  .planFilterBtnSec{padding: 0 10px;text-align: center;margin-top: 1rem;}
+  .planFilterSec{top: auto;bottom: -100px;transform: none;}
+  .planCalloutSec ul li h3{font-size: 22px;;}
+  .contentSp h3{font-size: 40px;;}
+
+  .housePlanStyleSec .fetauredProductTab li a{font-size: 14px;white-space: nowrap;}
+  .housePlanStyleSec .fetauredProductTab li{margin: 0 5px;}
+  .housePlanStyleSec .fetauredProductTab li a{padding-left: 15px;padding-right: 15px;}
+
+  .housePlanStyleSec .productHolder .productBox{width: calc(100% - 30px);}
+
+  .makeUniqueSec .uniquePlanBlockHolder{width: 50%;}
+  .makeUniqueSec .uniquePlanBlockHolder .planProductAvatarHolder img{height: 300px;}
+
+  .costBuiltCalcSec .costCalcList li{width: calc(100% / 4);border-right: 1px solid #61a2ef;border-bottom: 1px solid #61a2ef;}
+  .costBuiltCalcSec .costCalcList li:nth-last-child(-n+3){border-bottom: 0;}
+  .costBuiltCalcSec .costCalcList li:last-child, .costCalcList li:nth-child(4n){border-right: 0;}
+
+  .testimonialSec .testimonialSlideSec .testimonialBlock{padding: 0;flex-direction: column;align-items: center;text-align: center;}
+  .testimonialSec .testimonialSlideSec .testimonialBlock > i{margin-bottom: 2rem;}
+
+  .buildCostContainer .nav-tabs .nav-link{padding-left: 1rem;padding-right: 1rem;}
+  .competitiveComparisionTableHolder table thead tr th:first-child i{min-width: 430px;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow{flex-direction: column;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelContent{width: 100%;}
+  .costBuilQaulityLevelsHolder .costBuilQaulityLevelRow .costBuilQaulityLevelTitle{width: 100%;}
+
+
+  .buildCostSampleReportSec .buildCostSampleReportContent:before,.buildCostSampleReportSec .buildCostSampleReportContent:after{display: none;;}
+  .buildCostSampleReportSec .buildCostSampleReportThumb{width: 35%;padding: 15px;}
+  .buildCostSampleReportSec .buildCostSampleReportContent{flex-direction: column;padding: 15px;width: 65%;justify-content: center;}
+  .buildCostSampleReportSec .buildCostSampleReportContent h4{margin-bottom: 1rem;}
+
+/* blog */
+  .blogContentSec{width: 100%;padding-right: 15px;}
+  .blogContentHolder{flex-direction: column-reverse;}
+  .blogInfoListSec{width: 100%;margin-bottom: 15px;}
+  .sidebar .sidebar-title .mhpLogo{display: none;}
+  .sidebar + .sidebar{margin-top: 15px;}
+  .sidebar .sidebar-title{padding: 10px 30px 10px 15px;}
+  .sidebar .sidebar-title:after {display: inline-block;margin-left: .255em;vertical-align: .255em;position: absolute;top: 50%;right: 15px;margin-top: -2px;content: "";border-top: .3em solid #fff;border-right: .3em solid transparent;border-bottom: 0;border-left: .3em solid transparent;}
+  .sidebar .sidebar-title[aria-expanded="true"]:after{transform: rotate(180deg);}
+
+  .banner .banner-text .desc h2{font-size: 48px;}
+
+
+  /* contact */
+  .contactSec{flex-direction: column;}
+  .contactLeftSec{width: 100%;}
+  .contactRightSec{width: 100%;margin-top: 2rem;}
+  .contactSec .contactContentSec img{width: 100%;}
+  .contactSec .contactFormSec{max-width: 100%;}
+
+
+  /* house-plan */
+
+  .housePlanFilterTabSp{flex-direction: column;align-items: center;}
+  .housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder{margin-left: 0;margin-top: 2rem;}
+  .housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{width: 40%;padding-right: 10px;}
+  .housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 60%;padding-left: 10px;}
+  .housePlanProductHolder .productBox{width: calc(100% - 10px);}
+  .housePlanProductHolder .productHolder{width: 100%;}
+  .housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 10px;}
+  .customDreamContainer .costEffectiveContainer .costEffectiveSec{padding: 25px;}
+  .purchaseOnlinePlanContainer .purchaseOnlinePlanHolder ul li{width: 50%;}
+
+/* farm house */
+
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow{margin: 0;flex-direction: column-reverse;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorContent{padding: 0;width: 100%;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorImgHolder{padding: 0;width: 100%;margin-bottom: 1rem;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow:nth-child(2n+2){flex-direction: column-reverse;}
+.keyElementSec ul li{width: 100%;max-width: 100%;}
+
+.housePlanDetailPageSec .housePlanDetailTitleHolder{flex-direction: column;}
+.housePlanDetailPageHolder{flex-direction: column-reverse;margin: 0;}
+.housePlanDetailPageHolder .housePlanDetailPageLeftSec{width: 100%;padding: 0;}
+.housePlanDetailPageHolder .housePlanDetailPageRightSec{width: 100%;padding: 0;}
+.housePlanSliderActionoHolder ul li a{padding-left: 10px;padding-right: 10px;}
+.housePlanSliderActionoHolder ul li a i{width: 50px;height: 50px;;}
+.housePlanSliderActionoHolder ul li a i img{width: 50%;height: 50%;;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb img{height: 200px;}
+
+.orderCostBuildSec .wizard{padding-left: 0;padding-right: 0;}
+.orderCostBuildSec .wizard .steps ul li a{width: 180px;}
+.orderCostBuildSec .wizard .wizardBody .orderCostFormHolder{padding-left: 25px;padding-right: 25px;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead h4{font-size: 36px;}
+.orderCostBuildSec .wizard .wizardBody .planDetailFormSec .planDetailFormHead p span{font-size: 36px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .topBarleftInfoSec ul li:last-child p span{display: none;}
+  .topSearchSec .form-control{min-width: 15rem;}
+  .navBarHolder .navbar .navbar-nav{margin-left: 1rem;}
+  .navBarHolder .navbar .navbar-brand img{max-height: 70px;}
+  .navBarHolder .navbar .navbar-nav .nav-link{font-size: 12px;}
+  .sliderSec ul li .sliderCaption h2{font-size: 48px;;}
+  .sliderSec ul li .sliderCaption{width: 70%;top: 40%;}
+
+  .planFilterFieldSec > i{right: 0;left: auto;}
+  .planFilterFieldSec{padding-left: 0;padding-right: 250px;}
+  .planFilterFieldSp{align-items: flex-end;padding: 25px;}
+  .planFilterFormGroup{max-width: 33.333%;}
+  .planFilterFieldSp .planFilterFieldHolder{flex-wrap: wrap;}
+  .planFilterFormGroup.sqrFt{max-width: 66.666%;}
+  .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: inherit;}
+  .planFilterBtnSec{padding: 0 10px;text-align: center;margin-bottom: 1rem;}
+
+  .productHolder.twoColumn-md .productBox .productBtnHolder .btn-product{padding-left: 5px;padding-right: 5px;font-size: 12px;}
+  .productHolder.twoColumn-md .productBox .productBlock .productBottomInfoSec .productInfoSec ul li{font-size: 14px;}
+  .productHolder.twoColumn-md .productBox .productBlock .productImageSec img{height: 300px;}
+
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockHead{height: calc(102px + 1.2rem);}
+  .testimonialSec .testimonialSlideSec .testimonialBlock{padding: 0 50px;}
+
+  .footerBottomSec{flex-direction: column;align-items: center;text-align: center;}
+  .footerBottomSec p{margin-bottom: 1rem;}
+  .footerNavBlock{margin-top: 3rem;}
+  .footerSearchBlock{flex: auto;width: 100%;}
+  .footerSearchBlock > section{width: 380px;}
+
+  /* blog */
+  .blogContentSec{padding-right: 15px;width: 70%;}
+  .blogInfoListSec{width: 30%;}
+
+  .blogDetailContentSec ul{display: inline-block;width: 100%;}
+
+  .buildCostSampleReportSec .buildCostSampleReportContent{padding: 15px 20px 15px 90px;}
+  .buildCostSampleReportSec .buildCostSampleReportContent{width: calc(100% - 230px);}
+  .buildCostSampleReportSec .buildCostSampleReportThumb{width: 230px;}
+
+  .housePlanFilterTabSp{flex-direction: column;align-items: center;}
+  .housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder{margin-left: 0;margin-top: 2rem;}
+  .housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{width: 35%;}
+  .housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 65%;}
+  .housePlanProductHolder .productBox{width: calc(100% - 10px);}
+  .housePlanProductHolder .productHolder{width: 100%;}
+  .housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 10px;}
+
+  .interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow{margin: 0;flex-direction: column-reverse;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorContent{padding: 0;width: 100%;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorImgHolder{padding: 0;width: 100%;margin-bottom: 1rem;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow .interiorExteriorImgHolder img{max-height: 400px;object-fit: cover;object-position: center;}
+.interiorExteriorContainer .interiorExteriorSec .interiorExteriorContentrow:nth-child(2n+2){flex-direction: column-reverse;}
+
+/* .housePlanSliderActionoHolder ul{flex-wrap: wrap;}
+.housePlanSliderActionoHolder ul li{width: 33.3333%;border-bottom: 1px solid #eaeaea;}
+.housePlanSliderActionoHolder ul li:last-child{border-right: 1px solid #eaeaea;} */
+.housePlanSliderActionoHolder ul li a{padding-left: 10px;padding-right: 10px;}
+.housePlanSliderActionoHolder ul li a i{width: 50px;height: 50px;;}
+.housePlanSliderActionoHolder ul li a i img{width: 50%;height: 50%;;}
+.housePlanDetailPageHolder{margin: 0 -15px;}
+.housePlanDetailPageHolder .housePlanDetailPageLeftSec{padding: 0 15px;}
+.housePlanDetailPageHolder .housePlanDetailPageRightSec{padding: 0 15px;}
+.housePlanDetailPageCard .housePlanCardBody table tr:nth-child(2n+2) td{padding-left: 25px;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb{    width: calc(50% - 10px);}
+
+.orderCostBuildSec .wizard{padding-left: 0;padding-right: 0;}
+.orderCostBuildSec .wizard .steps ul{overflow: hidden;}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1339px) {
+  .sliderSec ul li .sliderCaption{width: 80%;}
+
+  .planFilterFieldSec > i{right: 0;left: auto;}
+  .planFilterFieldSec{padding-left: 0;padding-right: 250px;}
+  .planFilterFieldSp{align-items: flex-end;padding: 25px;}
+  .planFilterFormGroup{max-width: 33.333%;}
+  .planFilterFieldSp .planFilterFieldHolder{flex-wrap: wrap;}
+  .planFilterFormGroup.sqrFt{max-width: 66.666%;}
+  .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: inherit;}
+  .planFilterBtnSec{padding: 0 10px;text-align: center;margin-bottom: 1rem;}
+  .productBox .productBtnHolder .btn-product{padding-left: 10px;padding-right: 10px;}
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockHead{height: calc(102px + 1.2rem);}
+
+  .housePlanFilterTabSp{flex-direction: column;align-items: center;}
+  .housePlanFilterTabSec .housePlanProductStyleFilterHolder .housePlanCatTabHolder{margin-left: 0;margin-top: 2rem;}
+  .housePlanProductContainer .housePlanProductSec .productFilterRefineHolder{padding-right: 10px;}
+  .productBox .productBlock .productBottomInfoSec .productInfoSec ul li{font-size: 12px;}
+  .housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 10px;}
+  .housePlanProductContainer .housePlanProductSec .housePlanProductHolder{padding-left: 10px;}
+
+  .housePlanSliderActionoHolder ul li a{padding-left: 10px;padding-right: 10px;}
+.housePlanSliderActionoHolder ul li a i{width: 50px;height: 50px;;}
+.housePlanSliderActionoHolder ul li a i img{width: 50%;height: 50%;;}
+}
+@media only screen and (min-width: 991px){
+.sidebar .sidebar-body{display: block !important;}
+}
 /* ==========================================================================
     Helper classes
     ========================================================================== */
