@@ -1,40 +1,50 @@
 @font-face {
-  font-family: 'avertabold';
-  src: url('averta-bold-webfont.woff2') format('woff2'),
-       url('averta-bold-webfont.woff') format('woff');
+  font-family: 'Averta-Bold';
+  src: url('Averta-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Averta-Bold.otf')  format('opentype'),
+       url('Averta-Bold.woff') format('woff'),
+       url('Averta-Bold.ttf')  format('truetype'),
+       url('Averta-Bold.svg#Averta-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
-  font-family: 'avertaregular';
-  src: url('averta-regular-webfont.woff2') format('woff2'),
-       url('averta-regular-webfont.woff') format('woff');
+  font-family: 'Averta-Regular';
+  src: url('Averta-Regular.eot?#iefix') format('embedded-opentype'),  url('Averta-Regular.otf')  format('opentype'),
+	     url('Averta-Regular.woff') format('woff'), url('Averta-Regular.ttf')  format('truetype'), url('Averta-Regular.svg#Averta-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
-  font-family: 'avertasemibold';
-  src: url('averta-semibold-webfont.woff2') format('woff2'),
-       url('averta-semibold-webfont.woff') format('woff');
+  font-family: 'Averta-RegularItalic';
+  src: url('Averta-RegularItalic.eot?#iefix') format('embedded-opentype'),  url('Averta-RegularItalic.otf')  format('opentype'),
+	     url('Averta-RegularItalic.woff') format('woff'), url('Averta-RegularItalic.ttf')  format('truetype'), url('Averta-RegularItalic.svg#Averta-RegularItalic') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
-  font-family: 'montserratbold';
-  src: url('montserrat-bold-webfont.woff2') format('woff2'),
-       url('montserrat-bold-webfont.woff') format('woff');
+  font-family: 'Averta-Semibold';
+  src: url('Averta-Semibold.eot?#iefix') format('embedded-opentype'),  url('Averta-Semibold.otf')  format('opentype'),
+	     url('Averta-Semibold.woff') format('woff'), url('Averta-Semibold.ttf')  format('truetype'), url('Averta-Semibold.svg#Averta-Semibold') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
 @font-face {
-  font-family: 'montserratsemibold';
-  src: url('montserrat-semibold-webfont.woff2') format('woff2'),
-       url('montserrat-semibold-webfont.woff') format('woff');
+  font-family: 'Montserrat-Bold';
+  src: url('Montserrat-Bold.eot?#iefix') format('embedded-opentype'),  url('Montserrat-Bold.woff') format('woff'), url('Montserrat-Bold.ttf')  format('truetype'), url('Montserrat-Bold.svg#Montserrat-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),  url('Montserrat-SemiBold.otf')  format('opentype'),
+	     url('Montserrat-SemiBold.woff') format('woff'), url('Montserrat-SemiBold.ttf')  format('truetype'), url('Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
