@@ -200,7 +200,7 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .planFilterFieldSp{background: #fff;border-radius: 15px;box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2);padding:25px 40px;display: flex;align-items: center;}
 .planFilterFieldSp .planFilterFieldHolder{width: 100%;display: flex;}
 .planFilterFormGroup{width: 100%;max-width: 125px;padding: 0 10px;}
-.planFilterFormGroup label{font-size: 14px;font-family: "Averta-Semibold";}
+.planFilterFormGroup label{font-size: 14px;font-family: "Averta-Semibold";color: #333;}
 .planFilterFormGroup .form-control{border-color: #ebebeb;}
 .planFilterFormGroup.sqrFt{max-width: 100%;}
 .planFilterFormGroup.sqrFt .d-flex span{padding: 0 10px;}
@@ -291,7 +291,7 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li i{width: 100%;display: block;height: 55px;display: flex;align-items: flex-start;justify-content: center;}
 .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span{font-size: 20px;font-family: "Averta-Semibold";color: #131e26;}
 .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover{box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
-.makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover .btn-gray{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
+
 
 
 .testimonialSec{padding: 90px 0;}
@@ -318,7 +318,6 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .qucikAdviceSec .adviceBlockHolder{display: flex;flex-wrap: wrap;margin-top: 20px;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock{width: 50%;padding: 0 15px;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp{border: 1px solid #e0e7ed;display: flex;flex-direction: column;height: 100%;}
-.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp:hover{background: #fff;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp .adviceImgSec{width: 100%;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp .adviceImgSec img{width: 100%;height: 438px;object-fit: cover;object-position: center;}
 .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec{padding:30px 20px;text-align: left;}
@@ -361,7 +360,7 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .productFilterRefineSec .card .card-header{background: transparent;border-bottom-color: #e9eef3;font-family: 'Montserrat-SemiBold';font-size: 20px;color: #1f2c3d;display: flex;align-items: center;padding-top: 1.1rem;padding-bottom: 1.1rem;}
 .productFilterRefineSec .card .card-header h4{margin: 0;font-family: 'Montserrat-SemiBold';font-size: 20px;color: #1f2c3d;}
 .productFilterRefineSec .card .card-header a{margin-left: auto;}
-.productFilterRefineSec .card .card-header a.link{color: #2f83e8;font-size: 14px;}
+.productFilterRefineSec .card .card-header a.link{color: #2f83e8;font-size: 14px;margin-bottom: 0;}
 .productFilterRefineSec .accordion .card{border: 1px solid #e9eef3;}
 .productFilterRefineSec .accordion .card + .card{border-top: 0;}
 .productFilterRefineSec .accordion .card .card-header {padding: 0;}
@@ -458,7 +457,7 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .costBuiltCalcSec .contentSp h5 span{padding: 0 3px;background: #fff;color: #3b8beb;}
 .costBuiltCalcSec .contentSp h5{color: #fff}
 .costCalcList{list-style: none;padding: 0;margin: 60px 0;display: flex;flex-wrap: wrap;justify-content: center;/* align-items: center; */}
-.costCalcList li{width: calc(100% / 6);padding: 20px 15px;color: #fff;font-size: 18px;font-family: "Averta-Semibold";height: inherit;display: flex;flex-direction: column;justify-content: center;}
+.costCalcList li{width: calc(100% / 6);padding: 20px 15px;color: #fff;font-size: 18px;font-family: "Averta-Semibold";height: inherit;display: flex;flex-direction: column;justify-content: center;border-color: #4f97ed !important;}
 .costCalcList li img{display: block;margin: 0 auto 10px;}
 .costCalcList li span{width: min-content;margin: 0 auto;line-height: 20px;}
 .costCalcList li:nth-child(-n + 6){border-bottom: 1px solid #61a2ef;}
@@ -952,14 +951,14 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 
   .browseHousePlan .browseContentSec{position: static;padding: 0;text-align: center;}
   .browseHousePlan .browseContentSec .browseContentSecSp{width: 100%;padding: 0;}
-  .browseHousePlanSec{width: 100%;margin-top: 2rem;}
+  .browseHousePlanSec{width: 100%;margin-top: 2rem;margin-bottom: 1rem;}
 
 
   .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing{flex-wrap: wrap;}
   .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li {width: 50%;margin-top: 2rem;}
   .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span{font-size: 16px;}
   .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec .planViewListing li span br{display: none;}
-  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp{box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
+
 
 
 
@@ -977,14 +976,14 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   .topBarRightInfoSec{display: none;}
 
   .sliderSec ul li .sliderCaption{width: 100%;padding: 0 15px;}
-  .sliderSec ul li .sliderCaption h2{font-size: 32px;}
+  .sliderSec ul li .sliderCaption h2{font-size: 34px;}
   .sliderSec ul li .sliderCaption p{font-size: 22px;}
   .sliderCaption .btn{display: none;}
   .planFilterFieldSec{padding: 0;}
   .planFilterFieldSp{display: flex;flex-direction: column;padding: 20px;}
   .planFilterFieldSp .planFilterFieldHolder{flex-wrap: wrap;margin: 0 -10px;width: auto;}
   .planFilterFormGroup{max-width: 50%;}
-  .planFilterBtnSec{width: 100%;}
+  .planFilterBtnSec{width: 100%;margin-top: 1rem;}
   .planFilterBtnSec .btn{width: 100%;}
   .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: inherit;margin-top: 10px;}
   .sliderSec ul li .sliderCaption{top: 15px;transform: translate(-50% , 0);min-height: 170px;justify-content: center;display: flex;flex-direction: column;}
@@ -1013,7 +1012,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   .productBox .productBlock .productTopIconHolder > a{padding: 5px;}
   .productBox .productBlock .productTopIconHolder > a img{max-height: 15px;}
 
-
+  .housePlanStyleSec .btnHolder{margin-bottom: 1rem;}
 
   .housePlanStyleSec .fetauredProductTab li a{font-size: 14px;white-space: nowrap;}
   .housePlanStyleSec .fetauredProductTab{overflow: auto;justify-content: flex-start;height: 50px;margin: 30px -15px;}
@@ -1026,15 +1025,17 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   .makeUniqueSec .uniquePlanBlockSec{flex-wrap: wrap;width: 100%;}
   .makeUniqueSec .uniquePlanBlockHolder{width: 100%;}
   .makeUniqueSec .uniquePlanBlockHolder .planProductAvatarHolder img{height: 220px;}
-  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp{height: auto;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);}
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp{height: auto;box-shadow: none;border: 0;}
+  .makeUniqueSec .uniquePlanBlockHolder .planProductContentSec{padding-left: 0;padding-right: 0;}
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover{box-shadow: none;}
   .makeUniqueSec .uniquePlanBlockHolder h5{font-size: 20px;}
 
   .costBuiltCalcSec{padding: 40px 0;}
   .costCalcList li{width: 50%;font-size: 16px;padding-left: 10px;padding-right: 10px;border-bottom: 1px solid #61a2ef;}
   .costCalcList li:nth-child(2n+2){border-right: 0;}
-  .costCalcList li:last-child{border-bottom: 0;}
+  .costCalcList li:last-child{border-bottom: 0;border-right: 1px solid #61a2ef;}
   .costCalcList li img{max-height: 50px;}
-  .costCalcList{margin-bottom: 1rem;}
+  .costCalcList{margin-bottom: 1rem;justify-content: flex-start;}
 
   .testimonialSec{padding: 40px 0;}
   .testimonialSec .testimonialSlideSec .testimonialBlock{padding: 0;flex-direction: column;align-items: center;}
@@ -1129,7 +1130,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanProductContainer .housePlanProductSec .housePlanProductHolder{width: 100%;padding-left: 0;}
 .housePlanProductHolder .productBox{width: calc(100% - 10px);}
 .housePlanProductHolder .productHolder{width: 100%;}
-.housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 8px;padding: 5px;}
+.housePlanProductHolder .productBox .productBtnHolder .btn-product{font-size: 8px;padding:6px 5px;}
 .housePlanProductHolder .productBox .productBlock .productImageSec img{height: 260px;}
 
 .housePlanFilterTabSp{flex-direction: column;position: relative;margin-bottom: 40px;}
@@ -1156,20 +1157,28 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .filtersActive .navbar .navbar-brand{display: none;}
 .filtersActive .filterBtnHolder{display: none;}
 .filtersActive .filterBtnHolder.applyHolder{display: block;}
+.filtersActive .productFilterRefineHolder > .filterBtnHolder{display: none !important;}
+.filtersActive .navBarHolder{border-bottom: 0;}
+.filtersActive .productFilterRefineHolder .productFilterRefineSec .filterCard.accordion{margin-top: 2rem;}
+.filtersActive .productFilterRefineSec .accordion .card{border-left: 0;border-right: 0;}
+.filtersActive .productFilterRefineSec .accordion .card:first-child{border-top: 0;}
+.filtersActive .productFilterRefineSec .accordion .card:last-child{border-bottom: 0;}
 
 .customDreamContainer .customDreamHolder{padding: 40px 0 110px 0;}
 .customDreamContainer .customDreamContentHolder{flex-direction: column;margin: 0;}
 .customDreamContainer .customDreamContentHolder .customDreamLeftSec{width: 100%;padding-right: 0;padding-left: 0;padding-bottom: 40px;margin-bottom: 20px;}
 .customDreamContainer .customDreamContentHolder .customDreamRightSec{width: 100%;padding-right: 0;padding-left: 0;}
 .customDreamContainer .customDreamContentHolder .customDreamLeftSec::before{transform: rotate(90deg);width: 14px;height: 229px;margin-left: -7px;margin-bottom: calc(-229px / 2);content: '';position: absolute;right: 50%;top: auto;bottom: 0;}
-.customDreamContainer .costEffectiveContainer .costEffectiveSec{padding: 15px;flex-direction: column;}
+.customDreamContainer .costEffectiveContainer .costEffectiveSec{padding:25px 15px;flex-direction: column;}
+.customDreamContainer{margin-bottom: 100px;}
 .customDreamContainer .costEffectiveContainer .costEffectiveSec h2{font-size: 20px;padding-right: 0;text-align: center;margin-bottom: 1rem;}
 .customDreamContainer .costEffectiveContainer .costEffectiveSec .btn{width: 100%;min-width: inherit;padding-left: 15px;padding-right: 15px;font-size: 13px;}
 .designerEnvisionContainer .designerEnvisionSec .designerEnvisionCallout{margin: 15px 0;}
 .homeFloorPlanContainer{padding-bottom: 40px;background-position: bottom right;}
 .homeFloorPlanContainer{padding: 40px 0;text-align: center;}
 .homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li{flex-direction: column;align-items: center;margin: 15px 0;}
-.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li i{margin-right: 0;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li i{margin-right: 0;width: 80px;height: 80px;}
+.homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li i img{max-width: 50%;max-height: 50%;}
 .homeFloorPlanContainer .homeFloorPlanSec .floorPlanPoints li .floorPlanContent{width: 100%;margin-top: 2rem;}
 
 
@@ -1177,10 +1186,13 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 
 .onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li{padding: 10px 0  5px 0;}
 .onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList{flex-direction: column;align-items: center;text-align: center;}
-.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList i{margin-right: 0;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList i{margin-right: 0;width: 80px;height: 80px;}
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList i img{width: 70%;height: 70%;}
 .onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList .onlineHouseBenefitsContent{width: 100%;margin-top: 1rem;}
 .purchaseOnlinePlanContainer .purchaseOnlinePlanHolder ul li{width: 100%;font-size: 18px;}
 
+.onlineHouseBenefitsContainer .onlineHouseBenefitsListHolder li .onlineHouseBenefitsList .onlineHouseBenefitsContent h5{font-size: 22px;}
+.purchaseOnlinePlanContainer .purchaseOnlinePlanHolder h4{font-size: 20px;}
 
 .farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent{margin: 0;flex-direction: column;}
 .farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent .farmHouseDetailLeftSec{padding: 0;width: 100%;}
@@ -1208,7 +1220,8 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 
 .housePlanDetailTitleHolder{flex-direction: column;}
 .housePlanDetailTitleHolder .housePlanDetailTitleRightSec{display: none;}
-.housePlanDetailPageSec .housePlanDetailTitleHolder h2{font-size: 22px;}
+.housePlanDetailPageSec .housePlanDetailTitleHolder h2{font-size: 24px;}
+.housePlanDetailPageSec .housePlanDetailTitleHolder p{font-size: 14px;}
 .housePlanSliderHolder .pgwSlideshow .ps-list{display: none !important;}
 .pgwSlideshow .ps-current>ul>li img{height: 250px; object-fit: cover;object-position: center;}
 .housePlanDetailTitleHolder.xs-sp{display: flex;align-items: center;}
@@ -1219,22 +1232,22 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanDetailPageHolder .housePlanDetailPageRightSec{width: 100%;padding: 0;}
 .selectPlanFormHolder{margin-bottom: 20px;}
 .housePlanDetailPageHolder{padding-top: 0;}
-.housePlanSliderActionoHolder ul{flex-wrap: wrap;justify-content: space-between;}
+.housePlanSliderActionoHolder ul{flex-wrap: wrap;justify-content: center;}
 .housePlanSliderActionoHolder{box-shadow: none;}
 .housePlanSliderActionoHolder ul li{border: 0;max-width: 50%;}
 .housePlanSliderActionoHolder ul li a{font-size: 13px;padding-left: 10px;padding-right: 10px;}
 .housePlanKeySpecsHolder h4{font-size: 20px;}
 .housePlanKeySpecs .legend{left: 40px;}
-.housePlanKeySpecs .legend span{font-size: 18px;}
-.housePlanKeySpecs ul{flex-wrap: wrap;justify-content: space-between;margin-top: 0;margin-bottom: 0;}
-.housePlanKeySpecs ul li{border: 0;max-width: 50%;padding-left: 10px;padding-right: 10px;margin-top: 20px;}
-.housePlanKeySpecs{padding-left: 15px;padding-right: 15px;}
+.housePlanKeySpecs .legend span{font-size: 18px;padding-top: 7px;padding-bottom: 7px;}
+.housePlanKeySpecs ul{flex-wrap: wrap;justify-content: flex-start;margin-top: 0;margin-bottom: 0;}
+.housePlanKeySpecs ul li{border: 0;width: 33.3333%;padding-left: 10px;padding-right: 10px;margin-top: 20px;}
+.housePlanKeySpecs{padding-left: 5px;padding-right: 5px;}
 .housePlanHeaderBlock{flex-direction: column;align-items: center;text-align: center;}
 .housePlanHeaderBlock a{margin-top: 1rem;}
-.housePlanDetailPageContentHolder h4{font-size: 20px;}
-.housePlanDetailPageContentHolder h3{font-size: 20px;}
+.housePlanDetailPageContentHolder h4{font-size: 22px;}
+.housePlanDetailPageContentHolder h3{font-size: 22px;}
 .housePlanFieldSetHolder .legend{left: 40px;}
-.housePlanFieldSetHolder .legend span{font-size: 18px;}
+.housePlanFieldSetHolder .legend span{font-size: 18px;padding-top: 7px;padding-bottom: 7px;}
 .housePlanFieldSetHolder{padding-left: 15px;padding-right: 15px;}
 .housePlanFieldSetHolder ul li .btn{margin-right: auto;}
 .housePlanDetailPageContentHolder ul.foundation li{width: 100%;}
@@ -1242,8 +1255,9 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanDetailPageContentHolder ul.faq li h4:after{font-size: 20px;top:0;}
 .housePlanDetailPageCard .housePlanHeaderBlock{text-align: left;padding-left: 0;padding-right: 0;}
 .housePlanDetailPageCard .housePlanCardBody table td{padding-left: 15px;padding-right: 15px;}
-.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb{width: 100%;}
-.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb img{height: 180px;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder{justify-content: center;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb{width: 100%;max-width: 350px;}
+.relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb img{height: 230px;}
 .housePlanDetailPageCard .housePlanCardBody table tbody tr{display: flex;flex-direction: column;width: 100%;padding-left: 40%;position: relative;}
 .housePlanDetailPageCard .housePlanCardBody table tbody tr th{position: absolute;left: 0;height: 100%;width: 40%;padding-left: 10px;padding-right: 10px;font-size: 18px;display: flex;align-items: center;}
 .housePlanDetailPageCard .housePlanCardBody table tbody tr td{width: 100%;height: auto;}
@@ -1272,6 +1286,20 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .orderCostBuildSec .wizard .steps ul li:after{top: 65px;}
 
 .testimonialList li{max-width: 100%;width: 100%;}
+
+.costBuiltCalcSec .contentSp h5{font-size: 20px;}
+.costBuiltCalcSec .contentSp p{font-size: 18px;line-height: 30px;}
+
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp{border: 0;}
+.qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceContentSec{padding-left: 0;padding-right: 0;}
+
+.relatedHousePlanThumbSec > h4{margin-top: 2.5rem;margin-bottom: 2rem;text-align: center;}
+.housePlanCardBody .relatedHousePlanThumbSec > h4{margin-top: 1.5rem;margin-bottom: 1rem;text-align: left;}
+}
+
+@media only screen and (max-width: 374px) {
+  .sliderSec ul li .sliderCaption h2{font-size: 32px;}
+  .housePlanKeySpecs ul li{width: 50%;}
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sliderSec ul li .sliderCaption h2{font-size: 48px;;}
@@ -1470,6 +1498,10 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 }
 @media only screen and (min-width: 991px){
 .sidebar .sidebar-body{display: block !important;}
+}
+@media only screen and (min-width: 768px){
+  .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover .btn-gray{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
+  .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp:hover{background: #fff;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);;}
 }
 /* ==========================================================================
     Helper classes
