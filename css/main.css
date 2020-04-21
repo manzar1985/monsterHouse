@@ -745,6 +745,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 
 .housePlanDetailPageContentHolder ul.faq li:after{display:none;}
 .housePlanDetailPageContentHolder ul.faq li{padding-left: 0;border-bottom: 1px solid #eee;padding: 0 0 15px 0;}
+.housePlanDetailPageContentHolder ul.faq li:last-child{border-bottom: 0;}
 .housePlanDetailPageContentHolder ul.faq li h4{padding-left: 40px;margin-top: 0;font-family: "Averta-Semibold";font-size: 22px;color:#1f2c3d;line-height: 34px;}
 .housePlanDetailPageContentHolder ul.faq li h4:after{content: 'Q';font-family: "Averta-Bold";font-size: 26px;color: #0a56a5;position: absolute;left: 0;top: 2px;background: none;transform: translate(0);}
 .housePlanDetailPageContentHolder ul.faq li p{font-family: 'Averta-Regular';}
@@ -980,7 +981,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   .sliderSec ul li .sliderCaption p{font-size: 22px;}
   .sliderCaption .btn{display: none;}
   .planFilterFieldSec{padding: 0;}
-  .planFilterFieldSp{display: flex;flex-direction: column;padding: 20px;}
+  .planFilterFieldSp{display: flex;flex-direction: column;padding:26px;}
   .planFilterFieldSp .planFilterFieldHolder{flex-wrap: wrap;margin: 0 -10px;width: auto;}
   .planFilterFormGroup{max-width: 50%;}
   .planFilterBtnSec{width: 100%;margin-top: 1rem;}
@@ -1260,7 +1261,9 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .relatedHousePlanThumbSec .relatedHousePlanThumbHolder .relatedHousePlanThumb img{height: 230px;}
 .housePlanDetailPageCard .housePlanCardBody table tbody tr{display: flex;flex-direction: column;width: 100%;padding-left: 40%;position: relative;}
 .housePlanDetailPageCard .housePlanCardBody table tbody tr th{position: absolute;left: 0;height: 100%;width: 40%;padding-left: 10px;padding-right: 10px;font-size: 18px;display: flex;align-items: center;}
-.housePlanDetailPageCard .housePlanCardBody table tbody tr td{width: 100%;height: auto;}
+.housePlanDetailPageCard .housePlanCardBody table tbody tr td{width: 100%;height: auto;padding-bottom: 0;}
+.housePlanDetailPageCard .housePlanCardBody table tbody tr td:last-child{padding-bottom: 15px;}
+.housePlanDetailPageCard .housePlanCardBody table tbody tr td + td{padding-top: 0;}
 
 .orderCostBuildSec .wizard{padding-left: 0;padding-right: 0;}
 .orderCostBuildSec .wizard .wizardBody .orderCostFormHolder{padding-left: 15px;padding-right: 15px;}
