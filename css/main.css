@@ -133,6 +133,7 @@ a,a:hover{text-decoration: none;}
 .btn i{margin-right: 10px;}
 .form-control{border-color: #ebebeb;border-radius: 2px;font-size: 14px;font-family: "Averta-Regular";height: calc(2em + .75rem + 2px);}
 select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: none;background-image: url(../img/accordion-arrow.png);background-position: calc(100% - 20px) center;background-repeat: no-repeat;}
+.form-control:focus{box-shadow: none;outline: none;border-color:#ebebeb ;}
 
 .btn-gray{background-color: #f7f9fb;border-color: #f7f9fb;color: #666666;}
 .btn-gray:hover{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
@@ -688,7 +689,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a svg{width: 50%;height: 50%;}
 .housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a svg path{fill: #444444;}
 .housePlanDetailTitleHolder.xs-sp{display: none;}
-.housePlanSliderHolder{width: 100%;margin: 0;padding: 0;}
+.housePlanSliderHolder{width: 100%;margin: 0;padding: 0;position: relative;}
 .housePlanSliderHolder ul{margin: 0;padding: 0;list-style-type: none;}
 .housePlanSliderHolder ul li{position: relative;}
 .housePlanSliderHolder .pgwSlideshow{background: none;box-shadow: none;}
@@ -705,6 +706,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanSliderHolder .pgwSlideshow .ps-list .ps-next .ps-nextIcon{width:8px;height:14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;transform: rotate(180deg);display: inline-block;}
 .housePlanSliderHolder .pgwSlideshow .ps-list li .ps-item.ps-selected{border-color: #3b8beb;}
 .housePlanSliderHolder .pgwSlideshow .ps-list li .ps-item{opacity: 1;}
+.sliderReverseIcon{position: absolute;bottom: 0;right: 0;width: 40px;height: 40px;background-color: rgba(0,0,0,0.5);display: flex;align-items: center;justify-content: center;z-index: 5;}
 .pgwSlideshow .ps-current .ps-prev,.pgwSlideshow .ps-current .ps-next{display: none !important;}
 
 .housePlanDetailPageHolder{display: flex;margin: 0 -25px;padding: 40px 0;}
@@ -1505,6 +1507,9 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 @media only screen and (min-width: 768px){
   .makeUniqueSec .uniquePlanBlockHolder .uniquePlanBlockSp:hover .btn-gray{background-color: #3a7b1d;border-color: #3a7b1d;color: #fff;}
   .qucikAdviceSec .adviceBlockHolder .adviceBlock .adviceBlockSp:hover{background: #fff;box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);;}
+
+  .housePlanSliderHolder .pgwSlideshow .ps-list{position: absolute;top: 100%;width: 100%;left: 0;right: 0;}
+  .housePlanSliderHolder{margin-bottom: 120px;}
 }
 /* ==========================================================================
     Helper classes

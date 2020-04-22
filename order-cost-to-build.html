@@ -627,13 +627,13 @@
         };
 
         $this._events = function() {
-          $this._ele.find($this._object.navs).on('click', function (e) {
+          /*$this._ele.find($this._object.navs).on('click', function (e) {
             $this._activeWizard = $(this).index();
             var ret = $this._object.onChangeWizard($this._activeWizard);
             if(ret == true || typeof ret == 'undefined'){
               $this._activateWizard($this._activeWizard);
             }
-          });
+          });*/
 
           $this._ele.find($this._object.prevClass).on('click', function (e) {
             $this._activeWizard = $this._activeWizard-1;
