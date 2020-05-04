@@ -14,9 +14,9 @@ $(document).ready(function(){
     });
 
     var viewportWidth = $(window).width();
-    $(window).bind('resize, load',function() {
+    console.log(viewportWidth)
+    $(window).bind('resize load',function() {
         if(viewportWidth > 767){
-            console.log('hi')
             $(".nav-item.dropdown").hover(function(){
                 $('.dropdown-toggle', this).trigger('click'); 
             });

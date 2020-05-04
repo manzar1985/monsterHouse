@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="fonts/fonts.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -158,6 +159,13 @@
           <a class="btn btn-light btn-lg" href="javascript:void(0);">LEARN MORE</a>
         </section>
       </li>
+      <li>
+        <img src="img/slide-1.jpg" alt="slide">
+        <section class="sliderCaption">
+          <h2>House Plan 50-385</h2>
+          <a class="btn btn-light btn-lg" href="javascript:void(0);">LEARN MORE</a>
+        </section>
+      </li>
     </ul>
     <section class="planFilterSec">
       <section class="container">
@@ -220,7 +228,7 @@
       </section>
     </section>
   </section>
-  <section class="housePlanProductContainer">
+  <section class="housePlanProductContainer housePlanThreeColumn">
     <section class="container">
       <section class="housePlanProductSec">
         <section class="housePlanFilterTabSec">
@@ -2023,44 +2031,56 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $('.mainSlider').slick();
-    $('.productBrowseSlider').slick({
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      dots: false,
-      arrows: false,
-      variableWidth: true
-    });
-    $('.testimonialSlider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: true
-    });
-    $('.filterTrigger').click(function(){
-        $('body').toggleClass('filtersActive');
-    });
+    $(document).ready(function(){
+      
+      $('.mainSlider').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev'><i class='arrow-left'></i></button>",
+        nextArrow:"<button type='button' class='slick-next'><i class='arrow-left'></i></button>"
+      });
+      $('.productBrowseSlider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false,
+        arrows: false,
+        variableWidth: true
+      });
+      $('.testimonialSlider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+      });
+      $('.filterTrigger').click(function(){
+          $('body').toggleClass('filtersActive');
+      });
 
-    $('div[aria-labelledby].collapse').on('hide.bs.collapse', function (e) {
-      $(e.target).find(".boxscroll").getNiceScroll().remove()
-      $(e.target).find(".boxscroll").css('overflow', 'hidden');
-      // do something...
-    })
-    $('div[aria-labelledby].collapse').on('show.bs.collapse', function (e) {
-      $(e.target).find(".boxscroll").niceScroll({
+      $('div[aria-labelledby].collapse').on('hide.bs.collapse', function (e) {
+        $(e.target).find(".boxscroll").getNiceScroll().remove()
+        $(e.target).find(".boxscroll").css('overflow', 'hidden');
+        // do something...
+      })
+      $('div[aria-labelledby].collapse').on('show.bs.collapse', function (e) {
+        $(e.target).find(".boxscroll").niceScroll({
+          cursorborder: "",
+          cursorcolor: "#2f83e8",
+          boxzoom: false
+        });
+        // do something...
+      })
+      $("div[aria-labelledby].collapse.show .boxscroll").niceScroll({
         cursorborder: "",
         cursorcolor: "#2f83e8",
         boxzoom: false
       });
-      // do something...
+      
     })
-    $("div[aria-labelledby].collapse.show .boxscroll").niceScroll({
-      cursorborder: "",
-      cursorcolor: "#2f83e8",
-      boxzoom: false
-    });
 
   </script>
 </body>

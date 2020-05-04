@@ -71,7 +71,6 @@
     <section class="navBarHolder">
       <section class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="btn btn-primary filterTrigger" href="javascript:void(0);">Back</a>
           <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,6 +78,7 @@
           </button>
 
           <section class="collapse navbar-collapse" id="navbarSupportedContent">
+
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -1970,30 +1970,32 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $('.mainSlider').slick();
-    $('.productBrowseSlider').slick({
-      infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      dots: false,
-      arrows: false,
-      variableWidth: true
-    });
-    $('.filterTrigger').click(function(){
-        $('body').toggleClass('filtersActive');
-    });
-    $('.testimonialSlider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: true
-    });
-    $(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
-
-    $('.niceScrollTrigger').click(function () {
+    $(document).ready(function(){
+      $('.mainSlider').slick();
+      $('.productBrowseSlider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: false,
+        arrows: false,
+        variableWidth: true
+      });
+      $('.filterTrigger').click(function(){
+          $('body').toggleClass('filtersActive');
+      });
+      $('.testimonialSlider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true
+      });
       $(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
-    });
+
+      $('.niceScrollTrigger').click(function () {
+        $(".boxscroll").niceScroll({cursorborder:"",cursorcolor:"#2f83e8",boxzoom:false});
+      });
+    })
   </script>
 </body>
 

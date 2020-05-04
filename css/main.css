@@ -216,8 +216,11 @@ header.fixHeader .navBarHolder .navbar .navbar-brand img{height: 60px;}
 .planFilterFormGroup.sqrFt .d-flex span{padding: 0 10px;}
 .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: 95px;}
 .planFilterFormGroup .form-control{border-radius: 0;}
-.planFilterBtnSec .btn{min-width: 196px;;}
+.planFilterBtnSec .btn{min-width: 196px;}
 
+.mainSlider .slick-arrow{position: absolute;top: 50%;background: transparent;border: 0;outline: 0;box-shadow: none;z-index: 9;}
+.mainSlider .slick-arrow.slick-next{right: 15px;transform: rotate(180deg);}
+.mainSlider .slick-arrow.slick-prev{left: 15px;}
 
 .planToFindHomeSec{padding: 100px 0;}
 .planToFindHomeSec h6{color: #3b8beb;}
@@ -266,12 +269,12 @@ header.fixHeader .navBarHolder .navbar .navbar-brand img{height: 60px;}
 .productBrowseSlider .slick-track{display: flex;}
 .productBrowseSlider .slick-arrow{position: absolute;z-index: 9;top: 0;bottom: 0;background: transparent;border: 0;box-shadow: none;opacity: 1;visibility: visible;transition: 0.15s all ease-in;outline: 0;}
 .productBrowseSlider .slick-arrow.slick-disabled{opacity: 0;visibility: hidden;}
-.productBrowseSlider .slick-arrow .arrow-left{width: 30px;height: 30px;display: block;border-top: 4px solid #fff;border-left: 4px solid #fff;transform: rotate(-45deg);}
+.arrow-left{width: 30px;height: 30px;display: block;border-top: 4px solid #fff;border-left: 4px solid #fff;transform: rotate(-45deg);}
 .productBrowseSlider .slick-arrow.slick-prev{left: 10px}
 .productBrowseSlider .slick-arrow.slick-next{right: 10px;transform: rotate(180deg);}
 
 .housePlanStyleSec{padding: 90px 0;}
-.housePlanStyleSec .fetauredProductTab{display: flex;list-style-type: none;margin: 0;padding: 0;align-items: center;justify-content: center;margin: 40px 0 50px 0;}
+.housePlanStyleSec .fetauredProductTab{display: flex;list-style-type: none;margin: 0;padding: 0;align-items: center;justify-content: center;margin: 40px 0 50px 0;border: 0;}
 .housePlanStyleSec .fetauredProductTab li{margin: 0 10px;}
 .housePlanStyleSec .fetauredProductTab li a{padding: 8px 20px;font-family: "Averta-Semibold";font-size: 16px;text-align: center;display: block;width: 100%;background: #f7f9fb;color: #131f2b;;}
 .housePlanStyleSec .fetauredProductTab li a.active{background: #3b8beb;color: #fff;position: relative;;}
@@ -705,6 +708,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanDetailTitleHolder .housePlanDetailTitleRightSec > a svg path{fill: #444444;}
 .housePlanDetailTitleHolder.xs-sp{display: none;}
 .housePlanSliderHolder{width: 100%;margin: 0;padding: 0;position: relative;}
+.housePlanSliderHolder .ps-current{border: 1px solid #ddd;}
 .housePlanSliderHolder ul{margin: 0;padding: 0;list-style-type: none;}
 .housePlanSliderHolder ul li{position: relative;}
 .housePlanSliderHolder .pgwSlideshow{background: none;box-shadow: none;}
@@ -1215,7 +1219,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent{margin: 0;flex-direction: column;}
 .farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent .farmHouseDetailLeftSec{padding: 0;width: 100%;}
 .farmHouseDetailContainer .farmHouseDetailSec .farmHouseDetailContent .farmHouseDetailRightSec{padding: 0;width: 100%;}
-.housePlanProductContainer{padding-bottom: 40px;}
+.housePlanProductContainer{padding-bottom: 40px;padding-top: 150px;}
 .farmHouseDetailContainer .farmHouseDetailHolder{padding: 40px 0;}
 .designerEnvisionContainer{padding: 40px 0;}
 .keyElementContainer{padding: 40px 0;}

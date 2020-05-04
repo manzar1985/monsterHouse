@@ -653,22 +653,41 @@
   <section class="housePlanStyleSec text-center contentSp">
     <section class="container">
       <h3>Browse Featured House Plan Styles</h3>
-      <ul class="fetauredProductTab">
-        <li><a href="javascript:void(0);">MODERN FARMHOUSE</a></li>
-        <li><a href="javascript:void(0);">MODERN</a></li>
-        <li><a class="active" href="javascript:void(0);">FARM</a></li>
-        <li><a href="javascript:void(0);">CRAFTSMAN</a></li>
-        <li><a href="javascript:void(0);">COUNTRY</a></li>
-        <li><a href="javascript:void(0);">RANCH</a></li>
+      <ul class="nav nav-tabs fetauredProductTab">
+        <li><a href="#farmhouse" data-toggle="tab">MODERN FARMHOUSE</a></li>
+        <li><a href="#modern" data-toggle="tab">MODERN</a></li>
+        <li><a class="active" href="#farm" data-toggle="tab">FARM</a></li>
+        <li><a href="#craftsman" data-toggle="tab">CRAFTSMAN</a></li>
+        <li><a href="#country" data-toggle="tab">COUNTRY</a></li>
+        <li><a href="#ranch" data-toggle="tab">RANCH</a></li>
       </ul>
-      <p>If you've ever watched HGTV's Fixer Upper, you've probably heard the term "farmhouse style" in almost every
-        single episode.</p>
-      <p>There's a reason: the cozy yet spacious style of the farmhouse is back in style. And Zillow Group home design
-        expert Kerrie Kelly doesn't think it's going anywhere for a long time. "Well-designed, usable spaces, such as an
-        open kitchen or a big farmhouse sink often have a longer shelf life," she says.</p>
-      <p>"Farmhouses are also not new. So, it's fair to say trends inspired by farmhouses are here to stay in at least
-        some capacity." So, although the farmhouse is one of the older home types, it's clear that its style is
-        timeless.</p>
+      <div class="tab-content">
+        <div class="tab-pane" id="farmhouse">
+          <p>farmhouse</p>
+        </div>
+        <div class="tab-pane" id="modern">
+          <p>modern</p>
+        </div>
+        <div class="tab-pane" id="craftsman">
+          <p>craftsman</p>
+        </div>
+        <div class="tab-pane" id="country">
+          <p>country</p>
+        </div>
+        <div class="tab-pane" id="ranch">
+          <p>ranch</p>
+        </div>
+        <div class="tab-pane active" id="farm">
+          <p>If you've ever watched HGTV's Fixer Upper, you've probably heard the term "farmhouse style" in almost every
+            single episode.</p>
+          <p>There's a reason: the cozy yet spacious style of the farmhouse is back in style. And Zillow Group home design
+            expert Kerrie Kelly doesn't think it's going anywhere for a long time. "Well-designed, usable spaces, such as an
+            open kitchen or a big farmhouse sink often have a longer shelf life," she says.</p>
+          <p>"Farmhouses are also not new. So, it's fair to say trends inspired by farmhouses are here to stay in at least
+            some capacity." So, although the farmhouse is one of the older home types, it's clear that its style is
+            timeless.</p>
+        </div>
+      </div>
 
       <section class="row">
         <section class="productHolder twoColumn-md">
