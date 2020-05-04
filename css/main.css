@@ -36,6 +36,7 @@ html {
   background: #b3d4fc;
   text-shadow: none;
 }
+:focus{outline: 0;}
 
 /*
   * A better looking default horizontal rule
@@ -93,6 +94,7 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+strong, .strong, .bold{font-family: 'Montserrat-SemiBold';}
 
 /* ==========================================================================
     Author's custom styles
@@ -161,7 +163,7 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 
 
 .topBarContainer{background: #3b8beb;padding: 9px 0;}
-.navBarHolder{border-bottom: 1px solid #f0f0f0;}
+.navBarHolder{border-bottom: 1px solid #f0f0f0;background: #fff;}
 .topBarContainer .container{max-width: 1752px;}
 .topBarSec{display: flex;align-items: center;}
 .topBarleftInfoSec ul{display: flex;list-style-type: none;margin: 0;padding: 0;color: #fff;align-items: center;}
@@ -181,10 +183,17 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .navBarHolder .container{max-width: 1752px;}
 .navBarHolder .navbar{padding-left: 0;padding-right: 0;}
 .navBarHolder .navbar .navbar-brand{padding-top: 0;padding-bottom: 0;}
+.navBarHolder .navbar .navbar-brand img{height: 90px;transition: 0.25s all ease-in;}
 .navBarHolder .navbar .navbar-nav{width: 100%;justify-content: space-between;margin-left: 6rem;}
 .navBarHolder .navbar .navbar-nav .nav-link{font-size: 13px;color: #333333;font-family: 'Montserrat-SemiBold';}
 .navBarHolder .navbar .navbar-nav .dropdown-toggle::after{width: 10px;height: 6px;background: url(../img/nav-dropdown-arrow.png) center center no-repeat;border: 0;}
+.navBarHolder .navbar .navbar-nav .nav-item.dropdown.show .dropdown-toggle::after{transform: rotate(180deg);}
 .navbar-collapse .topSearchSec{display: none;}
+
+header{transition: 0.25s all ease-in;}
+header.height-0{opacity: 0;}
+header.fixHeader{position: fixed;left: 0;right: 0;top: 0;z-index: 9;opacity: 1;box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.15);}
+header.fixHeader .navBarHolder .navbar .navbar-brand img{height: 60px;}
 
 .sliderSec {position: relative;margin-bottom: 70px;}
 .sliderSec ul{list-style-type: none;margin: 0;padding: 0;}
@@ -995,9 +1004,9 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   .planFilterBtnSec{width: 100%;margin-top: 1rem;}
   .planFilterBtnSec .btn{width: 100%;}
   .planFilterFormGroup.sqrFt .d-flex .form-control{max-width: inherit;margin-top: 10px;}
-  .sliderSec ul li .sliderCaption{top: 15px;transform: translate(-50% , 0);min-height: 170px;justify-content: center;display: flex;flex-direction: column;}
+  .sliderSec ul li .sliderCaption{top: 45px;transform: translate(-50% , 0);min-height: 170px;justify-content: center;display: flex;flex-direction: column;}
   .sliderSec ul li > img{height: 500px;}
-  .planFilterSec{top: 220px;transform: none;}
+  .planFilterSec{top: 300px;transform: none;}
   .contentSp h3{font-size: 32px;}
   .contentSp h5{font-size: 18px;line-height: 30px;}
   .contentSp p{line-height: 26px;margin-bottom: 0.9rem;}
@@ -1010,7 +1019,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   .productBrowseSlider:after{display: none;}
 
   /* productBox */
-  .planToFindHomeSec{padding-bottom: 40px;}
+  .planToFindHomeSec{padding-bottom: 40px;padding-top: 150px;}
   .productBox .productBtnHolder .btn-product{font-size: 8px;padding:5px;}
   .browseHousePlanSec .browseSliderSec .productBox{width: calc(100vw - 30px);}
   .productBox .productBlock .productImageSec img{height: 260px;}
