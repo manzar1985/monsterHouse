@@ -231,7 +231,8 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 
 .productBox{background: #fff;padding: 5px;display: flex;flex-direction: column;color: #fff;border: 1px solid #eeeeee;}
 .productBox .productBtnHolder{display: flex;margin-top: 5px;}
-.productBox .productBtnHolder .btn-product{border: 1px solid #1f1f1f;    border-radius: 0;font-size: 14px;text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 15px;padding-right: 15px;font-family: "Averta-Semibold";color: #1f1f1f;width: 100%;display: block;text-align: center;}
+.productBox .productBtnHolder .btn-product{border: 1px solid #1f1f1f;border-radius: 0;font-size: 14px;text-transform: uppercase;white-space: nowrap;padding-top: .698rem;padding-bottom: .698rem;padding-left: 15px;padding-right: 15px;font-family: "Averta-Semibold";color: #1f1f1f;width: 100%;display: block;text-align: center;transition: 0.15s all ease-in;}
+.productBox .productBtnHolder .btn-product:hover{background: #1f1f1f;color: #fff}
 .productBox .productBtnHolder > span{padding: 0 5px;flex: 1;}
 .productBox .productBtnHolder > span:first-child{padding-left: 0;}
 .productBox .productBtnHolder > span:last-child{padding-right: 0;}
@@ -254,6 +255,11 @@ select.form-control{appearance: none;-moz-appearance: none;-webkit-appearance: n
 .productBrowseSlider{overflow: hidden;position: relative;}
 .productBrowseSlider:after{content: '';position: absolute;right: 0;top: 0;bottom: 0;width: 58px;background: url(../img/browse-right-shadow.png) top right repeat-y;}
 .productBrowseSlider .slick-track{display: flex;}
+.productBrowseSlider .slick-arrow{position: absolute;z-index: 9;top: 0;bottom: 0;background: transparent;border: 0;box-shadow: none;opacity: 1;visibility: visible;transition: 0.15s all ease-in;outline: 0;}
+.productBrowseSlider .slick-arrow.slick-disabled{opacity: 0;visibility: hidden;}
+.productBrowseSlider .slick-arrow .arrow-left{width: 30px;height: 30px;display: block;border-top: 4px solid #fff;border-left: 4px solid #fff;transform: rotate(-45deg);}
+.productBrowseSlider .slick-arrow.slick-prev{left: 10px}
+.productBrowseSlider .slick-arrow.slick-next{right: 10px;transform: rotate(180deg);}
 
 .housePlanStyleSec{padding: 90px 0;}
 .housePlanStyleSec .fetauredProductTab{display: flex;list-style-type: none;margin: 0;padding: 0;align-items: center;justify-content: center;margin: 40px 0 50px 0;}
