@@ -550,10 +550,9 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 
 /* testimonialList start */
 
-.testimonialList{list-style: none;padding: 0;margin: 0;display: inline-block;width: 100%;}
-.testimonialList li{max-width: 45%;padding: 30px 0 130px;float: left;}
-.testimonialList li:nth-child(even){float: right}
-.testimonialList li:nth-last-child(-n + 2){padding-bottom: 50px;}
+.test-par{display: flex;flex-wrap: wrap;justify-content: space-between;}
+.testimonialList{list-style: none;padding: 0;margin: 0;max-width: 45%;}
+.testimonialList li{width: 100%;padding: 30px 0 130px;}
 .testimonialList li .testimonial{padding-bottom: 35px;padding-left: 30px;position: relative;background: #f7f9fb;}
 .testimonialList li .testimonial:after{content: '';position: absolute;left: 30px;top: -25px;bottom: 0;height: calc(100% - 30px + 30px);width: 2px;background: #e9eef3;margin: auto;z-index: 0;}
 .testimonialList li .testimonial .quoteSign{width: 60px;height: 60px;display: flex;align-items: center;justify-content: center;position: absolute;left: 0px;z-index: 1;top: -30px;border-radius: 100%;background: #fff;box-shadow: 1px 6px 20px 0px rgba(0, 0, 0, 0.2);}
@@ -1309,7 +1308,8 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .orderCostBuildSec .wizard .steps ul li::before{top: 79px;}
 .orderCostBuildSec .wizard .steps ul li:after{top: 65px;}
 
-.testimonialList li{max-width: 100%;width: 100%;}
+.testimonialList{max-width: 100%}
+.testimonialList li{width: 100%;padding: 30px 0 80px;}
 
 .costBuiltCalcSec .contentSp h5{font-size: 20px;}
 .costBuiltCalcSec .contentSp p{font-size: 18px;line-height: 30px;}
