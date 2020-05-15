@@ -720,7 +720,7 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
 .housePlanSliderHolder .pgwSlideshow .ps-list{padding: 0 25px;}
 .housePlanSliderHolder .pgwSlideshow .ps-list .ps-prev{width: 25px;border-radius: 0;padding-left: 0;padding-right: 0;background: transparent;border: 0;top: 32px;}
 .housePlanSliderHolder .pgwSlideshow .ps-list .ps-prev .ps-prevIcon{width:8px;height:14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;}
-.housePlanSliderHolder .pgwSlideshow .ps-list .ps-next{width: 25px;border-radius: 0;padding-left: 0;padding-right: 0;background: transparent;border: 0;text-align: right;top: 32px;}
+.housePlanSliderHolder .pgwSlideshow .ps-list .ps-next{width: 25px;border-radius: 0;padding-left: 0;padding-right: 0;background: transparent;border: 0;text-align: right;top: 32px;z-index: 8;}
 .housePlanSliderHolder .pgwSlideshow .ps-list .ps-next .ps-nextIcon{width:8px;height:14px;background: url(../img/arrow-left.png) center center no-repeat;border: 0;transform: rotate(180deg);display: inline-block;}
 .housePlanSliderHolder .pgwSlideshow .ps-list li .ps-item.ps-selected{border-color: #3b8beb;}
 .housePlanSliderHolder .pgwSlideshow .ps-list li .ps-item{opacity: 1;}
@@ -1695,3 +1695,4 @@ footer p{font-size: 14px;color: #23303a;margin: 0;}
   }
 }
 
+.stick {position: fixed;z-index: 9;top: 128px;}
