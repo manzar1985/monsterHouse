@@ -2,39 +2,43 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="./img/favicon.png">
-  <link rel="icon" type="image/png" href="./img/favicon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="fonts/fonts.css">
-  <link rel="stylesheet" href="css/pgwslideshow.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/pgwslideshow.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-  <!--[if IE]>
+<body id="body">
+    <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <header>
-    <section class="topBarContainer">
-      <section class="container">
-        <section class="topBarSec">
-          <section class="topBarleftInfoSec">
-            <ul>
-              <li><a href="javascript:void(0);"><img src="img/flag-1.png" alt="icon"></a></li>
-              <li><a href="javascript:void(0);"><img src="img/flag-2.png" alt="icon"></a></li>
-              <li>
-                <p><span>Get advice from an architect</span> <a href="tel: 360-325-8057"><i><svg width="16" height="16"
+    <!-- Add your site or application content here -->
+    <header>
+        <section class="topBarContainer">
+            <section class="container">
+                <section class="topBarSec">
+                    <section class="topBarleftInfoSec">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);"><img src="img/flag-1.png" alt="icon"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><img src="img/flag-2.png" alt="icon"></a>
+                            </li>
+                            <li>
+                                <p><span>Get advice from an architect</span> <a href="tel: 360-325-8057"><i><svg width="16" height="16"
                         aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-alt" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                         class="svg-inline--fa fa-phone-alt fa-w-16 fa-2x">
@@ -42,807 +46,927 @@
                           d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
                           class=""></path>
                       </svg></i>360-325-8057</a></p>
-              </li>
-            </ul>
-          </section>
-          <section class="topBarRightInfoSec">
-            <section class="topSearchSec">
-              <section class="input-group">
-                <input type="text" class="form-control" placeholder="Quick search plan by #"
-                  aria-label="Quick search plan by #" aria-describedby="button-addon2">
-                <section class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="button-addon2"><i><img src="img/search-icon.png"
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="topBarRightInfoSec">
+                        <section class="topSearchSec">
+                            <section class="input-group">
+                                <input type="text" class="form-control" placeholder="Quick search plan by #" aria-label="Quick search plan by #" aria-describedby="button-addon2">
+                                <section class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="button-addon2"><i><img src="img/search-icon.png"
                         alt="search"></i>Find Plans</button>
+                                </section>
+                            </section>
+                        </section>
+                        <ul>
+                            <li><a href="javascript:void(0);"><i><img src="img/heart.png" alt="img" /></i></a></li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i><img src="img/cart.png" alt="img" /></i>
+                                    <span class="count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
-              </section>
             </section>
-            <ul>
-              <li><a href="javascript:void(0);"><i><img src="img/heart.png" alt="img" /></i></a></li>
-              <li>
-                <a href="javascript:void(0);">
-                  <i><img src="img/cart.png" alt="img" /></i>
-                  <span class="count">0</span>
-                </a>
-              </li>
-            </ul>
-          </section>
         </section>
-      </section>
-    </section>
-    <section class="navBarHolder">
-      <section class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <section class="navBarHolder">
+            <section class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <section class="collapse navbar-collapse" id="navbarSupportedContent">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <section class="topSearchSec">
-              <section class="input-group">
-                <input type="text" class="form-control" placeholder="Search"
-                  aria-label="Quick search plan by #" aria-describedby="button-addon2">
-                <section class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="button-addon2"><i><img src="img/search-icon.png"
+                        <section class="topSearchSec">
+                            <section class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" aria-label="Quick search plan by #" aria-describedby="button-addon2">
+                                <section class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="button-addon2"><i><img src="img/search-icon.png"
                         alt="search"></i></button>
-                </section>
-              </section>
-            </section>
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="house-plan.html">HOUSE PLANS</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
+                                </section>
+                            </section>
+                        </section>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="house-plan.html">HOUSE PLANS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   STYLES
                 </a>
-                <section class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Country</a>
-                  <a class="dropdown-item" href="#">Craftsman</a>
-                  <a class="dropdown-item" href="house-plan-farmhouse.html">Farmhouse</a>
-                  <a class="dropdown-item" href="#">Modern Farmhouse</a>
-                  <a class="dropdown-item" href="#">Modern</a>
-                  <a class="dropdown-item" href="#">Ranch</a>
-                  <a class="dropdown-item strong" href="#">View All</a>
-                </section>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
+                                <section class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Country</a>
+                                    <a class="dropdown-item" href="#">Craftsman</a>
+                                    <a class="dropdown-item" href="house-plan-farmhouse.html">Farmhouse</a>
+                                    <a class="dropdown-item" href="#">Modern Farmhouse</a>
+                                    <a class="dropdown-item" href="#">Modern</a>
+                                    <a class="dropdown-item" href="#">Ranch</a>
+                                    <a class="dropdown-item strong" href="#">View All</a>
+                                </section>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   POPULAR SEARCHES
                 </a>
-                <section class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">A-Frame</a>
-                  <a class="dropdown-item" href="#">L Shape</a>
-                  <a class="dropdown-item" href="#">Small House Plans</a>
-                  <a class="dropdown-item" href="#">2 Bedrooms</a>
-                  <a class="dropdown-item" href="#">2 Story</a>
+                                <section class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">A-Frame</a>
+                                    <a class="dropdown-item" href="#">L Shape</a>
+                                    <a class="dropdown-item" href="#">Small House Plans</a>
+                                    <a class="dropdown-item" href="#">2 Bedrooms</a>
+                                    <a class="dropdown-item" href="#">2 Story</a>
+                                </section>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="build-cost-instant.html">COST-TO-BUILD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="testimonial.html">TESTIMONIALS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                        </ul>
+                    </section>
+                </nav>
+            </section>
+        </section>
+    </header>
+
+    <section class="housePlanDetailPageContainer">
+        <section class="container">
+            <section class="housePlanDetailPageSec">
+                <section class="housePlanDetailTitleHolder">
+                    <section class="housePlanDetailTitleLeftSec">
+                        <p>House Plans > Modern Farmhouse Style > <span>Plan 00-00000</span></p>
+                        <h2>3 Bedroom , 2 Bath Mountain Or Rustic House Plan #61-102</h2>
+                    </section>
+                    <section class="housePlanDetailTitleRightSec">
+                        <span>SHARE ON</span>
+                        <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                class="svg-inline--fa fa-facebook-f fa-w-10 fa-2x">
+                <path fill="currentColor"
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  class=""></path>
+              </svg></a>
+                        <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-instagram fa-w-14 fa-2x">
+                <path fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  class=""></path>
+              </svg></a>
+                        <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                data-icon="pinterest-p" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                class="svg-inline--fa fa-pinterest-p fa-w-12 fa-2x">
+                <path fill="currentColor"
+                  d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
+                  class=""></path>
+              </svg></a>
+                    </section>
+                    </h2>
                 </section>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FEATURES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="build-cost-instant.html">COST-TO-BUILD</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="testimonial.html">TESTIMONIALS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">BLOG</a>
-              </li>
-            </ul>
-          </section>
-        </nav>
-      </section>
-    </section>
-  </header>
+                <section class="housePlanSliderHolder">
+                    <ul class="individualPlanSlider">
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <!-- <li><img src="https://s3-us-west-2.amazonaws.com/prod.monsterhouseplans.com/uploads/images_plans/61/61-102/61-102tn.jpg"></li> -->
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                        <li><img src="img/house-plan/slide-1.jpg"></li>
+                    </ul>
+                    <a class="sliderReverseIcon" href="javascript:void(0);"><img src="img/reverse-icon.png" alt="img"></a>
+                </section>
 
-  <section class="housePlanDetailPageContainer">
-    <section class="container">
-      <section class="housePlanDetailPageSec">
-        <section class="housePlanDetailTitleHolder">
-          <section class="housePlanDetailTitleLeftSec">
-            <p>House Plans > Modern Farmhouse Style > <span>Plan 00-00000</span></p>
-            <h2>3 Bedroom , 2 Bath Mountain Or Rustic House Plan #61-102</h2>
-          </section>
-          <section class="housePlanDetailTitleRightSec">
-            <span>SHARE ON</span>
-            <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                <section class="housePlanDetailTitleHolder xs-sp">
+                    <section class="housePlanDetailTitleRightSec">
+                        <span>SHARE ON</span>
+                        <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
                 data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
                 class="svg-inline--fa fa-facebook-f fa-w-10 fa-2x">
                 <path fill="currentColor"
                   d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
                   class=""></path>
               </svg></a>
-            <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                        <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
                 data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                 class="svg-inline--fa fa-instagram fa-w-14 fa-2x">
                 <path fill="currentColor"
                   d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
                   class=""></path>
               </svg></a>
-            <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
+                        <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
                 data-icon="pinterest-p" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
                 class="svg-inline--fa fa-pinterest-p fa-w-12 fa-2x">
                 <path fill="currentColor"
                   d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
                   class=""></path>
               </svg></a>
-          </section>
-          </h2>
-        </section>
-        <section class="housePlanSliderHolder">
-          <ul class="individualPlanSlider">
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="https://s3-us-west-2.amazonaws.com/prod.monsterhouseplans.com/uploads/images_plans/61/61-102/61-102tn.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-            <li><img src="img/house-plan/slide-1.jpg"></li>
-          </ul>
-          <a class="sliderReverseIcon" href="javascript:void(0);"><img src="img/reverse-icon.png" alt="img"></a>
-        </section>
-
-        <section class="housePlanDetailTitleHolder xs-sp">
-          <section class="housePlanDetailTitleRightSec">
-            <span>SHARE ON</span>
-            <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
-                data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
-                class="svg-inline--fa fa-facebook-f fa-w-10 fa-2x">
-                <path fill="currentColor"
-                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                  class=""></path>
-              </svg></a>
-            <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
-                data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                class="svg-inline--fa fa-instagram fa-w-14 fa-2x">
-                <path fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  class=""></path>
-              </svg></a>
-            <a href="javascript:void(0);"><svg aria-hidden="true" focusable="false" data-prefix="fab"
-                data-icon="pinterest-p" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
-                class="svg-inline--fa fa-pinterest-p fa-w-12 fa-2x">
-                <path fill="currentColor"
-                  d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"
-                  class=""></path>
-              </svg></a>
-          </section>
-          </h2>
-        </section>
-        <section class="housePlanDetailPageHolder">
-          <section class="housePlanDetailPageLeftSec sticky_parent">
-            <section class="housePlanSliderActionoHolder sec_sticky">
-              <ul>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i><img src="img/plan-action-1.png" alt="img"></i>
-                    <span>Modify this Plan</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i><img src="img/plan-action-2.png" alt="img"></i>
-                    <span>View Photos</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="order-cost-to-build.html">
-                    <i><img src="img/plan-action-3.png" alt="img"></i>
-                    <span>Cost to Build</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i><img src="img/plan-action-4.png" alt="img"></i>
-                    <span>Print This Page</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i><img src="img/plan-action-5.png" alt="img"></i>
-                    <span>Add to Favorites</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i><img src="img/plan-action-6.png" alt="img"></i>
-                    <span>Share this Plan </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i><img src="img/plan-action-7.png" alt="img"></i>
-                    <span>Ask an Architect</span>
-                  </a>
-                </li>
-              </ul>
-            </section>
-            <section class="housePlanKeySpecsHolder">
-              <h4>3 Bedroom , 2 Bath Mountain Or Rustic House Plan #61-102</h4>
-              <section class="housePlanKeySpecs">
-                <b class="legend"><span>Key Specs:</span></b>
-                <ul>
-                  <li>
-                    <i><img src="img/key-spec-1.png" alt="img"></i>
-                    <span>2091 Sq. Ft.</span>
-                  </li>
-                  <li>
-                    <i><img src="img/key-spec-2.png" alt="img"></i>
-                    <span>3 Bedrooms</span>
-                  </li>
-                  <li>
-                    <i><img src="img/key-spec-3.png" alt="img"></i>
-                    <span>2-1/2 Baths </span>
-                  </li>
-                  <li>
-                    <i><img src="img/key-spec-4.png" alt="img"></i>
-                    <span>1 Story </span>
-                  </li>
-                  <li>
-                    <i><img src="img/key-spec-5.png" alt="img"></i>
-                    <span>2 Garages</span>
-                  </li>
-                </ul>
-              </section>
-            </section>
-            <section class="housePlanDetailPageContentHolder">
-              <section class="housePlanHeaderBlock">
-                <h4>See more Specs about plan</h4>
-                <a class="btn btn-primary btn-med" href="javascript:void(0);">FULL SPECS AND FEATURES</a>
-              </section>
-              <h4>House Plan Highlights</h4>
-              <ul>
-                <li>The perfect house for the perfect view - this rustic design ranks as one of the most popular floor
-                  plans in our catalog.</li>
-                <li>Featuring tall windows in strategically placed areas, every room receives abundant natural light
-                  in a mountain setting. </li>
-                <li>With 2,091 square feet of space, this home offers enough room for privacy yet brings everyone
-                  together in the cozy family room. </li>
-                <li>Compared to similar mountain or rustic house plans, this design offers ample space with room to
-                  grow for family planning.</li>
-                <li>All rustic home plans share one thing in common: a gathering area for friends and family outside.
-                </li>
-                <li>This plan is no different; however, it offers both a welcoming lanai and an inviting barbecue
-                  porch overlooking the backyard.</li>
-                <li>Inside the home, three bedrooms await along with a separate dining room, a breakfast nook and a
-                  media or study room for entertainment or meeting with guests.</li>
-                <li>An optional bonus room is available, making this design stand out from other floor plans in this
-                  category.</li>
-                <ul>
-                  <h5>Other premium features include:</h5>
-                  <ul>
-                    <li>A master suite with a sitting area</li>
-                    <li>A foyer leading to the family room and the kitchen.</li>
-                    <li>A Jack-and-Jill bath for the little ones.</li>
-                    <li>One of the Most Popular Mountain Home Plans.</li>
-                    <li>This one-story, two-garage house plan fits the needs of growing families. </li>
-                    <li>It offers everything from a spacious interior to an entertainment area outside.</li>
-                    <li>Our exclusive 3d Intelligent House Plan model is available for an instant download with the
-                      purchase of the PDF plan package. </li>
-                  </ul>
-                  <p>See plan <strong>61-196</strong> for 3 car garage version. </p>
-                  <p>This floor plan is found in our <a href="javascript:void(0);">Mountain or Rustic house plans
+                    </section>
+                    </h2>
+                </section>
+                <section class="housePlanDetailPageHolder">
+                    <section class="housePlanDetailPageLeftSec sticky_parent">
+                        <section class="housePlanSliderActionoHolder sec_sticky">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i><img src="img/plan-action-1.png" alt="img"></i>
+                                        <span>Modify this Plan</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i><img src="img/plan-action-2.png" alt="img"></i>
+                                        <span>View Photos</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="order-cost-to-build.html">
+                                        <i><img src="img/plan-action-3.png" alt="img"></i>
+                                        <span>Cost to Build</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i><img src="img/plan-action-4.png" alt="img"></i>
+                                        <span>Print This Page</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i><img src="img/plan-action-5.png" alt="img"></i>
+                                        <span>Add to Favorites</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i><img src="img/plan-action-6.png" alt="img"></i>
+                                        <span>Share this Plan </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <i><img src="img/plan-action-7.png" alt="img"></i>
+                                        <span>Ask an Architect</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="housePlanKeySpecsHolder">
+                            <h4>3 Bedroom , 2 Bath Mountain Or Rustic House Plan #61-102</h4>
+                            <section class="housePlanKeySpecs">
+                                <b class="legend"><span>Key Specs:</span></b>
+                                <ul>
+                                    <li>
+                                        <i><img src="img/key-spec-1.png" alt="img"></i>
+                                        <span>2091 Sq. Ft.</span>
+                                    </li>
+                                    <li>
+                                        <i><img src="img/key-spec-2.png" alt="img"></i>
+                                        <span>3 Bedrooms</span>
+                                    </li>
+                                    <li>
+                                        <i><img src="img/key-spec-3.png" alt="img"></i>
+                                        <span>2-1/2 Baths </span>
+                                    </li>
+                                    <li>
+                                        <i><img src="img/key-spec-4.png" alt="img"></i>
+                                        <span>1 Story </span>
+                                    </li>
+                                    <li>
+                                        <i><img src="img/key-spec-5.png" alt="img"></i>
+                                        <span>2 Garages</span>
+                                    </li>
+                                </ul>
+                            </section>
+                        </section>
+                        <section class="housePlanDetailPageContentHolder">
+                            <section class="housePlanHeaderBlock">
+                                <h4>See more Specs about plan</h4>
+                                <a class="btn btn-primary btn-med" href="javascript:void(0);">FULL SPECS AND FEATURES</a>
+                            </section>
+                            <h4>House Plan Highlights</h4>
+                            <ul>
+                                <li>The perfect house for the perfect view - this rustic design ranks as one of the most popular floor plans in our catalog.</li>
+                                <li>Featuring tall windows in strategically placed areas, every room receives abundant natural light in a mountain setting. </li>
+                                <li>With 2,091 square feet of space, this home offers enough room for privacy yet brings everyone together in the cozy family room. </li>
+                                <li>Compared to similar mountain or rustic house plans, this design offers ample space with room to grow for family planning.</li>
+                                <li>All rustic home plans share one thing in common: a gathering area for friends and family outside.
+                                </li>
+                                <li>This plan is no different; however, it offers both a welcoming lanai and an inviting barbecue porch overlooking the backyard.</li>
+                                <li>Inside the home, three bedrooms await along with a separate dining room, a breakfast nook and a media or study room for entertainment or meeting with guests.</li>
+                                <li>An optional bonus room is available, making this design stand out from other floor plans in this category.
+                                </li>
+                                <ul>
+                                    <h5>Other premium features include:</h5>
+                                    <ul>
+                                        <li>A master suite with a sitting area</li>
+                                        <li>A foyer leading to the family room and the kitchen.</li>
+                                        <li>A Jack-and-Jill bath for the little ones.</li>
+                                        <li>One of the Most Popular Mountain Home Plans.</li>
+                                        <li>This one-story, two-garage house plan fits the needs of growing families. </li>
+                                        <li>It offers everything from a spacious interior to an entertainment area outside.</li>
+                                        <li>Our exclusive 3d Intelligent House Plan model is available for an instant download with the purchase of the PDF plan package. </li>
+                                    </ul>
+                                    <p>See plan <strong>61-196</strong> for 3 car garage version. </p>
+                                    <p>This floor plan is found in our <a href="javascript:void(0);">Mountain or Rustic house plans
                       section.</a></p>
-                  <h5>3-D modeling</h5>
-                  <h3>Taking house plans to a new level!!!</h3>
-                  <p><b>“The difference between our Intelligent House Plans and typical stock plans is the difference
+                                    <h5>3-D modeling</h5>
+                                    <h3>Taking house plans to a new level!!!</h3>
+                                    <p><b>“The difference between our Intelligent House Plans and typical stock plans is the difference
                       between high definition television and black and white.”</b></p>
 
-                  <section class="housePlanHeaderBlock">
-                    <h4>Intelligent Sample</h4>
-                    <a class="downloadIcon" href="javascript:void(0);"><i><img src="img/pdf-icon.png"
+                                    <section class="housePlanHeaderBlock">
+                                        <h4>Intelligent Sample</h4>
+                                        <a class="downloadIcon" href="javascript:void(0);"><i><img src="img/pdf-icon.png"
                           alt="icon"></i>Download</a>
-                  </section>
+                                    </section>
 
-                  <h3>The Intelligent Advantage....</h3>
-                  <p>...gives you multiple perspective views and construction detail (delivered in PDF format).This
-                    will allow you and your builder to have complete understanding of the designer’s intent, verify
-                    constructability, preview and alter material finish selections used in the modeling process, and
-                    so much more.</p>
-                  <ul>
-                    <li>VIEW 3-D Models from multiple vantage points.</li>
-                    <li>ASSURANCE that the design through and through is of the highest standard.</li>
-                    <li>ABILITY to review constructability (especially important complex roof designs and wall
-                      geometries).</li>
-                    <li>Obtain ACCURATE material take-off reports.</li>
-                    <li>Quickly EXPLORE design modifications, putting custom design with reach of consumer once
-                      limited to typical stock house plans.</li>
-                    <li>We model each architect or designers FINISHING TOUCHES - an expression of their unique style.
-                    </li>
-                  </ul>
-                  <h3>Building Information Modeling (BIM)</h3>
-                  <p>...is used to model your house as it will be constructed, from the concrete footings to the
-                    shingle roof cap. Every element of the design is modeled in three dimensions, not drafted with
-                    lines or drafting symbols.</p>
-                  <h3>What you get...</h3>
-                  <ul>
-                    <li>(2) Exterior Perspective Views (You select siding & roofing materials/colors, window grid
-                      style, trim color)</li>
-                    <li>Interior Perspective view (You select casing, baseboard, crown molding styles)</li>
-                    <li>(2) Intelligent 3-D sections with full construction notation (Additional views upon request)
-                    </li>
-                    <li>Enhanced Framing Plans (See sample pdf)</li>
-                    <li>Complete material schedules & takeoffs</li>
-                    <li>(1) 3-D Intelligent Structural View (Additional views upon request)</li>
-                  </ul>
-                  <h3>How to order...</h3>
-                  <p>...when ordering house plans, simply select the plan package you would like, then select the
-                    “Intelligent House Plan” option on the order form. That’s all you need! You will be sent the
-                    complete drawings in a full 3-D version of the design you have selected. That’s when the fun
-                    begins!</p>
+                                    <h3>The Intelligent Advantage....</h3>
+                                    <p>...gives you multiple perspective views and construction detail (delivered in PDF format).This will allow you and your builder to have complete understanding of the designer’s intent, verify constructability, preview
+                                        and alter material finish selections used in the modeling process, and so much more.</p>
+                                    <ul>
+                                        <li>VIEW 3-D Models from multiple vantage points.</li>
+                                        <li>ASSURANCE that the design through and through is of the highest standard.</li>
+                                        <li>ABILITY to review constructability (especially important complex roof designs and wall geometries).
+                                        </li>
+                                        <li>Obtain ACCURATE material take-off reports.</li>
+                                        <li>Quickly EXPLORE design modifications, putting custom design with reach of consumer once limited to typical stock house plans.</li>
+                                        <li>We model each architect or designers FINISHING TOUCHES - an expression of their unique style.
+                                        </li>
+                                    </ul>
+                                    <h3>Building Information Modeling (BIM)</h3>
+                                    <p>...is used to model your house as it will be constructed, from the concrete footings to the shingle roof cap. Every element of the design is modeled in three dimensions, not drafted with lines or drafting symbols.</p>
+                                    <h3>What you get...</h3>
+                                    <ul>
+                                        <li>(2) Exterior Perspective Views (You select siding & roofing materials/colors, window grid style, trim color)</li>
+                                        <li>Interior Perspective view (You select casing, baseboard, crown molding styles)</li>
+                                        <li>(2) Intelligent 3-D sections with full construction notation (Additional views upon request)
+                                        </li>
+                                        <li>Enhanced Framing Plans (See sample pdf)</li>
+                                        <li>Complete material schedules & takeoffs</li>
+                                        <li>(1) 3-D Intelligent Structural View (Additional views upon request)</li>
+                                    </ul>
+                                    <h3>How to order...</h3>
+                                    <p>...when ordering house plans, simply select the plan package you would like, then select the “Intelligent House Plan” option on the order form. That’s all you need! You will be sent the complete drawings in a full 3-D
+                                        version of the design you have selected. That’s when the fun begins!
+                                    </p>
+                        </section>
+                        <section class="housePlanFieldSetHolder">
+                            <b class="legend"><span>Floor Plans</span></b>
+                            <ul>
+                                <li>
+                                    <h4>Main Floor</h4>
+                                    <img src="img/plan-1.jpg" alt="img">
+                                    <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
+                                </li>
+                                <li>
+                                    <h4>Bonus Floor</h4>
+                                    <img src="img/plan-2.jpg" alt="img">
+                                    <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
+                                </li>
+                                <li>
+                                    <h4>Alternate Floor Plans</h4>
+                                    <img src="img/plan-3.jpg" alt="img">
+                                    <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
+                                </li>
+                                <li>
+                                    <img src="img/plan-4.jpg" alt="img">
+                                    <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
+                                </li>
+                                <li>
+                                    <img src="img/plan-5.jpg" alt="img">
+                                    <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="housePlanDetailPageContentHolder">
+                            <h4>Foundation Options</h4>
+                            <ul class="foundation">
+                                <li>Basement <span>$395</span></li>
+                                <li>Crawlspace <span>$200</span></li>
+                                <li>Walk-out basement <span>$395</span></li>
+                                <li>Slab <span>Standard With Plan</span></li>
+                            </ul>
+                            <h4>Frequently Asked Questions About This Plan </h4>
+                            <ul class="faq">
+                                <li>
+                                    <h4>I love this plan. Is this house built anywhere near Knoxville, TN? We\’d love to see it in person, or do you have any photos of the actual house after completion?</h4>
+                                    <p>I’m sorry but the designers do not make that information available because of privacy concerns.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>I love this style and house! However I need 4 bedrooms is there any house plan similar to this one that comes to mind with 4 bedrooms? Thank You</h4>
+                                    <p>Try looking at 61-103. This has a very similar architectural style but has 4 bedrooms.</p>
+                                </li>
+                                <li>
+                                    <h4>I have previously looked at this plan to build in the middle Tennessee area, and would like to see it in person. Is this building available to view in the Austin Tx area? I will be traveling to Austin for the NAHB fall
+                                        meeting in September and would really like to see the finished product on the lot. </h4>
+                                    <p>Unfortunately, the designers do not give out that information for privacy reasons.</p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="housePlanDetailPageCard">
+                            <section class="housePlanHeaderBlock">
+                                <h4>Full Specs and Features</h4>
+                            </section>
+                            <section class="housePlanCardBody">
+                                <table>
+                                    <tr>
+                                        <th>Total Living Area (finished) </th>
+                                        <td>
+                                            <p>Total Sq. Ft.: 2091</p>
+                                            <p>Main floor: 2091</p>
+                                            <p>Basement: 1524</p>
+                                        </td>
+                                        <td>
+                                            <p>Bonus: 349 </p>
+                                            <p>Porches: 448 </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Beds / Baths </th>
+                                        <td>
+                                            <p>Bedrooms: 3 </p>
+                                            <p>Half Baths: 1</p>
+                                        </td>
+                                        <td>
+                                            <p>Full Baths: 2</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Garage</th>
+                                        <td>
+                                            <p>Garage: 549 </p>
+                                        </td>
+                                        <td>
+                                            <p>Garage Stalls: 2 </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Levels</th>
+                                        <td>
+                                            <p>1 story</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Dimension </th>
+                                        <td>
+                                            <p>Width: 78’ 9” </p>
+                                            <p>Height: 30’ 0”</p>
+                                        </td>
+                                        <td>
+                                            <p>Depth: 71’ 5” </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Roof slope </th>
+                                        <td>
+                                            <p>12:12 (primary)</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Walls (exterior)</th>
+                                        <td>
+                                            <p>2”x4”</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Ceiling heights</th>
+                                        <td>
+                                            <p>10’ (Main)</p>
+                                            <p>9’ (Upper)</p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <section class="housePlanDetailPageRightSec d-block d-md-none">
+                                    <div class="rightSec">
+                                        <section class="selectPlanFormHolder">
+                                            <section class="selectPlanFormSec">
+                                                <select class="form-control">
+                                                <option>Select Plan Package</option>
+                                              </select>
+                                                <select class="form-control">
+                                                <option>Foundation Options</option>
+                                              </select>
+                                                <select class="form-control">
+                                                <option>Exclusive Options</option>
+                                              </select>
+                                                <select class="form-control">
+                                                <option>Other Options</option>
+                                              </select>
+                                            </section>
+                                            <section class="selectPlanAmountSec">
+                                                <p>Subtotal: <span>$1640</span></p>
+                                                <a class="btn btn-primary btn-sm" href="javascript:void(0);">Buy Now</a>
+                                            </section>
+                                        </section>
+                                        <div class="featureCardSection">
+                                            <section class="housePlanFeatureCard">
+                                                <h4>House Plan Features</h4>
+                                                <section class="housePlanFeatureCardBody">
+                                                    <ul class="featureBadgeList">
+                                                        <li>
+                                                            <h5>Lot Characteristics</h5>
+                                                            <a href="javascript:void(0);">Suited for a back view</a>
+                                                        </li>
+                                                        <li>
+                                                            <h5>Bedrooms & Baths</h5>
+                                                            <a href="javascript:void(0);">Split bedrooms</a>
+                                                            <a href="javascript:void(0);">Master sitting area</a>
+                                                            <a href="javascript:void(0);">Nursery</a>
+                                                            <a href="javascript:void(0);">Teen suite</a>
+                                                            <a href="javascript:void(0);">Jack & Jill bath</a>
+                                                        </li>
+                                                        <li>
+                                                            <h5>Kitchen</h5>
+                                                            <a href="javascript:void(0);">Walk-in pantry</a>
+                                                            <a href="javascript:void(0);">Eating bar</a>
+                                                            <a href="javascript:void(0);">Nook</a>
+                                                            <a href="javascript:void(0);">Breakfast</a>
+                                                        </li>
+                                                        <li>
+                                                            <h5>Interior Features</h5>
+                                                            <a href="javascript:void(0);">Bonus room</a>
+                                                            <a href="javascript:void(0);">Great room</a>
+                                                            <a href="javascript:void(0);">Open concept floor plan</a>
+                                                            <a href="javascript:void(0);">Formal dining room</a>
+                                                            <a href="javascript:void(0);">Den</a>
+                                                            <a href="javascript:void(0);">office</a>
+                                                            <a href="javascript:void(0);">computer</a>
+                                                            <a href="javascript:void(0);">Unfinished</a>
+                                                            <a href="javascript:void(0);">future space</a>
+                                                        </li>
+                                                        <li>
+                                                            <h5>Exterior Features</h5>
+                                                            <a href="javascript:void(0);">Covered front porch</a>
+                                                            <a href="javascript:void(0);">Covered rear porch</a>
+                                                        </li>
+                                                    </ul>
+                                                </section>
+                                            </section>
+                                            <section class="housePlanFeatureCard">
+                                                <h4>Additional Services</h4>
+                                                <section class="housePlanFeatureCardBody">
+                                                    <ul class="relatedList">
+                                                        <li><a href="javascript:void(0);">Related Plans</a></li>
+                                                        <li><a href="javascript:void(0);">Other house plans by this Designer</a></li>
+                                                        <li><a href="javascript:void(0);">Your Recently Viewed Plans</a></li>
+                                                    </ul>
+                                                </section>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="relatedHousePlanThumbSec">
+                                    <h4>Related House Plans</h4>
+                                    <section class="relatedHousePlanThumbHolder">
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                        <section class="relatedHousePlanThumb">
+                                            <a href="javascript:void(0);">
+                                                <img src="img/product-thumb.jpg" alt="img">
+                                                <span>Plan 61-103</span>
+                                            </a>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="relatedHousePlanThumbSec">
+                            <h4>Other house plans by this Designer</h4>
+                            <section class="relatedHousePlanThumbHolder">
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                            </section>
+                            <section class="btnHolder">
+                                <a class="btn btn-primary" href="javascript:void(0);">See All</a>
+                            </section>
+                        </section>
+                        <section class="relatedHousePlanThumbSec">
+                            <h4>Your recently Viewed Plans</h4>
+                            <section class="relatedHousePlanThumbHolder">
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                                <section class="relatedHousePlanThumb">
+                                    <a href="javascript:void(0);">
+                                        <img src="img/product-thumb.jpg" alt="img">
+                                        <span>Plan 61-103</span>
+                                    </a>
+                                </section>
+                            </section>
+                            <section class="btnHolder">
+                                <a class="btn btn-primary" href="javascript:void(0);">See All</a>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="housePlanDetailPageRightSec sec_sticky_1 d-none d-md-block">
+                        <div class="rightSec">
+                            <section class="selectPlanFormHolder">
+                                <section class="selectPlanFormSec">
+                                    <select class="form-control">
+                                      <option>Select Plan Package</option>
+                                    </select>
+                                    <select class="form-control">
+                                      <option>Foundation Options</option>
+                                    </select>
+                                    <select class="form-control">
+                                      <option>Exclusive Options</option>
+                                    </select>
+                                    <select class="form-control">
+                                      <option>Other Options</option>
+                                    </select>
+                                </section>
+                                <section class="selectPlanAmountSec">
+                                    <p>Subtotal: <span>$1640</span></p>
+                                    <a class="btn btn-primary btn-sm" href="javascript:void(0);">Buy Now</a>
+                                </section>
+                            </section>
+                            <div class="featureCardSection">
+                                <section class="housePlanFeatureCard">
+                                    <h4>House Plan Features</h4>
+                                    <section class="housePlanFeatureCardBody">
+                                        <ul class="featureBadgeList">
+                                            <li>
+                                                <h5>Lot Characteristics</h5>
+                                                <a href="javascript:void(0);">Suited for a back view</a>
+                                            </li>
+                                            <li>
+                                                <h5>Bedrooms & Baths</h5>
+                                                <a href="javascript:void(0);">Split bedrooms</a>
+                                                <a href="javascript:void(0);">Master sitting area</a>
+                                                <a href="javascript:void(0);">Nursery</a>
+                                                <a href="javascript:void(0);">Teen suite</a>
+                                                <a href="javascript:void(0);">Jack & Jill bath</a>
+                                            </li>
+                                            <li>
+                                                <h5>Kitchen</h5>
+                                                <a href="javascript:void(0);">Walk-in pantry</a>
+                                                <a href="javascript:void(0);">Eating bar</a>
+                                                <a href="javascript:void(0);">Nook</a>
+                                                <a href="javascript:void(0);">Breakfast</a>
+                                            </li>
+                                            <li>
+                                                <h5>Interior Features</h5>
+                                                <a href="javascript:void(0);">Bonus room</a>
+                                                <a href="javascript:void(0);">Great room</a>
+                                                <a href="javascript:void(0);">Open concept floor plan</a>
+                                                <a href="javascript:void(0);">Formal dining room</a>
+                                                <a href="javascript:void(0);">Den</a>
+                                                <a href="javascript:void(0);">office</a>
+                                                <a href="javascript:void(0);">computer</a>
+                                                <a href="javascript:void(0);">Unfinished</a>
+                                                <a href="javascript:void(0);">future space</a>
+                                            </li>
+                                            <li>
+                                                <h5>Exterior Features</h5>
+                                                <a href="javascript:void(0);">Covered front porch</a>
+                                                <a href="javascript:void(0);">Covered rear porch</a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </section>
+                                <section class="housePlanFeatureCard">
+                                    <h4>Additional Services</h4>
+                                    <section class="housePlanFeatureCardBody">
+                                        <ul class="relatedList">
+                                            <li><a href="javascript:void(0);">Related Plans</a></li>
+                                            <li><a href="javascript:void(0);">Other house plans by this Designer</a></li>
+                                            <li><a href="javascript:void(0);">Your Recently Viewed Plans</a></li>
+                                        </ul>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                </section>
             </section>
-            <section class="housePlanFieldSetHolder">
-              <b class="legend"><span>Floor Plans</span></b>
-              <ul>
-                <li>
-                  <h4>Main Floor</h4>
-                  <img src="img/plan-1.jpg" alt="img">
-                  <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
-                </li>
-                <li>
-                  <h4>Bonus Floor</h4>
-                  <img src="img/plan-2.jpg" alt="img">
-                  <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
-                </li>
-                <li>
-                  <h4>Alternate Floor Plans</h4>
-                  <img src="img/plan-3.jpg" alt="img">
-                  <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
-                </li>
-                <li>
-                  <img src="img/plan-4.jpg" alt="img">
-                  <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
-                </li>
-                <li>
-                  <img src="img/plan-5.jpg" alt="img">
-                  <a class="btn btn-primary" href="javascript:void(0);">Reverse</a>
-                </li>
-              </ul>
-            </section>
-            <section class="housePlanDetailPageContentHolder">
-              <h4>Foundation Options</h4>
-              <ul class="foundation">
-                <li>Basement <span>$395</span></li>
-                <li>Crawlspace <span>$200</span></li>
-                <li>Walk-out basement <span>$395</span></li>
-                <li>Slab <span>Standard With Plan</span></li>
-              </ul>
-              <h4>Frequently Asked Questions About This Plan </h4>
-              <ul class="faq">
-                <li>
-                  <h4>I love this plan. Is this house built anywhere near Knoxville, TN? We\’d love to see it in
-                    person, or do you have any photos of the actual house after completion?</h4>
-                  <p>I’m sorry but the designers do not make that information available because of privacy concerns.
-                  </p>
-                </li>
-                <li>
-                  <h4>I love this style and house! However I need 4 bedrooms is there any house plan similar to this
-                    one that comes to mind with 4 bedrooms? Thank You</h4>
-                  <p>Try looking at 61-103. This has a very similar architectural style but has 4 bedrooms.</p>
-                </li>
-                <li>
-                  <h4>I have previously looked at this plan to build in the middle Tennessee area, and would like to
-                    see it in person. Is this building available to view in the Austin Tx area? I will be traveling to
-                    Austin for the NAHB fall meeting in September and would really like to see the finished product on
-                    the lot. </h4>
-                  <p>Unfortunately, the designers do not give out that information for privacy reasons.</p>
-                </li>
-              </ul>
-            </section>
-            <section class="housePlanDetailPageCard">
-              <section class="housePlanHeaderBlock">
-                <h4>Full Specs and Features</h4>
-              </section>
-              <section class="housePlanCardBody">
-                <table>
-                  <tr>
-                    <th>Total Living Area (finished) </th>
-                    <td>
-                      <p>Total Sq. Ft.: 2091</p>
-                      <p>Main floor: 2091</p>
-                      <p>Basement: 1524</p>
-                    </td>
-                    <td>
-                      <p>Bonus: 349 </p>
-                      <p>Porches: 448 </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Beds / Baths </th>
-                    <td>
-                      <p>Bedrooms: 3 </p>
-                      <p>Half Baths: 1</p>
-                    </td>
-                    <td>
-                      <p>Full Baths: 2</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Garage</th>
-                    <td>
-                      <p>Garage: 549 </p>
-                    </td>
-                    <td>
-                      <p>Garage Stalls: 2 </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Levels</th>
-                    <td>
-                      <p>1 story</p>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Dimension </th>
-                    <td>
-                      <p>Width: 78’ 9” </p>
-                      <p>Height: 30’ 0”</p>
-                    </td>
-                    <td>
-                      <p>Depth: 71’ 5” </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Roof slope </th>
-                    <td>
-                      <p>12:12 (primary)</p>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Walls (exterior)</th>
-                    <td>
-                      <p>2”x4”</p>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Ceiling heights</th>
-                    <td>
-                      <p>10’ (Main)</p>
-                      <p>9’ (Upper)</p>
-                    </td>
-                    <td>
-                    </td>
-                  </tr>
-                </table>
-                <section class="relatedHousePlanThumbSec">
-                  <h4>Related House Plans</h4>
-                  <section class="relatedHousePlanThumbHolder">
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                    <section class="relatedHousePlanThumb">
-                      <a href="javascript:void(0);">
-                        <img src="img/product-thumb.jpg" alt="img">
-                        <span>Plan 61-103</span>
-                      </a>
-                    </section>
-                  </section>
-                </section>
-              </section>
-            </section>
-            <section class="relatedHousePlanThumbSec">
-              <h4>Other house plans by this Designer</h4>
-              <section class="relatedHousePlanThumbHolder">
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-              </section>
-              <section class="btnHolder">
-                <a class="btn btn-primary" href="javascript:void(0);">See All</a>
-              </section>
-            </section>
-            <section class="relatedHousePlanThumbSec">
-              <h4>Your recently Viewed Plans</h4>
-              <section class="relatedHousePlanThumbHolder">
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-                <section class="relatedHousePlanThumb">
-                  <a href="javascript:void(0);">
-                    <img src="img/product-thumb.jpg" alt="img">
-                    <span>Plan 61-103</span>
-                  </a>
-                </section>
-              </section>
-              <section class="btnHolder">
-                <a class="btn btn-primary" href="javascript:void(0);">See All</a>
-              </section>
-            </section>
-          </section>
-          <section class="housePlanDetailPageRightSec sticky_parent">
-            <div class="rightSec sec_sticky_1">
-              <section class="selectPlanFormHolder">
-                <section class="selectPlanFormSec">
-                  <select class="form-control">
-                    <option>Select Plan Package</option>
-                  </select>
-                  <select class="form-control">
-                    <option>Foundation Options</option>
-                  </select>
-                  <select class="form-control">
-                    <option>Exclusive Options</option>
-                  </select>
-                  <select class="form-control">
-                    <option>Other Options</option>
-                  </select>
-                </section>
-                <section class="selectPlanAmountSec">
-                  <p>Subtotal: <span>$1640</span></p>
-                  <a class="btn btn-primary btn-sm" href="javascript:void(0);">Buy Now</a>
-                </section>
-              </section>
-              <section class="housePlanFeatureCard">
-                <h4>House Plan Features</h4>
-                <section class="housePlanFeatureCardBody">
-                  <ul class="featureBadgeList">
-                    <li>
-                      <h5>Lot Characteristics</h5>
-                      <a href="javascript:void(0);">Suited for a back view</a>
-                    </li>
-                    <li>
-                      <h5>Bedrooms & Baths</h5>
-                      <a href="javascript:void(0);">Split bedrooms</a>
-                      <a href="javascript:void(0);">Master sitting area</a>
-                      <a href="javascript:void(0);">Nursery</a>
-                      <a href="javascript:void(0);">Teen suite</a>
-                      <a href="javascript:void(0);">Jack & Jill bath</a>
-                    </li>
-                    <li>
-                      <h5>Kitchen</h5>
-                      <a href="javascript:void(0);">Walk-in pantry</a>
-                      <a href="javascript:void(0);">Eating bar</a>
-                      <a href="javascript:void(0);">Nook</a>
-                      <a href="javascript:void(0);">Breakfast</a>
-                    </li>
-                    <li>
-                      <h5>Interior Features</h5>
-                      <a href="javascript:void(0);">Bonus room</a>
-                      <a href="javascript:void(0);">Great room</a>
-                      <a href="javascript:void(0);">Open concept floor plan</a>
-                      <a href="javascript:void(0);">Formal dining room</a>
-                      <a href="javascript:void(0);">Den</a>
-                      <a href="javascript:void(0);">office</a>
-                      <a href="javascript:void(0);">computer</a>
-                      <a href="javascript:void(0);">Unfinished</a>
-                      <a href="javascript:void(0);">future space</a>
-                    </li>
-                    <li>
-                      <h5>Exterior Features</h5>
-                      <a href="javascript:void(0);">Covered front porch</a>
-                      <a href="javascript:void(0);">Covered rear porch</a>
-                    </li>
-                  </ul>
-                </section>
-              </section>
-              <section class="housePlanFeatureCard">
-                <h4>Additional Services</h4>
-                <section class="housePlanFeatureCardBody">
-                  <ul class="relatedList">
-                    <li><a href="javascript:void(0);">Related Plans</a></li>
-                    <li><a href="javascript:void(0);">Other house plans by this Designer</a></li>
-                    <li><a href="javascript:void(0);">Your Recently Viewed Plans</a></li>
-                  </ul>
-                </section>
-              </section>
-            </div>
-          </section>
         </section>
-      </section>
-    </section>
 
-    <section class="qucikAdviceSec text-center contentSp">
-      <section class="container">
-        <h3>Need Some Quick Tips Or Advice?</h3>
-        <h5>We want to help you design the house of your dreams as best as we can. If you can’t find what you’re looking
-          for here, <a href="javascript:void(0);">get in touch with our licensed architect or a designer!</a></h5>
+        <section class="qucikAdviceSec text-center contentSp">
+            <section class="container">
+                <h3>Need Some Quick Tips Or Advice?</h3>
+                <h5>We want to help you design the house of your dreams as best as we can. If you can’t find what you’re looking for here, <a href="javascript:void(0);">get in touch with our licensed architect or a designer!</a></h5>
 
-        <section class="btnHolder">
-          <a class="btn btn-primary" href="contact.html">GET IN TOUCH</a>
+                <section class="btnHolder">
+                    <a class="btn btn-primary" href="contact.html">GET IN TOUCH</a>
+                </section>
+            </section>
         </section>
-      </section>
-    </section>
 
-    <footer>
-      <div class="container">
-        <section class="footerBlockHolder">
-          <section class="footerSearchBlock">
-            <a href="javascript:void(0);"><img src="img/logo.png" alt="logo" /></a>
-            <section class="">
-              <section class="input-group">
-                <input type="text" class="form-control" placeholder="Quick search plan by #"
-                  aria-label="Quick search plan by #" aria-describedby="button-addon2">
-                <section class="input-group-append">
-                  <button class="btn btn-primary" type="button" id="button-addon2">
+        <footer>
+            <div class="container">
+                <section class="footerBlockHolder">
+                    <section class="footerSearchBlock">
+                        <a href="javascript:void(0);"><img src="img/logo.png" alt="logo" /></a>
+                        <section class="">
+                            <section class="input-group">
+                                <input type="text" class="form-control" placeholder="Quick search plan by #" aria-label="Quick search plan by #" aria-describedby="button-addon2">
+                                <section class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="button-addon2">
                     <i><img src="img/search-icon.png" alt="search"></i>
                     FIND PLAN
                   </button>
-                </section>
-              </section>
-            </section>
-          </section>
-          <section class="footerNavBlock">
-            <h6>NAVIGATION</h6>
-            <ul class="double-inner">
-              <li><a href="house-plan.html">House Plans</a></li>
-              <li><a href="javascript:void(0);">Saved Plans</a></li>
-              <li><a href="javascript:void(0);">Popular</a></li>
-              <li><a href="javascript:void(0);">About Us </a></li>
-              <li><a href="javascript:void(0);">New Designs</a></li>
-              <li><a href="javascript:void(0);">Designers</a></li>
-              <li><a href="javascript:void(0);">3-D Plans</a></li>
-              <li><a href="javascript:void(0);">Legal/Privacy </a></li>
-              <li><a href="javascript:void(0);">House Styles</a></li>
-              <li><a href="terms-and-condition.html">Terms and Conditions </a></li>
-              <li><a href="javascript:void(0);">FAQ</a></li>
-              <li><a href="testimonial.html">Testimonials</a></li>
-            </ul>
-          </section>
-          <section class="footerNavBlock">
-            <h6>CONTACT US </h6>
-            <ul>
-              <li><a href="mailto:info@monsterhouseplans.com">Email Us</a></li>
-              <li><a href="blog.html">Blog</a></li>
-            </ul>
-            <section class="cardImgSec">
-              <span><img src="./img/visa-icon.png" alt="icon"></span>
-              <span><img src="./img/mastercard-icon.png" alt="icon"></span>
-              <span><img src="./img/discover-icon.png" alt="icon"></span>
-            </section>
-            <section class="adviceSection">
-              <p>Get Advice From an Architect!:</p>
-              <a href="tel:360-325-8057"><i><svg width="20" height="20px" aria-hidden="true" focusable="false"
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="footerNavBlock">
+                        <h6>NAVIGATION</h6>
+                        <ul class="double-inner">
+                            <li><a href="house-plan.html">House Plans</a></li>
+                            <li><a href="javascript:void(0);">Saved Plans</a></li>
+                            <li><a href="javascript:void(0);">Popular</a></li>
+                            <li><a href="javascript:void(0);">About Us </a></li>
+                            <li><a href="javascript:void(0);">New Designs</a></li>
+                            <li><a href="javascript:void(0);">Designers</a></li>
+                            <li><a href="javascript:void(0);">3-D Plans</a></li>
+                            <li><a href="javascript:void(0);">Legal/Privacy </a></li>
+                            <li><a href="javascript:void(0);">House Styles</a></li>
+                            <li><a href="terms-and-condition.html">Terms and Conditions </a></li>
+                            <li><a href="javascript:void(0);">FAQ</a></li>
+                            <li><a href="testimonial.html">Testimonials</a></li>
+                        </ul>
+                    </section>
+                    <section class="footerNavBlock">
+                        <h6>CONTACT US </h6>
+                        <ul>
+                            <li><a href="mailto:info@monsterhouseplans.com">Email Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                        <section class="cardImgSec">
+                            <span><img src="./img/visa-icon.png" alt="icon"></span>
+                            <span><img src="./img/mastercard-icon.png" alt="icon"></span>
+                            <span><img src="./img/discover-icon.png" alt="icon"></span>
+                        </section>
+                        <section class="adviceSection">
+                            <p>Get Advice From an Architect!:</p>
+                            <a href="tel:360-325-8057"><i><svg width="20" height="20px" aria-hidden="true" focusable="false"
                     data-prefix="fas" data-icon="phone-alt" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512" class="svg-inline--fa fa-phone-alt fa-w-16 fa-2x">
                     <path fill="currentColor"
                       d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"
                       class=""></path>
                   </svg></i>360-325-8057</a>
-            </section>
-          </section>
-        </section>
-        <section class="footerBottomSec">
-          <p>©2020 MonsterHousePlans.Com, A Planworks, L.L.C. Company. All Rights Reserved. | <a
-              href="javascript:void(0);">Sitemap</a></p>
-          <ul>
-            <li><a href="https://www.facebook.com/pages/MonsterHousePlanscom/106151602749894"><img src="img/facebook-icon.png" alt="img"></a></li>
-            <li><a href="javascript:void(0);"><img src="img/insta-icon.png" alt="img"></a></li>
-            <li><a href="https://www.pinterest.com/mnstrhouseplans/"><img src="img/pinterest-icon.png" alt="img"></a></li>
-            <li><a href="https://www.youtube.com/channel/UC9DkBT31lgdrRKpd9TyeMPA?view_as=subscriber"><img src="img/youtube.png" alt="img"></a></li>
-          </ul>
-        </section>
-      </div>
-    </footer>
+                        </section>
+                    </section>
+                </section>
+                <section class="footerBottomSec">
+                    <p>©2020 MonsterHousePlans.Com, A Planworks, L.L.C. Company. All Rights Reserved. | <a href="javascript:void(0);">Sitemap</a></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/pages/MonsterHousePlanscom/106151602749894"><img src="img/facebook-icon.png" alt="img"></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);"><img src="img/insta-icon.png" alt="img"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/mnstrhouseplans/"><img src="img/pinterest-icon.png" alt="img"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC9DkBT31lgdrRKpd9TyeMPA?view_as=subscriber"><img src="img/youtube.png" alt="img"></a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
 
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script src="js/vendor/jquery-3.4.1.min.js"></script>
-    <script src="js/pgwslideshow.min.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('.individualPlanSlider').pgwSlideshow();
-      });
+        <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+        <script src="js/vendor/jquery-3.4.1.min.js"></script>
+        <script src="js/pgwslideshow.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/slimScroll.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            var div_name = $('.sec_sticky');
+            var div_top;
+            var div_name_1 = $('.sec_sticky_1');
+            var div_top_1;
+            setTimeout(function() {
+                div_top = div_name.offset().top;
 
-    </script>
+                div_top_1 = div_name_1.offset().top;
+            }, 500);
+
+            function sticky_relocate() {
+                var headerHeight = $('header.fixHeader').outerHeight();
+                var window_top = $(window).scrollTop();
+                var parentOffset = $('.housePlanDetailPageHolder').offset().top;
+                var outerHeight = $('.housePlanDetailPageHolder').outerHeight();
+
+                if (window_top > div_top) {
+                    var div_setTop = window_top - parentOffset + headerHeight - 40;
+                    $('.sec_sticky').addClass('stick');
+                    if (div_setTop < (outerHeight - headerHeight)) {
+                        $('.sec_sticky').css('top', div_setTop + 'px');
+                    }
+                } else if (window_top < div_top) {
+                    $('.sec_sticky').removeClass('stick');
+                }
+                if (window_top > div_top_1) {
+                    var div_setTop_1 = window_top - parentOffset + headerHeight - 40;
+                    var stickyHeight = $('.sec_sticky_1').outerHeight();
+                    $('.sec_sticky_1').addClass('stick');
+                    if (div_setTop_1 < (outerHeight - headerHeight - stickyHeight)) {
+                        $('.sec_sticky_1').css('top', div_setTop_1 + 'px');
+                    }
+                } else if (window_top < div_top_1) {
+                    $('.sec_sticky_1').removeClass('stick');
+                }
+            }
+
+            window.onload = window.onresize = fixElements;
+
+            function fixElements() {
+                var viewportWidth = document.documentElement.clientWidth;
+                if (viewportWidth > 767) {
+                    $(window).scroll(sticky_relocate);
+                }
+            }
+            $(document).ready(function() {
+                $('.individualPlanSlider').pgwSlideshow();
+                $(".stick .featureCardSection ").slimScroll({
+                    cursorborder: "",
+                    color: "#2f83e8",
+                    alwaysVisible: true,
+                    railVisible: true,
+                    railColor: '#d8e1eb',
+                    railOpacity: 1,
+                    size: '6px',
+                    height: '100%',
+                    position: 'right',
+                    distance: '10px'
+                });
+            });
+        </script>
 </body>
 
 </html>
