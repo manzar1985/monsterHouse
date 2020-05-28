@@ -932,7 +932,7 @@
                     $('.sec_sticky').removeClass('stick');
                 }
                 if (window_top > div_top_1) {
-                    var div_setTop_1 = window_top - parentOffset + headerHeight - 40;
+                    var div_setTop_1 = window_top - parentOffset + headerHeight;
                     var stickyHeight = $('.sec_sticky_1').outerHeight();
                     $('.sec_sticky_1').addClass('stick');
                     if (div_setTop_1 < (outerHeight - headerHeight - stickyHeight)) {
@@ -953,7 +953,7 @@
             }
             $(document).ready(function() {
                 $('.individualPlanSlider').pgwSlideshow();
-                $(".stick .featureCardSection ").slimScroll({
+                $(".featureCardSection ").slimScroll({
                     cursorborder: "",
                     color: "#2f83e8",
                     alwaysVisible: true,
